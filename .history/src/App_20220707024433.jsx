@@ -6,12 +6,15 @@ import Navbar from "./pages/Navbar/Navbar";
 
 function App() {
   return (
+    <Router>
       <React.Fragment>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
       </React.Fragment>
+      
+    </Router>
   );
 }
 

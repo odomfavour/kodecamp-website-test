@@ -1,17 +1,15 @@
 import * as React from "react";
-import { Routes, Route, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Index";
 import Navbar from "./pages/Navbar/Navbar";
 
 function App() {
   return (
-      <React.Fragment>
+      <Routes>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </React.Fragment>
+        <Route path="/" element={<Home />} />
+      </Routes>
   );
 }
 
