@@ -1,8 +1,11 @@
 import React from 'react'
+import PageWrapper from '../layout/PageWapper/PageWrapper'
 
 const Index = () => {
   return (
-    <div className='container'>Index</div>
+    <PageWrapper>
+      <div className='container'>Index</div>
+    </PageWrapper>
   )
 }
 
