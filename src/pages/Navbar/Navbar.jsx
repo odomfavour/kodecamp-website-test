@@ -7,9 +7,11 @@ import navbarAboutIcon from "./NavbarAssets//navbar-about-icon.svg";
 import navbarContactIcon from "./NavbarAssets/navbar-contact-icon.svg";
 import navbarExploreIcon from "./NavbarAssets/navbar-explore-icon.svg";
 import navbarWorksIcon from "./NavbarAssets/navbar-works-icon.svg";
+import LoginIconMobile from "./NavbarAssets/login-icon-mobile.svg";
 import navbarToggle from "./NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const NavigationBar = () => {
@@ -24,37 +26,38 @@ const NavigationBar = () => {
                 <div id="overlay" className=""></div>
             }
         <Navbar.Brand href="#home" className="pt-10">
-            <img src={kodecampIconMobile} alt="kodecamp-icon" className="d-sm-none" />
-            <img src={kodecampIconDesktop} alt="kodecamp-icon" className="d-none d-sm-block d-lg-none kodecamp-icon-tablet" />
-            <img src={kodecampIconDesktop} alt="kodecamp-icon" className="d-none d-lg-block" />
+            <img src={kodecampIconMobile} alt="kodecamp-icon" id="kodecamp-icon-mobile" className="d-sm-none kodecamp-icon" />
+            <img src={kodecampIconDesktop} alt="kodecamp-icon" id="kodecamp-icon-tablet" className="d-none d-sm-block d-lg-none kodecamp-icon" />
+            <img src={kodecampIconDesktop} alt="kodecamp-icon" id="kodecamp-icon-desktop" className="d-none d-lg-block kodecamp-icon" />
         </Navbar.Brand>
-        <Nav.Link className="d-none d-lg-block navbar-links-desktop">
+        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             Home
-        </Nav.Link>
-        <Nav.Link className="d-none d-lg-block navbar-links-desktop">
+        </Link>
+        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             About Us
-        </Nav.Link>
-        <Nav.Link className="d-none d-lg-block navbar-links-desktop">
+        </Link>
+        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             Contact Us
-        </Nav.Link>
-        <Nav.Link className="d-none d-lg-block navbar-links-desktop">
+        </Link>
+        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             Explore
-        </Nav.Link>
-        <Nav.Link className="d-none d-lg-block navbar-links-desktop">
+        </Link>
+        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             How It Works
-        </Nav.Link>
+        </Link>
 
-        <div className="d-flex justify-content-end">
-            <Nav.Link>
-                <Button variant="" className="d-inline-block btn-login">Login</Button>{' '}
-            </Nav.Link>
-            <Nav.Link>
-                <Button variant="secondary" className="d-inline-block btn-enroll">Enroll Now</Button>{' '}
-            </Nav.Link>
-        </div>
-            
-        <div>
+        <div className="d-flex">
+            <div className="d-flex justify-content-end">
+                <Link to="/" className="btn">
+                    <Button variant="" className="d-inline-block d-none d-md-block btn-login">Login</Button>
+                </Link>
+                <Link to="/" className="btn">
+                    <Button variant="secondary" className="d-inline-block btn-enroll">Enroll Now</Button>
+                </Link>
+            </div>
+                
             <img src={navbarToggle} id="navbarToggle" className="d-lg-none d-xl-none" onClick={() => setShowNavAndOverlay(true)} alt=""/>
+    
         </div>
         </Container>
         { 
@@ -67,45 +70,54 @@ const NavigationBar = () => {
                 
                 <div className="mt-2">
                     <img src={navbarHomeIcon} alt="navbar-home-icon" className="ps-2" />
-                    <a href="#" className="navbar-links-mobile ps-3">
+                    <Link to="/" className="navbar-links-mobile ps-3">
                         Home
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="navbar-mobile-line mt-3"></div>
                 
                 <div className="mt-3">
                     <img src={navbarAboutIcon} alt="navbar-about-icon" className="ps-2" />
-                    <a href="#" className="navbar-links-mobile ps-3">
+                    <Link to="/" className="navbar-links-mobile ps-3">
                         About Us
-                    </a>
+                    </Link>
                 </div>
                 
                 <div className="navbar-mobile-line mt-3"></div>
                 
                 <div className="mt-3">
                     <img src={navbarContactIcon} alt="navbar-contact-icon" className="ps-2" />
-                    <a href="#" className="navbar-links-mobile ps-3">
+                    <Link to="/" className="navbar-links-mobile ps-3">
                         Contact Us
-                    </a>
+                    </Link>
                 </div>
                 
                 <div className="navbar-mobile-line mt-3"></div>
                 
                 <div className="mt-3">
                     <img src={navbarExploreIcon} alt="navbar-explore-icon" className="ps-2" />
-                    <a href="#" className="navbar-links-mobile ps-3">
+                    <Link to="/" className="navbar-links-mobile ps-3">
                         Explore
-                    </a>
+                    </Link>
                 </div>
                 
                 <div className="navbar-mobile-line mt-3"></div>
                 
                 <div className="mt-3">
                     <img src={navbarWorksIcon} alt="navbar-works-icon" className="ps-2" />
-                    <a href="#" className="navbar-links-mobile ps-3">
+                    <Link to="/" className="navbar-links-mobile ps-3">
                         How It Works
-                    </a>
+                    </Link>
+                </div>
+                
+                <div className="navbar-mobile-line mt-3"></div>
+                
+                <div className="mt-3">
+                    <img src={LoginIconMobile} alt="navbar-works-icon" className="ps-2" />
+                    <Link to="/" id="navbar-mobile-login" className="navbar-links-mobile green-100 ps-3">
+                        Login
+                    </Link>
                 </div>
                 
             </div>
