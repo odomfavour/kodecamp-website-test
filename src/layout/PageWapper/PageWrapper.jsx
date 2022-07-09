@@ -6,7 +6,7 @@ const PageWrapper = ({ children }) => {
     <section>
       {/* header component */}
       <main>{children}</main>
-      <Footer />;
+      <Footer />
     </section>
   );
 };

@@ -131,7 +131,7 @@ const Footer = () => {
             </form>
           </Col>
         </Row>
-        <p className="fw-semibold text-center mt-0 pt-4">
+        <p className="fw-semibold text-center mt-0 pt-4 white-100">
           &copy; 2022 KodeCamp
         </p>
       </Container>
