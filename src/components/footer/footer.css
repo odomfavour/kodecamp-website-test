@@ -1,14 +1,9 @@
 .footer {
-  background: url("../Images/desktop_footer_vector.svg");
+  background: url("../../Images/desktop_footer_vector.svg");
   background-position: -110px;
   background-repeat: no-repeat;
 }
-.footer-row {
-  /* margin-right: 0 !important;
-  margin-left: 0 !important; */
-}
 .footer-logo {
-  /* background-color: red; */
   width: 180px !important;
   align-self: center;
 }
@@ -47,16 +42,14 @@
     background: none;
   }
   .footer {
-    background: url("../Images/mobile_footer_vector.svg");
+    background: url("../../Images/mobile_footer_vector.svg");
     background-position: top -15px right;
     background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 420px) {
   .footer {
-    background: url("../Images/mobile_footer_vector.svg");
     background-position: top;
-    background-repeat: no-repeat;
   }
   .footer-col {
     padding-left: 5px !important;

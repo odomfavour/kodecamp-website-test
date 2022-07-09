@@ -1,12 +1,11 @@
 import React from "react";
-import Footer from "../components/Footer";
+import PageWrapper from "../layout/PageWapper/PageWrapper";
 
 const Index = () => {
   return (
-    <div className="">
-      Index
-      <Footer />;
-    </div>
+    <PageWrapper>
+      <div className="container">Index</div>
+    </PageWrapper>
   );
 };
 

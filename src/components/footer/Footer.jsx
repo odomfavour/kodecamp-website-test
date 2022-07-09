@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Form, InputGroup } from "react-bootstrap";
-import KodocampWhite from "../Images/kodecamp_logo_white.svg";
+import KodocampWhite from "../../Images/kodecamp_logo_white.svg";
 
 // import css
-import "../css/footer.css";
+// import "../../css/footer.css";
+import "./footer.css";
 // import social icons
 import {
   FaLinkedinIn,
@@ -29,22 +30,16 @@ const Footer = () => {
     >
       <Container className="text-left container-xl px-lg-0 footer-container">
         <Row className="align-items-start justify-content-between px-xl-0 px-xxl-4  mb-3 mx-xxl-0">
-          <Col
-            className="col-7 col-md-3 col-lg-3 mb-5 mb-lg-0 footer-col footer-logo"
-            // style={{ flex: "10%" }}
-          >
+          <Col className="col-7 col-md-3 col-lg-3 mb-5 mb-lg-0 footer-col footer-logo">
             <img src={KodocampWhite} className="img-fluid" alt="" />
           </Col>
-          <Col
-            className="col-11 col-md-6 col-lg-2 mb-5 mb-lg-0  footer-col"
-            // style={{ flex: "16%" }}
-          >
+          <Col className="col-11 col-md-6 col-lg-2 mb-5 mb-lg-0  footer-col">
             <p className=" footer-subtitle">Quick Links</p>
             <ul className="list-unstyled">
               <li className="footer-list">
                 <Link to="/">About Us</Link>
               </li>
-              <li className="footer-list">
+              <li className="footer-list ">
                 <Link to="/">Contact Us</Link>
               </li>
               <li className="footer-list">
@@ -58,10 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col
-            className="col-11 col-md-6 col-lg-2 mb-5 mb-lg-0 footer-col"
-            // style={{ flex: "16%" }}
-          >
+          <Col className="col-11 col-md-6 col-lg-2 mb-5 mb-lg-0 footer-col">
             <p className="footer-subtitle ">Terms</p>
             <ul className="list-unstyled">
               <li className="footer-list">
@@ -108,10 +100,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col
-            className="col-11 col-md-6 col-lg-3 mb-2 footer-col"
-            // style={{ width: "240px" }}
-          >
+          <Col className="col-11 col-md-6 col-lg-3 mb-2 footer-col">
             <p className="footer-subtitle ">
               We know you'll love to find out more!
             </p>

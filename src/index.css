@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --blue-100: #0d6efd;
+  --blue-60: #0d6efd99;
+  --blue-20: #0d6efd33;
+  --black-100: #212529;
+  --black-60: #21252999;
+  --black-20: #21252933;
+  --deep-blue-100: #19364d;
+  --deep-blue-60: #19364d99;
+  --deep-blue-20: #19364d33;
+  --green-100: #669e00;
+  --green-60: #669e0099;
+  --green-20: #669e0033;
+}
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -7,10 +21,47 @@ body {
 }
 *,
 button,
-input {
+input,
+a {
   font-family: "Montserrat", sans-serif;
 }
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+.blue-100 {
+  color: var(--blue-100) !important;
+}
+.blue-60 {
+  color: var(--blue-60) !important;
+}
+.blue-20 {
+  color: var(--blue-20) !important;
+}
+.black-100 {
+  color: var(--black-100) !important;
+}
+.black-60 {
+  color: var(--black-60) !important;
+}
+.black-20 {
+  color: var(--black-20) !important;
+}
+.deep-blue-100 {
+  color: var(--deep-blue-100) !important;
+}
+.deep-blue-60 {
+  color: var(--deep-blue-60) !important;
+}
+.deep-blue-20 {
+  color: var(--deep-blue-20) !important;
+}
+.green-100 {
+  color: var(--green-100) !important;
+}
+.green-60 {
+  color: var(--green-60) !important;
+}
+.green-20 {
+  color: var(--green-20) !important;
 }
