@@ -24,12 +24,9 @@ const Footer = () => {
     alert("Email has been subscribed");
   };
   return (
-    <footer
-      style={{ backgroundColor: "#19364D" }}
-      className="text-white py-4 pt-5 footer container-xxl"
-    >
+    <footer className=" py-4 pt-5 footer container-xxl ">
       <Container className="text-left container-xl px-lg-0 footer-container">
-        <Row className="align-items-start justify-content-between px-xl-0 px-xxl-4  mb-3 mx-xxl-0">
+        <Row className="align-items-start justify-content-between px-xl-0 px-xxl-5  mb-3 ">
           <Col className="col-7 col-md-3 col-lg-3 mb-5 mb-lg-0 footer-col footer-logo">
             <img src={KodocampWhite} className="img-fluid" alt="" />
           </Col>
@@ -71,7 +68,9 @@ const Footer = () => {
             </ul>
           </Col>
           <Col className="col-11 col-md-6 col-lg-2 mb-5 mb-lg-0 footer-col">
-            <p className="footer-subtitle ">Connect With Us</p>
+            <p className="footer-subtitle footer-subtitle-connect ">
+              Connect With Us
+            </p>
             <ul className="list-unstyled">
               <li className="footer-list ">
                 <Link to="/">
@@ -104,7 +103,7 @@ const Footer = () => {
             <p className="footer-subtitle ">
               We know you'll love to find out more!
             </p>
-            <p className="fw-light">
+            <p className="fw-light white-100">
               Subscribe to our newsletter to receive the latest updates and
               information about Kodecamp.
             </p>
@@ -113,7 +112,6 @@ const Footer = () => {
                 <Form.Control
                   className="bg-transparent py-3 fw-light"
                   placeholder="Email Address"
-                  style={{ color: "#FCFCFC" }}
                   value={subscribeEmail}
                   onChange={(e) => {
                     setSubscribeEmail(e.target.value);
@@ -125,8 +123,7 @@ const Footer = () => {
                   variant="outline-secondary"
                   id="button-addon2"
                   type="submit"
-                  className="border-0 px-4"
-                  style={{ backgroundColor: "#0D6EFD", color: "#FCFCFC" }}
+                  className="border-0 px-4 white-100 bg-blue-100"
                 >
                   <FaArrowRight />
                 </Button>

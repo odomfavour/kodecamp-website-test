@@ -12,6 +12,7 @@
   --green-100: #669e00;
   --green-60: #669e0099;
   --green-20: #669e0033;
+  --white-100: #fcfcfc;
 }
 body {
   margin: 0;
@@ -32,36 +33,78 @@ a {
 .blue-100 {
   color: var(--blue-100) !important;
 }
+.bg-blue-100 {
+  background-color: var(--blue-100) !important;
+}
 .blue-60 {
   color: var(--blue-60) !important;
+}
+.bg-blue-60 {
+  background-color: var(--blue-60) !important;
 }
 .blue-20 {
   color: var(--blue-20) !important;
 }
+.bg-blue-20 {
+  background-color: var(--blue-20) !important;
+}
 .black-100 {
   color: var(--black-100) !important;
+}
+.bg-black-100 {
+  background-color: var(--black-100) !important;
 }
 .black-60 {
   color: var(--black-60) !important;
 }
+.bg-black-60 {
+  background-color: var(--black-60) !important;
+}
 .black-20 {
   color: var(--black-20) !important;
+}
+.bg-black-20 {
+  background-color: var(--black-20) !important;
 }
 .deep-blue-100 {
   color: var(--deep-blue-100) !important;
 }
+.bg-deep-blue-100 {
+  background-color: var(--deep-blue-100) !important;
+}
 .deep-blue-60 {
   color: var(--deep-blue-60) !important;
+}
+.bg-deep-blue-60 {
+  background-color: var(--deep-blue-60) !important;
 }
 .deep-blue-20 {
   color: var(--deep-blue-20) !important;
 }
+.bg-deep-blue-20 {
+  background-color: var(--deep-blue-20) !important;
+}
 .green-100 {
   color: var(--green-100) !important;
+}
+.bg-green-100 {
+  background-color: var(--green-100) !important;
 }
 .green-60 {
   color: var(--green-60) !important;
 }
+.bg-green-60 {
+  background-color: var(--green-60) !important;
+}
 .green-20 {
   color: var(--green-20) !important;
+}
+.bg-green-20 {
+  background-color: var(--green-20) !important;
+}
+.white-100 {
+  color: var(--white-100) !important;
+}
+.bg-white-100 {
+  background-color: var(--white-100) !important;
 }
