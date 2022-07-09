@@ -1,7 +1,8 @@
 import React from 'react'
 import NavigationBar from '../../pages/Navbar/Navbar'
+import Footer from "../../components/footer/Footer";
 
-const PageWrapper = ({children}) => {
+const PageWrapper = ({ children }) => {
   return (
     <section>
         {/* header component */}
@@ -10,8 +11,11 @@ const PageWrapper = ({children}) => {
             {children}
         </main>
         {/* footer component */}
+      {/* header component */}
+      <main>{children}</main>
+      <Footer />
     </section>
-  )
-}
+  );
+};
 
-export default PageWrapper
+export default PageWrapper;

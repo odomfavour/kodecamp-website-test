@@ -1,14 +1,14 @@
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
-import closeCollapseBarIcon from "./NavbarAssets/close-collapsebar-icon.svg";
-import kodecampIconMobile from "./NavbarAssets/kodecamp-icon-mobile.svg";
-import kodecampIconDesktop from "./NavbarAssets/kodecamp-icon-desktop.svg";
-import navbarHomeIcon from "./NavbarAssets/navbar-home-icon.svg";
-import navbarAboutIcon from "./NavbarAssets//navbar-about-icon.svg";
-import navbarContactIcon from "./NavbarAssets/navbar-contact-icon.svg";
-import navbarExploreIcon from "./NavbarAssets/navbar-explore-icon.svg";
-import navbarWorksIcon from "./NavbarAssets/navbar-works-icon.svg";
-import LoginIconMobile from "./NavbarAssets/login-icon-mobile.svg";
-import navbarToggle from "./NavbarAssets/navbar-toggle.svg";
+import closeCollapseBarIcon from "../../Images/NavbarAssets/close-collapsebar-icon.svg";
+import kodecampIconMobile from "../../Images/NavbarAssets/kodecamp-icon-mobile.svg";
+import kodecampIconDesktop from "../../Images/NavbarAssets/kodecamp-icon-desktop.svg";
+import navbarHomeIcon from "../../Images/NavbarAssets/navbar-home-icon.svg";
+import navbarAboutIcon from "../../Images/NavbarAssets//navbar-about-icon.svg";
+import navbarContactIcon from "../../Images/NavbarAssets/navbar-contact-icon.svg";
+import navbarExploreIcon from "../../Images/NavbarAssets/navbar-explore-icon.svg";
+import navbarWorksIcon from "../../Images/NavbarAssets/navbar-works-icon.svg";
+import LoginIconMobile from "../../Images/NavbarAssets/login-icon-mobile.svg";
+import navbarToggle from "../../Images/NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -52,7 +52,7 @@ const NavigationBar = () => {
                     <Button variant="" className="d-inline-block d-none d-md-block btn-login">Login</Button>
                 </Link>
                 <Link to="/" className="btn">
-                    <Button variant="secondary" className="d-inline-block btn-enroll">Enroll Now</Button>
+                    <Button className="d-inline-block btn-enroll bg-green-100">Enroll Now</Button>
                 </Link>
             </div>
                 

@@ -5,11 +5,9 @@ import Home from "./pages/Index";
 
 function App() {
   return (
-      <React.Fragment>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </React.Fragment>
   );
 }
 
