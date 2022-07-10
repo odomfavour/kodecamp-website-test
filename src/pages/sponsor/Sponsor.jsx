@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import "./Sponsor.css";
@@ -7,6 +7,7 @@ const Sponsor = () => {
   const [newSponsor, setNewSponsor] = useState({
     firstName: "",
     lastName: "",
+    
     email: "",
     phone: "",
     business: "",
