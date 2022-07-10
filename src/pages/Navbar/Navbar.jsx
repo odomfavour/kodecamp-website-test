@@ -42,7 +42,7 @@ const NavigationBar = () => {
         <Link to="/" className="d-none d-lg-block navbar-links-desktop">
             Explore
         </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
+        <Link to="/works" className="d-none d-lg-block navbar-links-desktop">
             How It Works
         </Link>
 
