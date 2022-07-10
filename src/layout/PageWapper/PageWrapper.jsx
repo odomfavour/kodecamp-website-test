@@ -11,8 +11,6 @@ const PageWrapper = ({ children }) => {
             {children}
         </main>
         {/* footer component */}
-      {/* header component */}
-      <main>{children}</main>
       <Footer />
     </section>
   );

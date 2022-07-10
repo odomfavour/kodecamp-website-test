@@ -13,6 +13,7 @@
   --green-60: #669e0099;
   --green-20: #669e0033;
   --white-100: #fcfcfc;
+  --sonic-silver: #757575;
 }
 body {
   margin: 0;
@@ -107,4 +108,7 @@ a {
 }
 .bg-white-100 {
   background-color: var(--white-100) !important;
+}
+.sonic-silver {
+  color: var(--sonic-silver); 
 }
