@@ -3,7 +3,7 @@ import  Row  from "react-bootstrap/esm/Row";
 import Col  from "react-bootstrap/esm/Col";
 import { Link } from "react-router-dom";
 
-const KodeCamp3_0 = () => {
+const KodeCamp30 = () => {
     const KodeCamp3_0_Style = {
         fontSize: "1.5em",
         fontWeight: "600",
@@ -179,4 +179,4 @@ const KodeCamp3_0 = () => {
     );
 }
  
-export default KodeCamp3_0;
+export default KodeCamp30;
