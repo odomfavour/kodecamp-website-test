@@ -1,11 +1,16 @@
-import React from "react";
+import React from 'react'
+import NavigationBar from '../../pages/Navbar/Navbar'
 import Footer from "../../components/footer/Footer";
 
 const PageWrapper = ({ children }) => {
   return (
     <section>
-      {/* header component */}
-      <main>{children}</main>
+        {/* header component */}
+        <NavigationBar />
+        <main>
+            {children}
+        </main>
+        {/* footer component */}
       <Footer />
     </section>
   );
