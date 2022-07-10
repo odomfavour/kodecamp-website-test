@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+    #kodecamp3_0_heading {
+        width:  18.75em !important;
+        height: 2.75em !important;
+        line-height: 2.75em !important;
+        font-size: 2.25em !important;
+    }
+
+    #textBelowKodeCamp3_0 {
+        font-size: 1.5em !important
+    }
+
+    .text-time {
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .num-days-container {
+        width: 125px !important;
+        height: 72px !important;
+    }
+
+    .num-days {
+        font-size: 40px !important;
+        height: 30px;
+        padding: 21px 37px !important;
+    }
+
+    #data_container {
+        margin-top: 96px !important;
+        box-shadow: 0px 4px 8px rgba(217, 217, 217, 0.8);
+        margin-bottom: 30px;
+    }
+
+    #data_heading {
+        width: 19.125em !important;
+        font-size: 36px !important;
+        line-height: 24px !important;
+    }
+
+    #text-below-data {
+        font-weight: 400 !important;
+        font-size: 24px  !important;
+        line-height: 1.5625em !important;
+    }
+
+    #btn-join-works {
+        width: 400px !important;
+        height: 64px !important;
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+}
