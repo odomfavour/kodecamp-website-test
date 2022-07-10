@@ -28,7 +28,7 @@
   color: var(--white-100);
 }
 .footer-list a:hover {
-  color: inherit;
+  color: var(--white-100);
 }
 
 .footer-social-icons {
