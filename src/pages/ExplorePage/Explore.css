@@ -1,0 +1,93 @@
+
+.explore-card-container{
+  width: 400px;
+  height: 360px;
+  box-shadow: 3px 3px 2px rgba(25, 54, 77, 0.4);
+  border-radius: 12px;
+}
+
+.explore-card-bg{
+  height: 240px;  
+  background-image: url('../../Images/explore-image/productdesign-figma.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: 12px 12px 0px 0px;
+}
+
+.explore-fs-20-600{
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+.explore-fs-14-500{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.explore-fs-24-700{
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  display: none;
+}
+
+/* .carousel-indicators .active {
+  background-color: hsl(270, 100%, 66%);
+} */
+
+/* mobile screen */
+@media (max-width:426px) {
+  .explore-card-container{    
+    width: 333px;
+    height: 299.7px;
+  }
+
+  .explore-card-bg{
+    width: 333px;
+    height: 199.8px;
+  }
+
+  
+  
+}
+
+/* tablet */
+@media (min-width: 426px) and (max-width: 769px) {
+    .explore-card-container{    
+        width: 333px;
+        height: 299.7px;
+    }
+    
+    .explore-card-bg{
+        width: 333px;
+        height: 199.8px;
+    }
+
+}
+
+/* laptops */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+}
+
+/* desktop */
+@media (min-width: 1025px) and (max-width: 1200px) { 
+
+}
+
+/* xxxl */
+@media (min-width: 1201px){ 
+
+}
