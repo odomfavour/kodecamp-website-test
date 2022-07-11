@@ -23,7 +23,7 @@ function ContactUsHero() {
               </div>
 
               {/* displays only on lg and above screen hero image */}
-              <div className='col col-xl-9  text-center mt-5  d-none d-md-block '>
+              <div className='col col-md-9 col-xl-9  text-center mt-5  d-none d-md-block '>
                 <p className='text-white contact-fs-32-500 text-center mt-4'>
                     Our team are available to respond to any 
                     enquires or question you might have.
