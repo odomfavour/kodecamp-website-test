@@ -1,0 +1,24 @@
+.enrol-btn{    
+    width: 201px;
+    height: 64px;
+    border-radius: 4px;
+    border: none;
+}
+
+.button-fs-16{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (min-width: 321px) and (max-width: 425.89px){
+    .enrol-btn{    
+        width: 150px;
+        height: 60px;
+    }
+    
+
+    .button-fs-16{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

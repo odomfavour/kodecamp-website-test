@@ -4,14 +4,18 @@ import ExploreDesktop from './ExploreDesktop';
 import ExploreMobile from './ExploreMobile';
 import "../../App.css";
 import "./Explore.css";
+import SearchBar from '../../components/SearchBar/SearchBar';
+import ButtonEnrol from '../../components/Buttons/ButtonEnrol';
 
 function Explore() {
   return (
     <>
         <PageWrapper>
-          <div className='container'>
+          <div className='container my-5'>
+            <SearchBar/>
             <ExploreMobile/>
-            <ExploreDesktop/> 
+            <ExploreDesktop/>
+            <ButtonEnrol/> 
           </div>
         </PageWrapper>
     </>

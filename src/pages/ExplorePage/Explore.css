@@ -1,13 +1,14 @@
 
 .explore-card-container{
-  width: 400px;
-  height: 360px;
+  width: 300px;
+  height: 299.7px;
   box-shadow: 3px 3px 2px rgba(25, 54, 77, 0.4);
   border-radius: 12px;
 }
 
 .explore-card-bg{
-  height: 240px;  
+  height: 299.7px;
+  
   background-image: url('../../Images/explore-image/productdesign-figma.jpg');
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -39,55 +40,94 @@
     display: none;
 }
 
+
+
 .carousel-indicators [data-bs-target] {
   display: none;
 }
 
-/* .carousel-indicators .active {
+.carousel-indicators .active {
   background-color: hsl(270, 100%, 66%);
+}
+
+/* .carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 } */
 
+
 /* mobile screen */
-@media (max-width:426px) {
+@media (min-width: 321px) and (max-width: 375.89px) {
   .explore-card-container{    
-    width: 333px;
+    width: 300px;
     height: 299.7px;
-  }
+    
+  } 
 
   .explore-card-bg{
-    width: 333px;
+    width: 300px;
     height: 199.8px;
-  }
+  }  
+ 
+}
 
+@media (min-width: 376px) and (max-width: 425.89px) {
+  .explore-card-container{    
+    width: 350px;
+    height: 299.7px;
+
+    
+  }
   
-  
+  .explore-card-bg{
+    width: 350px;
+    height: 199.8px;
+  }  
 }
 
 /* tablet */
 @media (min-width: 426px) and (max-width: 769px) {
-    .explore-card-container{    
-        width: 333px;
-        height: 299.7px;
-    }
     
-    .explore-card-bg{
-        width: 333px;
-        height: 199.8px;
-    }
 
 }
 
 /* laptops */
 @media (min-width: 769px) and (max-width: 1024px) { 
+  .explore-card-container{    
+    width: 300px;
+    height: 299.7px;
+  }
+
+  .explore-card-bg{
+    width: 300px;
+    height: 199.8px;
+  }
 
 }
 
 /* desktop */
 @media (min-width: 1025px) and (max-width: 1200px) { 
+  .explore-card-bg{
+    height: 199.8px;
+  } 
+
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) { 
 
 }
 
 /* xxxl */
-@media (min-width: 1201px){ 
+@media (min-width: 1440px){ 
+  .explore-card-container{    
+    width: 400px;
+    height: 360px;
+  }
+
+  .explore-card-bg{
+    width: 400px;
+    height: 240px;
+  }
 
 }

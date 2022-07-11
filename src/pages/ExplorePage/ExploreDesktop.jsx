@@ -7,7 +7,8 @@ function ExploreDesktop() {
         
 
         {/* display normal card display for other screens apart from mobile */}
-        <div className='d-none d-sm-block'>
+        <div className='d-none d-sm-block '>
+            
             <div className='mt-3'>
               <p className='explore-fs-24-700 fw-bold deep-blue-100'>Product Design</p>
             </div>
