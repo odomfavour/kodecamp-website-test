@@ -6,9 +6,8 @@ function ExploreCard() {
     <>
         <div className=''>
             <div className='mb-3'>
-                <div className=' col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4'>
-                    <Card className='explore-card-container h-100 bg-white-100  '>
-
+                <div className=' col mb-4'>
+                    <Card className='explore-card-container h-100 bg-white-100'>
                         <div className=' explore-card-bg text-white  '>
                             <div className='px-3 py-3 h-100 d-flex flex-column justify-content-start'>
                                 <div className='mb-auto'>

@@ -1,8 +1,7 @@
 .explore-card-container{
-  width: 300px;
-  height: 299.7px;
-  box-shadow: 3px 3px 2px rgba(25, 54, 77, 0.4);
-  border-radius: 12px;
+  /* width: 300px;
+  height: 299.7px; */
+  box-shadow: 3px 3px 3px rgba(25, 54, 77, 0.4);
 }
 
 .explore-card-bg{
@@ -11,7 +10,7 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
 }
 
 .explore-fs-20-600{
@@ -48,84 +47,3 @@
   background-color: rgba(102, 158, 0, 0.2) ;
 }
 
-/* mobile screen */
-@media (min-width: 1440px){ 
-  .explore-card-container{    
-    width: 290px;
-    height: 299.7px;
-  } 
-  .explore-card-bg{
-    width: 290px;
-    height: 199.8px;
-  } 
-}
-
-@media (min-width: 321px) and (max-width: 375.89px) {
-  .explore-card-container{    
-    width: 300px;
-    height: 299.7px;
-  } 
-  .explore-card-bg{
-    width: 300px;
-    height: 199.8px;
-  }  
-}
-
-@media (min-width: 376px) and (max-width: 425.89px) {
-  .explore-card-container{    
-    width: 350px;
-    height: 299.7px;
-  }
-  .explore-card-bg{
-    width: 350px;
-    height: 199.8px;
-  }  
-}
-
-/* tablet */
-@media (min-width: 426px) and (max-width: 769px) {
-  .explore-card-container{    
-    width: 300px;
-    height: 299.7px;
-  }
-  .explore-card-bg{
-    width: 300px;
-    height: 199.8px;
-  }     
-}
-
-/* laptops */
-@media (min-width: 769px) and (max-width: 1024px) { 
-  .explore-card-container{    
-    width: 300px;
-    height: 299.7px;
-  }
-  .explore-card-bg{
-    width: 300px;
-    height: 199.8px;
-  }
-}
-
-/* desktop */
-@media (min-width: 1025px) and (max-width: 1440px) { 
-  .explore-card-bg{
-    height: 199.8px;
-  } 
-}
-
-/* @media (min-width: 1201px) and (max-width: 14px) { 
-  .explore-card-bg{
-    height: 199.8px;
-  } 
-} */
-/* xxxl */
-@media (min-width: 1440px){ 
-  .explore-card-container{    
-    width: 400px;
-    height: 360px;
-  }
-  .explore-card-bg{
-    width: 400px;
-    height: 240px;
-  }
-}

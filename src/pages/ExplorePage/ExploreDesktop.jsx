@@ -5,7 +5,7 @@ function ExploreDesktop() {
   return (
     <>
         {/* display normal card display for other screens apart from mobile */}
-        <div className='d-none d-sm-block '>    
+        <div className='d-none d-sm-block my-4 '>    
             {/* Frontend track Section */}
             <section className=''>
               <div className='pt-5'>
@@ -18,7 +18,7 @@ function ExploreDesktop() {
               </div>
             </section>
             {/* BackEnd track Section */}
-            <section className='mt-5'>
+            <section className='mt-4'>
               <div className='pt-5'>
                 <p className='explore-fs-24-700 fw-bold deep-blue-100'>BackEnd Development </p>
               </div>
@@ -29,7 +29,7 @@ function ExploreDesktop() {
               </div>
             </section>
             {/* Andriod Development track Section */}
-            <section className='mt-5'>
+            <section className='mt-4'>
               <div className='pt-5'>
                 <p className='explore-fs-24-700 fw-bold deep-blue-100'>Andriod Development </p>
               </div>
@@ -39,7 +39,7 @@ function ExploreDesktop() {
               </div>
             </section>
             {/* Product Management track Section */}
-            <section className='mt-5'>
+            <section className='mt-4'>
               <div className='pt-5'>
                 <p className='explore-fs-24-700 fw-bold deep-blue-100'>Product Management </p>
               </div>
@@ -50,7 +50,7 @@ function ExploreDesktop() {
               </div>
             </section>
             {/* Newly Added track Section */}
-            <section className='mt-5'>
+            <section className='mt-4'>
               <div className='pt-5'>
                 <p className='explore-fs-24-700 fw-bold deep-blue-100'>Newly Added </p>
               </div>
@@ -61,7 +61,7 @@ function ExploreDesktop() {
               </div>
             </section>
             {/* Product Design track Section */}
-            <section className='mt-5'>
+            <section className='mt-4'>
               <div className='pt-5'>
                 <p className='explore-fs-24-700 fw-bold deep-blue-100'>Product Design </p>
               </div>

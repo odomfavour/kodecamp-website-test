@@ -7,7 +7,7 @@ function ExploreMobile() {
         <div className='d-block d-sm-none '>
                 {/* front end development track */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>FrontEnd Development</p>
                         </div>
@@ -32,7 +32,7 @@ function ExploreMobile() {
                 </section>
                 {/* back end development track */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>BackEnd Development</p>
                         </div>
@@ -57,7 +57,7 @@ function ExploreMobile() {
                 </section>
                 {/* andriod development track */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>Andriod Development</p>
                         </div>
@@ -77,7 +77,7 @@ function ExploreMobile() {
                 </section>
                 {/* project management track */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>Project Management</p>
                         </div>
@@ -102,7 +102,7 @@ function ExploreMobile() {
                 </section>
                 {/* newly added tracks */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>Newly Added</p>
                         </div>
@@ -127,7 +127,7 @@ function ExploreMobile() {
                 </section>
                 {/* back end development track */}
                 <section className='mt-4'>
-                    <div className='pt-4 ms-2 container'>
+                    <div className='pt-4 container'>
                         <div className='container'>
                             <p className='explore-fs-24-700 fw-bold deep-blue-100'>Product Design</p>
                         </div>
