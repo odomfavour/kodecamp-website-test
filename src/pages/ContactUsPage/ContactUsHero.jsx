@@ -19,8 +19,8 @@ function ContactUsHero() {
               </div>
 
               {/* displays only on lg and above screen hero image */}
-              <div className='col col-md-9 col-lg-8 col-xl-9  text-center mt-5  d-none d-md-block '>
-                <p className='text-white contact-fs-32-500 text-center mt-4'>
+              <div className=' col-9  text-center mt-5  d-none d-md-block '>
+                <p className='text-white contact-fs-32-500 text-center mt-4 mx-5'>
                     Our team are available to respond to any 
                     enquires or question you might have.
                     We’ll love to hear from you. <br></br>Get in touch today!

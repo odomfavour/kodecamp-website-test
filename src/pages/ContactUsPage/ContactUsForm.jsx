@@ -16,12 +16,9 @@ function ContactUsForm() {
   const handleChange = (e) =>{
     let value = e.target.value;
     setInputField( {
-      
       ...inputField,[e.target.name]: value
-    
     })
   }
-
   const handleSubmit = event => {
     event.preventDefault();
     console.log(inputField);
@@ -34,13 +31,11 @@ function ContactUsForm() {
 
   return (
     <>
-    
       <div className='my-5 container'>
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
-        <Form onSubmit={handleSubmit}>
-          
+        <Form onSubmit={handleSubmit}>        
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
@@ -51,11 +46,8 @@ function ContactUsForm() {
               onChange={handleChange} 
               placeholder="Jane Cooper" 
               value={inputField.full_name}
-            />
-            
+            />      
           </Form.Group>
-
-
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
@@ -68,7 +60,6 @@ function ContactUsForm() {
               value={inputField.email}
             />
           </Form.Group>
-
           <Form.Group className="mb-4 col-lg-6 col input-style" controlId="formBasicPhone">
             <Form.Label className='contact-fs-24-500 black-100 '>Phone Number</Form.Label>
             <Form.Control
@@ -101,7 +92,6 @@ function ContactUsForm() {
         </Form>
       </div>
     </>
-    
   )
 }
 
