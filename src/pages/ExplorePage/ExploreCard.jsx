@@ -1,7 +1,5 @@
-import React from 'react';
 import {Card} from 'react-bootstrap';
 import figmaicon from '../../Images/explore-image/figma-logo.svg';
-
 
 function ExploreCard() {
   return (

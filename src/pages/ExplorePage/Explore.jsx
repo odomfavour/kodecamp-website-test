@@ -1,4 +1,3 @@
-import React from 'react';
 import PageWrapper from '../../layout/PageWapper/PageWrapper';
 import ExploreDesktop from './ExploreDesktop';
 import ExploreMobile from './ExploreMobile';
@@ -16,7 +15,6 @@ function Explore() {
             <ExploreMobile/>
             <ExploreDesktop/>
             <ButtonEnrol/>
-            
           </div>
         </PageWrapper>
     </>

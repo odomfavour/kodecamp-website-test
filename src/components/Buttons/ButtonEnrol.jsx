@@ -1,4 +1,3 @@
-import React from 'react';
 import "./Button.css";
 
 function ButtonEnrol() {
@@ -9,8 +8,6 @@ function ButtonEnrol() {
                 <button type="submit" className=' button-fs-16s fw-bold  bg-green-100 enrol-btn white-100' size="lg">Enroll</button>
             </div>
         </div>
-    
-    
     </>
   )
 }
