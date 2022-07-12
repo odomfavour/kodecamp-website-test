@@ -5,7 +5,7 @@ import {Form} from 'react-bootstrap';
 
 function ContactUsForm() {
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [inputField , setInputField] = useState({
     full_name: '',
     email: '',
@@ -25,13 +25,12 @@ function ContactUsForm() {
   const handleSubmit = event => {
     event.preventDefault();
     console.log(inputField);
-   setLoading(true);
+  //  setLoading(true);
 
    setTimeout(() => {
-     setLoading(false);
+    //  setLoading(false);
    }, 3000)
   }
-
 
   return (
     <>
@@ -68,7 +67,6 @@ function ContactUsForm() {
               placeholder="janecooper@gmail.com" 
               value={inputField.email}
             />
-
           </Form.Group>
 
           <Form.Group className="mb-4 col-lg-6 col input-style" controlId="formBasicPhone">
@@ -82,7 +80,6 @@ function ContactUsForm() {
               placeholder="+234 812 555 0126" 
               value={inputField.phone}
             />
-
           </Form.Group>
           <Form.Group className="mb-4 col-lg-10 col "  controlId="formBasicMessage">
             <Form.Label className='contact-fs-24-500 black-100 '>Message</Form.Label>
@@ -94,15 +91,7 @@ function ContactUsForm() {
               onChange={handleChange}
               placeholder='Can I take three courses together' 
               value={inputField.message}
-              
-
-    
-
             />
-            
-              
-            
-
           </Form.Group>
           <div className='text-center my-5 '>
             <button className='bg-green-100  contact-send-btn contact-send-btn-text font-weight-semibold white-100 '  type="submit">
@@ -111,8 +100,6 @@ function ContactUsForm() {
           </div>
         </Form>
       </div>
-
-        
     </>
     
   )

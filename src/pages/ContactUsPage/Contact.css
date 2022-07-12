@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap'); */
-
 .contact-us-hero-img{  
   height: 560px; /* You must set a specified height */
   background: linear-gradient(0deg, rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.8)), url("../../Images/contactus_images/contactus-hero-img.jpg");
@@ -13,17 +11,12 @@
   box-shadow: none !important;
   -webkit-appearance:none !important;
   outline:0px  !important;
-  border-color: inherit !important;
-
-
-  
+  border-color: var(--black-60) !important;
 }
 
 .input-style{
   height: 75px;
 }
-
-
 
 textarea{
   resize: none!important;
@@ -56,8 +49,7 @@ textarea{
 .contact-fs-24-500{
   font-weight: 500;
   font-size: 24px;
-  line-height: 120%;
-  
+  line-height: 120%;  
 }
 
 .contact-fs-22-600{ 
@@ -76,7 +68,6 @@ textarea{
   .contact-us-hero-img{
     height: 206px;/* You must set a specified height */ 
   }
-
   .contact-fs-24-500{
     font-weight: 500;
     font-size: 18px;
@@ -110,8 +101,7 @@ textarea{
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-  }
-  
+  }  
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) { 
@@ -121,7 +111,5 @@ textarea{
   }
 }
 
-@media (min-width: 1200px){ 
-  
-  
+@media (min-width: 1200px){  
 }
