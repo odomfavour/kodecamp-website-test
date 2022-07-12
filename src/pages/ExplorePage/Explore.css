@@ -107,11 +107,17 @@
 }
 
 /* desktop */
-@media (min-width: 1025px) and (max-width: 1200px) { 
+@media (min-width: 1025px) and (max-width: 1440px) { 
   .explore-card-bg{
     height: 199.8px;
   } 
 }
+
+/* @media (min-width: 1201px) and (max-width: 14px) { 
+  .explore-card-bg{
+    height: 199.8px;
+  } 
+} */
 /* xxxl */
 @media (min-width: 1440px){ 
   .explore-card-container{    
