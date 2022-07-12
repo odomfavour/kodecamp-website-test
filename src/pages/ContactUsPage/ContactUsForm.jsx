@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Form} from 'react-bootstrap';
 
-
 function ContactUsForm() {
-
   // const [loading, setLoading] = useState(false);
   const [inputField , setInputField] = useState({
     full_name: '',
@@ -12,7 +9,6 @@ function ContactUsForm() {
     phone: '',
     message: ''
   })
-
   const handleChange = (e) =>{
     let value = e.target.value;
     setInputField( {
