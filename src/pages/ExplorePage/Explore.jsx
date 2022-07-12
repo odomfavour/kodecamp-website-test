@@ -15,7 +15,8 @@ function Explore() {
             <SearchBar/>
             <ExploreMobile/>
             <ExploreDesktop/>
-            <ButtonEnrol/> 
+            <ButtonEnrol/>
+            
           </div>
         </PageWrapper>
     </>

@@ -9,21 +9,9 @@
   border-radius: 4px;
 }
 
-.form-control:focus {
-  box-shadow: none !important;
-  -webkit-appearance:none !important;
-  outline:0px  !important;
-  border-color: inherit !important;
-
-
-  
-}
-
 .input-style{
   height: 75px;
 }
-
-
 
 textarea{
   resize: none!important;
