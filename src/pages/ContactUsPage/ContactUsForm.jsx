@@ -9,16 +9,12 @@ function ContactUsForm() {
     phone: '',
     message: ''
   })
-
   const handleChange = (e) =>{
     let value = e.target.value;
     setInputField( {
-      
       ...inputField,[e.target.name]: value
-    
     })
   }
-
   const handleSubmit = event => {
     event.preventDefault();
     console.log(inputField);
@@ -29,16 +25,13 @@ function ContactUsForm() {
   //  }, 3000)
   }
 
-
   return (
     <>
-    
       <div className='my-5 container'>
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
-        <Form onSubmit={handleSubmit}>
-          
+        <Form onSubmit={handleSubmit}>          
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
@@ -50,9 +43,7 @@ function ContactUsForm() {
               placeholder="Jane Cooper" 
               value={inputField.full_name}
             />
-            
           </Form.Group>
-
 
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
@@ -65,7 +56,6 @@ function ContactUsForm() {
               placeholder="janecooper@gmail.com" 
               value={inputField.email}
             />
-
           </Form.Group>
 
           <Form.Group className="mb-4 col-lg-6 col input-style" controlId="formBasicPhone">
@@ -79,8 +69,8 @@ function ContactUsForm() {
               placeholder="+234 812 555 0126" 
               value={inputField.phone}
             />
-
           </Form.Group>
+          
           <Form.Group className="mb-4 col-lg-10 col "  controlId="formBasicMessage">
             <Form.Label className='contact-fs-24-500 black-100 '>Message</Form.Label>
             <Form.Control
@@ -100,11 +90,7 @@ function ContactUsForm() {
           </div>
         </Form>
       </div>
-
-        
     </>
-    
   )
 }
-
 export default ContactUsForm

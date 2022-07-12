@@ -113,7 +113,6 @@ a {
   color: var(--sonic-silver); 
 }
 
-
 /* form control focus removal */
 .form-control:focus {
   box-shadow: none !important;
