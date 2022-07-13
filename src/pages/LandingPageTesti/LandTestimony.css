@@ -1,0 +1,38 @@
+.testimonial-imag-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    /* commented for demo
+    float: left;
+    margin-left: 125px;
+    margin-top: 20px;
+    */
+    
+    /*for demo*/
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.testimonial-imag-circle img{
+    width: 100%;
+}
+
+.landtesti-fs-16{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.landtesti-fs-14{
+    font-size: 14px;
+    line-height: 17px;
+}
+.landtesti-fs-12{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+
