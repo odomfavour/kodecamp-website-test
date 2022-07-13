@@ -20,9 +20,15 @@ function ContactUsForm() {
     console.log(inputField);
   //  setLoading(true);
 
+<<<<<<< HEAD
    setTimeout(() => {
     //  setLoading(false);
    }, 3000)
+=======
+  //  setTimeout(() => {
+  //    setLoading(false);
+  //  }, 3000)
+>>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
   }
 
   return (
@@ -31,24 +37,34 @@ function ContactUsForm() {
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
+<<<<<<< HEAD
         <Form onSubmit={handleSubmit}>        
+=======
+        <Form onSubmit={handleSubmit}>          
+>>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
-              clasName="contact-fs-24-400 black-100 input-style "
+              className="contact-fs-24-400 black-100 "
               size="lg"
               type="text" 
               name="full_name" 
               onChange={handleChange} 
               placeholder="Jane Cooper" 
               value={inputField.full_name}
+<<<<<<< HEAD
             />      
           </Form.Group>
+=======
+            />
+          </Form.Group>
+
+>>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
               size="lg"
-              clasName="contact-fs-24-400 black-100"
+              className="contact-fs-24-400 black-100"
               type="email" 
               name="email" 
               onChange={handleChange} 
@@ -60,7 +76,7 @@ function ContactUsForm() {
             <Form.Label className='contact-fs-24-500 black-100 '>Phone Number</Form.Label>
             <Form.Control
               size="lg"
-              clasName="contact-fs-24-400 black-100"
+              className="contact-fs-24-400 black-100"
               type="tel"
               name="phone" 
               onChange={handleChange} 
@@ -68,11 +84,12 @@ function ContactUsForm() {
               value={inputField.phone}
             />
           </Form.Group>
+          
           <Form.Group className="mb-4 col-lg-10 col "  controlId="formBasicMessage">
             <Form.Label className='contact-fs-24-500 black-100 '>Message</Form.Label>
             <Form.Control
               size="lg"
-              clasName=" contact-fs-24-400 black-100 contact-textarea"
+              className=" contact-fs-24-400 black-100 contact-textarea"
               as="textarea"
               name="message"
               onChange={handleChange}
@@ -90,5 +107,4 @@ function ContactUsForm() {
     </>
   )
 }
-
 export default ContactUsForm
