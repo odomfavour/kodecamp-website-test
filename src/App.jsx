@@ -5,7 +5,8 @@ import EnrollNow from "./components/EnrollNow/EnrollNow";
 import Home from "./pages/Index";
 import Works from "./pages/Works/Works";
 import Sponsor from "./pages/sponsor/Sponsor";
-import Explorevideo from "./pages/exploreVideo/Explorevideo";
+import Explorevideo from "./components/exploreVideo/Explorevideo";
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Route path="/enroll" element={<EnrollNow />} />
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
-      <Route path="/explorevideo" element={<Explorevideo />} />
+      <Route path="/explorevideo" element={<Explorevideo/>} />
     </Routes>
   );
 }
