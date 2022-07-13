@@ -36,7 +36,7 @@
   font-size: 20px;
 }
 .footer .form-control::placeholder {
-  color: #fcfcfc;
+  color: red;
 }
 /* media query */
 @media screen and (max-width: 991px) {

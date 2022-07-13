@@ -110,7 +110,7 @@ const Footer = () => {
             <form onSubmit={handleSubmit}>
               <InputGroup className="mb-2 mt-4 bg-none">
                 <Form.Control
-                  className="bg-transparent py-3 fw-light"
+                  className="bg-transparent py-3 fw-light white-100"
                   placeholder="Email Address"
                   value={subscribeEmail}
                   onChange={(e) => {
