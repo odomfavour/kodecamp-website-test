@@ -5,7 +5,10 @@ import EnrollNow from "./components/EnrollNow/EnrollNow";
 import Home from "./pages/Index";
 import Works from "./pages/Works/Works";
 import Sponsor from "./pages/sponsor/Sponsor";
-import Explorevideo from "./components/exploreVideo/Explorevideo";
+import Explorevideo from "./pages/exploreVideo/Explorevideo";
+import ContactUs from "./pages/ContactUsPage/ContactUs";
+import Explore from "./pages/ExplorePage/Explore";
+
 
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/enroll" element={<EnrollNow />} />
+      <Route path="/contactus" element={<ContactUs/>} />
+      <Route path="/explore" element={<Explore/>} />
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
       <Route path="/explorevideo" element={<Explorevideo/>} />
