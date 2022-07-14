@@ -12,7 +12,7 @@ const Analytics = ({ cohort, value }) => {
         // border="secondary"
         className="mx-auto py-2 px-2 px-md-3 deep-blue-100 shadow-sm"
       >
-        <Card.Body>
+        <Card.Body className="pb-0">
           <Card.Title
             className="fw-semibold mb-3 "
             style={{ fontSize: "2rem" }}
@@ -29,7 +29,7 @@ const Analytics = ({ cohort, value }) => {
           </Card.Text>
           <div
             className="p-2 mx-auto"
-            style={{ width: "130px", height: "130px" }}
+            style={{ width: "120px", height: "120px" }}
           >
             <CircularProgressbar
               value={value}
@@ -37,7 +37,7 @@ const Analytics = ({ cohort, value }) => {
               styles={buildStyles({
                 textColor: "var(--green-100)",
                 trailColor: "var(--green-20)",
-                pathColor: `var(--green-100)`,
+                pathColor: "var(--green-100)",
               })}
             />
           </div>

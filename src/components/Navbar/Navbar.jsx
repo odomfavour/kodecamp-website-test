@@ -46,7 +46,10 @@ const NavigationBar = () => {
         <Link to="/" className="d-none d-lg-block navbar-links-desktop">
           About Us
         </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
+        <Link
+          to="/contactus"
+          className="d-none d-lg-block navbar-links-desktop"
+        >
           Contact Us
         </Link>
         <Link to="/explore" className="d-none d-lg-block navbar-links-desktop">
@@ -66,7 +69,7 @@ const NavigationBar = () => {
                 Login
               </Button>
             </Link>
-            <Link to="/" className="btn">
+            <Link to="/enroll" className="btn">
               <Button className="d-inline-block btn-enroll bg-green-100">
                 Enroll Now
               </Button>
