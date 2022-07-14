@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationBar from '../../pages/Navbar/Navbar'
+import NavigationBar from '../../components/Navbar/Navbar'
 import Footer from "../../components/footer/Footer";
 
 const PageWrapper = ({ children }) => {

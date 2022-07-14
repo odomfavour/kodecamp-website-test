@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
-import { Modal } from "react-bootstrap";
 import React from "react";
 import img1 from "../../Images/EnrollNow/image2.jpg";
 import img2 from "../../Images/EnrollNow/image1.jpg";
 import "./EnrollNow.css";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 const EnrollNow = () => {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
     const [email, setEmail] = useState("");
@@ -46,7 +42,7 @@ const EnrollNow = () => {
 
     const countries = [
         { id: "1", name: "Nigeria" },
-        { id: "2", name: "Usa" },
+        { id: "2", name: "USA" },
     ];
 
     const states = [
@@ -76,12 +72,12 @@ const EnrollNow = () => {
     const cities = [
         { id: "1", stateId: "1", name: "lekki" },
         { id: "2", stateId: "1", name: "Ikeja" },
-        { id: "3", stateId: "2", name: "Uyo" },
-        { id: "4", stateId: "2", name: "Eket" },
-        { id: "1", stateId: "3", name: "Houston" },
-        { id: "2", stateId: "3", name: "Austin" },
-        { id: "3", stateId: "4", name: "Los Angeles" },
-        { id: "4", stateId: "4", name: "Son Diego" },
+        { id: "3", stateId: "3", name: "Uyo" },
+        { id: "4", stateId: "3", name: "Eket" },
+        { id: "1", stateId: "23", name: "Houston" },
+        { id: "2", stateId: "23", name: "Austin" },
+        { id: "3", stateId: "24", name: "Los Angeles" },
+        { id: "4", stateId: "24", name: "Son Diego" },
         { id: "5", stateId: "1", name: "Agbara" },
     ];
     useEffect((country) => {
@@ -118,10 +114,9 @@ const EnrollNow = () => {
         padding: "10px",
         gap: "10px",
     };
-    const bgcolor = {
-        background: "#669E00",
-        color: "#fff",
-    };
+    const fontwgt = {
+        fontWeight : "500"
+    }
     return (
         <PageWrapper>
             <div className="container-md">
@@ -162,8 +157,9 @@ const EnrollNow = () => {
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-6   text-md-start">
                                         <label
+                                            style={fontwgt}
                                             htmlFor="firstname"
-                                            className="fw-bold fw-bold form-label enrollalignlabel"
+                                            className="form-label enrollalignlabel"
                                         >
                                             First Name
                                         </label>
@@ -180,8 +176,9 @@ const EnrollNow = () => {
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
                                         <label
+                                             style={fontwgt}
                                             htmlFor="lastname"
-                                            className="fw-bold form-label enrollalignlabel "
+                                            className="form-label enrollalignlabel "
                                         >
                                             Last Name
                                         </label>
@@ -198,6 +195,7 @@ const EnrollNow = () => {
                                 </div>
                                 <div className="col-md-6 my-4 text-md-start d-md-none d-lg-none">
                                     <label
+                                     style={fontwgt}
                                         htmlFor="name"
                                         className="fw-bold form-label enrollalignlabel"
                                     >
@@ -217,7 +215,7 @@ const EnrollNow = () => {
                             <div className="my-4">
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-6  text-md-start">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             Email address
                                         </label>
                                         <input
@@ -231,7 +229,7 @@ const EnrollNow = () => {
                                         />
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             Phone Number
                                         </label>
                                         <input
@@ -246,7 +244,7 @@ const EnrollNow = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-4  text-md-start  d-md-none  d-lg-none">
-                                    <label className="fw-bold form-label enrollalignlabel">
+                                    <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Phone Number
                                     </label>
                                     <input
@@ -260,106 +258,30 @@ const EnrollNow = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="my-4">
+                           <div className="my-4">
                                 <div className="row justify-content-center align-items-center">
-                                    <div className="col-md-6  text-md-start">
-                                        <label className="fw-bold form-label enrollalignlabel">
-                                            Gender
+                                <div className="col-md-6  text-md-start">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
+                                           Gender
                                         </label>
-                                        <input
-                                            placeholder={gender}
-                                            readOnly="readonly"
-                                            className="form-control enroll-input bg-transparent text-muted"
-                                            variant="primary"
-                                            onClick={handleShow}
-                                        />
-                                        <Modal
-                                            backdrop="static"
-                                            centered
-                                            show={show}
-                                            onHide={handleClose}
-                                            animation={false}
+                                        <select
+                                            value={gender}
+                                            className="form-select enroll-input "
+                                            name="gender"
+                                            id="gender"
+                                            onChange={(e) => setGender(e.target.value)}
                                         >
-                                            <Modal.Header closeButton>
-                                                <Modal.Title></Modal.Title>
-                                            </Modal.Header>
-                                            <Modal.Body scrollable={true}>
-                                                <div className="form-check">
-                                                    <label className="form-check-label">
-                                                        <input
-                                                            onClick={(e) => {
-                                                                setGender(e.target.value);
-                                                            }}
-                                                            value="Male"
-                                                            className="form-check-input d-none"
-                                                            name="GenderflexRadioDefault"
-                                                            type="radio"
-                                                            defaultChecked
-                                                        />
-                                                        <div className="custom-radio"></div>
-                                                        <div className=" text-position  fw-bold  ">
-                                                            Male
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div className="form-check">
-                                                    <label className="form-check-label">
-                                                        <input
-                                                            onClick={(e) => {
-                                                                setGender(e.target.value);
-                                                            }}
-                                                            value="Female"
-                                                            className="form-check-input d-none"
-                                                            name="GenderflexRadioDefault"
-                                                            type="radio"
-
-                                                        />
-                                                        <div className="custom-radio"></div>
-                                                        <div className=" text-position  fw-bold  fw-semibold ">
-                                                            Female
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div className="form-check">
-                                                    <label className="form-check-label">
-                                                        <input
-                                                            onClick={(e) => {
-                                                                setGender(e.target.value);
-                                                            }}
-                                                            value="Choose not to disclose"
-                                                            className="form-check-input d-none"
-                                                            name="GenderflexRadioDefault"
-                                                            type="radio"
-
-                                                        />
-                                                        <div className="custom-radio"></div>
-                                                        <div className=" text-position  fw-bold">
-                                                            Choose not to disclose
-                                                        </div>
-                                                    </label>
-                                                </div>
-                                                <div className="form-check">
-                                                    <label className="form-check-label">
-                                                        <input
-                                                            onClick={(e) => {
-                                                                setGender(e.target.value);
-                                                            }}
-                                                            value="Others"
-                                                            className="form-check-input d-none"
-                                                            name="GenderflexRadioDefault"
-                                                            type="radio"
-
-                                                        />
-                                                        <div className="custom-radio"></div>
-                                                        <div className=" text-position  fw-bold">Others</div>
-                                                    </label>
-                                                </div>
-                                            </Modal.Body>
-                                            <Modal.Footer></Modal.Footer>
-                                        </Modal>
+                                            <option value="level" selected disabled>
+                                                Select Gender
+                                            </option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Prefer not to disclose">Prefer not to disclose</option>
+                                            <option value="Others">Others</option>
+                                        </select>
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             Country
                                         </label>
                                         <select
@@ -385,7 +307,7 @@ const EnrollNow = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-4 text-md-start  d-md-none d-lg-none">
-                                    <label className="fw-bold form-label enrollalignlabel">
+                                    <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Country
                                     </label>
                                     <select
@@ -413,7 +335,7 @@ const EnrollNow = () => {
                             <div className="my-4">
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-6  text-md-start">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             State
                                         </label>
                                         <select
@@ -438,7 +360,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             City
                                         </label>
                                         <select
@@ -461,7 +383,7 @@ const EnrollNow = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-4 text-md-start  d-md-none  d-lg-none">
-                                    <label className="fw-bold form-label enrollalignlabel">
+                                    <label  style={fontwgt} className="form-label enrollalignlabel">
                                         City
                                     </label>
                                     <select
@@ -486,7 +408,7 @@ const EnrollNow = () => {
                             <div className="my-4">
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-6  text-md-start">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             What level are you applying for
                                         </label>
                                         <select
@@ -505,7 +427,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             Learning track
                                         </label>
                                         <select
@@ -539,7 +461,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                     <div className="col-md-6 mt-4 text-md-start d-md-none">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt}className="form-label enrollalignlabel">
                                             Learning track
                                         </label>
                                         <select
@@ -577,7 +499,7 @@ const EnrollNow = () => {
                             <div className="my-4">
                                 <div className="row justify-content-center align-items-center">
                                     <div className="col-md-6  text-md-start">
-                                        <label className="fw-bold form-label enrollalignlabel">
+                                        <label  style={fontwgt} className="form-label enrollalignlabel">
                                             How did you hear about kodecamp
                                         </label>
                                         <select
@@ -605,8 +527,9 @@ const EnrollNow = () => {
                             </div>
                             <div className="row mx-1 justify-content-center align-items-center">
                                 <label
+                                 style={fontwgt}
                                     htmlFor="query"
-                                    className="fw-bold form-label enrollalignlabel"
+                                    className="form-label enrollalignlabel"
                                 >
                                     Tell us about yourself
                                 </label>
@@ -615,6 +538,7 @@ const EnrollNow = () => {
                                     className="form-control z-depth-1 enrollaligntextarea"
                                     onChange={(e) => setAboutyou(e.target.value)}
                                     rows="3"
+                                    maxLength="500"
                                     name="aboutyourself"
                                     id="aboutyourself"
                                     placeholder="About you"
@@ -622,8 +546,9 @@ const EnrollNow = () => {
                             </div>
                             <div className="row mx-1 justify-content-center align-items-center mt-4">
                                 <label
+                                    style={fontwgt}
                                     htmlFor="query"
-                                    className="fw-bold form-label enrollalignlabel"
+                                    className="form-label enrollalignlabel"
                                 >
                                     What do you aim to achieve at the end of the program
                                 </label>
@@ -632,13 +557,14 @@ const EnrollNow = () => {
                                     className="form-control z-depth-1 enrollaligntextarea"
                                     onChange={(e) => setAim(e.target.value)}
                                     rows="3"
+                                    maxLength="500"
                                     name="aboutyourself"
                                     id="aboutyourself"
                                     placeholder="Your Aim(s)"
                                 ></textarea>
                             </div>
                             <div className="justify-content-center align-items-center text-center">
-                                <button type="submit" className="btn m-4 " style={bgcolor}>
+                                <button type="submit" className="btn m-4 bg-green-100 white-100"  >
                                     Join the Cohort
                                 </button>
                             </div>

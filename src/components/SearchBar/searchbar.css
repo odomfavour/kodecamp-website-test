@@ -1,0 +1,17 @@
+.searchbar-fs-20-500{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.search input {
+    border-radius: 4px;
+    border: 1px solid rgba(25, 54, 77, 0.6);
+    height: 72px;
+    background-image: url('../../Images/search-icon.svg');
+    padding-left: 20px ;
+    background-repeat: no-repeat;
+    background-position: 25px center;
+}
+.search input:focus{
+    background-image: none;
+}
