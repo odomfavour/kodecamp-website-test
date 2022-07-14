@@ -11,11 +11,7 @@ function ContactUs() {
             <ContactUsHero/>
             <ContactUsForm/>
         </div>
-<<<<<<< HEAD
       </PageWrapper>
-=======
-      </PageWrapper>  
->>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
     </>
   )
 }

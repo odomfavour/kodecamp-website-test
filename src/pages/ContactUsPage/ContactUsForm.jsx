@@ -20,15 +20,9 @@ function ContactUsForm() {
     console.log(inputField);
   //  setLoading(true);
 
-<<<<<<< HEAD
    setTimeout(() => {
     //  setLoading(false);
    }, 3000)
-=======
-  //  setTimeout(() => {
-  //    setLoading(false);
-  //  }, 3000)
->>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
   }
 
   return (
@@ -37,11 +31,7 @@ function ContactUsForm() {
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
-<<<<<<< HEAD
         <Form onSubmit={handleSubmit}>        
-=======
-        <Form onSubmit={handleSubmit}>          
->>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
@@ -52,14 +42,8 @@ function ContactUsForm() {
               onChange={handleChange} 
               placeholder="Jane Cooper" 
               value={inputField.full_name}
-<<<<<<< HEAD
             />      
           </Form.Group>
-=======
-            />
-          </Form.Group>
-
->>>>>>> 7911877cae6a787eca11560eea601bd89844cb04
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
