@@ -1,20 +1,23 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Modal } from "react-bootstrap";
 import React from "react";
-import img1 from "../../Images/Pexels Photo by Cytonn Photography.jpg";
-import img2 from "../../Images/picture1.jpg"
+import img1 from "../../Images/EnrollNow/image2.jpg";
+import img2 from "../../Images/EnrollNow/image1.jpg";
 import "./EnrollNow.css";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 const EnrollNow = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
     const [email, setEmail] = useState("");
     const [phonenumber, setPhonenumber] = useState("");
-    const [gender, setGender] = useState("");
+    const [gender, setGender] = useState("Select a Gender");
     const [countryy, setCountryy] = useState("");
     const [statee, setStatee] = useState("");
     const [cityy, setCityy] = useState("");
-    const [level, setLevel] = useState("");
+    const [level, setLevel] = useState("Select Level");
     const [learningtrack, setLearningtrack] = useState("");
     const [referal, setReferal] = useState("");
     const [aboutyou, setAboutyou] = useState("");
@@ -47,10 +50,27 @@ const EnrollNow = () => {
     ];
 
     const states = [
-        { id: "1", countryId: "1", name: "Lagos" },
-        { id: "2", countryId: "1", name: "AkwaIbom" },
-        { id: "3", countryId: "2", name: "Texas" },
-        { id: "4", countryId: "2", name: "California" },
+        { id: "1", countryId: "1", name: "Abia" },
+        { id: "2", countryId: "1", name: "Adamawa" },
+        { id: "3", countryId: "1", name: "AkwaIbom" },
+        { id: "4", countryId: "1", name: "Anambra" },
+        { id: "5", countryId: "1", name: "Bauchi" },
+        { id: "6", countryId: "1", name: "Bayelsa" },
+        { id: "7", countryId: "1", name: "Benue" },
+        { id: "8", countryId: "1", name: "Cross River" },
+        { id: "9", countryId: "1", name: "Delta" },
+        { id: "10", countryId: "1", name: "Ebonyi" },
+        { id: "11", countryId: "1", name: "Edo" },
+        { id: "12", countryId: "1", name: "Ekiti" },
+        { id: "13", countryId: "1", name: "Enugu" },
+        { id: "14", countryId: "1", name: "Gombe" },
+        { id: "15", countryId: "1", name: "Imo" },
+        { id: "16", countryId: "1", name: "Jigawa"},
+        { id: "17", countryId: "1", name: "Kaduna" },
+        { id: "18", countryId: "1", name: "Kano" },
+        { id: "19", countryId: "1", name: "Kastina" },
+        { id: "23", countryId: "2", name: "Texas" },
+        { id: "24", countryId: "2", name: "California" },
     ];
 
     const cities = [
@@ -64,11 +84,11 @@ const EnrollNow = () => {
         { id: "4", stateId: "4", name: "Son Diego" },
         { id: "5", stateId: "1", name: "Agbara" },
     ];
-
-    useEffect(() => {
+    useEffect((country) => {
         setCountry(countries);
-    }, []);
-
+    }, 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []);
     const handleCountry = (name) => {
         const dt = states.filter((x) => x.countryId === name);
         setState(dt);
@@ -82,10 +102,8 @@ const EnrollNow = () => {
     const ImageStyle1 = {
         borderRadius: "4px",
         width: "600px",
-        //height: "600px",
         left: "100px",
         marginTop: "90px",
-        // paddingRight : "16px"
     };
 
     const ImageStyle2 = {
@@ -99,23 +117,6 @@ const EnrollNow = () => {
         alignItems: "flex-start",
         padding: "10px",
         gap: "10px",
-    };
-    const label = {
-        width: "147px",
-        height: "29px",
-        fontSize: "18px",
-        lineHeight: "120%",
-    };
-    const input = {
-        width: "585px",
-        height: "75px",
-        fontSize: "18px",
-        border: "0.5px solid #757575",
-        borderRadius: "4px",
-    };
-    const textarea = {
-        width: "900px",
-        height: "200px",
     };
     const bgcolor = {
         background: "#669E00",
@@ -150,8 +151,8 @@ const EnrollNow = () => {
                         Join the next cohort and become the next tech expert.{" "}
                     </h6>
                     <h6 className="enroll-h6">
-                        The tech space is waiting to see the amazing things you are
-                        capable of.
+                        The tech space is waiting to see the amazing things you are capable
+                        of.
                     </h6>
                 </div>
                 <div>
@@ -172,8 +173,9 @@ const EnrollNow = () => {
                                                 setFirstname(e.target.value);
                                             }}
                                             type="text"
-                                            className="form-control enroll-input"
+                                            className="form-control enroll-input form-controll"
                                             placeholder="Name"
+                                            required
                                         />
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
@@ -264,23 +266,97 @@ const EnrollNow = () => {
                                         <label className="fw-bold form-label enrollalignlabel">
                                             Gender
                                         </label>
-                                        <select
-                                            value={gender}
-                                            onChange={(e) => {
-                                                setGender(e.target.value);
-                                            }}
-                                            className="form-select enroll-input"
-                                            name="gender"
-                                            id="gender"
+                                        <input
+                                            placeholder={gender}
+                                            readOnly="readonly"
+                                            className="form-control enroll-input bg-transparent text-muted"
+                                            variant="primary"
+                                            onClick={handleShow}
+                                        />
+                                        <Modal
+                                            backdrop="static"
+                                            centered
+                                            show={show}
+                                            onHide={handleClose}
+                                            animation={false}
                                         >
-                                            <option value="male" selected disabled>
-                                                Select Gender
-                                            </option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                            <option value="disclose">Choose not to disclose</option>
-                                            <option value="others">Others</option>
-                                        </select>
+                                            <Modal.Header closeButton>
+                                                <Modal.Title></Modal.Title>
+                                            </Modal.Header>
+                                            <Modal.Body scrollable={true}>
+                                                <div className="form-check">
+                                                    <label className="form-check-label">
+                                                        <input
+                                                            onClick={(e) => {
+                                                                setGender(e.target.value);
+                                                            }}
+                                                            value="Male"
+                                                            className="form-check-input d-none"
+                                                            name="GenderflexRadioDefault"
+                                                            type="radio"
+                                                            defaultChecked
+                                                        />
+                                                        <div className="custom-radio"></div>
+                                                        <div className=" text-position  fw-bold  ">
+                                                            Male
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <label className="form-check-label">
+                                                        <input
+                                                            onClick={(e) => {
+                                                                setGender(e.target.value);
+                                                            }}
+                                                            value="Female"
+                                                            className="form-check-input d-none"
+                                                            name="GenderflexRadioDefault"
+                                                            type="radio"
+
+                                                        />
+                                                        <div className="custom-radio"></div>
+                                                        <div className=" text-position  fw-bold  fw-semibold ">
+                                                            Female
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <label className="form-check-label">
+                                                        <input
+                                                            onClick={(e) => {
+                                                                setGender(e.target.value);
+                                                            }}
+                                                            value="Choose not to disclose"
+                                                            className="form-check-input d-none"
+                                                            name="GenderflexRadioDefault"
+                                                            type="radio"
+
+                                                        />
+                                                        <div className="custom-radio"></div>
+                                                        <div className=" text-position  fw-bold">
+                                                            Choose not to disclose
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div className="form-check">
+                                                    <label className="form-check-label">
+                                                        <input
+                                                            onClick={(e) => {
+                                                                setGender(e.target.value);
+                                                            }}
+                                                            value="Others"
+                                                            className="form-check-input d-none"
+                                                            name="GenderflexRadioDefault"
+                                                            type="radio"
+
+                                                        />
+                                                        <div className="custom-radio"></div>
+                                                        <div className=" text-position  fw-bold">Others</div>
+                                                    </label>
+                                                </div>
+                                            </Modal.Body>
+                                            <Modal.Footer></Modal.Footer>
+                                        </Modal>
                                     </div>
                                     <div className="col-md-6  text-md-start d-none d-md-block">
                                         <label className="fw-bold form-label enrollalignlabel">
@@ -288,6 +364,7 @@ const EnrollNow = () => {
                                         </label>
                                         <select
                                             id="ddlCountry"
+                                            value={countryy}
                                             className="form-control enroll-input select-class"
                                             onChange={(e) => [
                                                 handleCountry(e.target.value),
@@ -313,6 +390,7 @@ const EnrollNow = () => {
                                     </label>
                                     <select
                                         id="ddlCountry"
+                                        value={countryy}
                                         className="form-control enroll-input select-class"
                                         onChange={(e) => [
                                             handleCountry(e.target.value),
@@ -340,6 +418,7 @@ const EnrollNow = () => {
                                         </label>
                                         <select
                                             id="ddlStates"
+                                            value={statee}
                                             className="form-control enroll-input select-class"
                                             onChange={(e) => [
                                                 handleState(e.target.value),
@@ -364,6 +443,7 @@ const EnrollNow = () => {
                                         </label>
                                         <select
                                             id="ddlCity"
+                                            value={cityy}
                                             className="form-control enroll-input select-class"
                                             onChange={(e) => setCityy(e.target.value)}
                                         >
@@ -386,6 +466,7 @@ const EnrollNow = () => {
                                     </label>
                                     <select
                                         id="ddlCity"
+                                        value={cityy}
                                         className="form-control enroll-input select-class"
                                         onChange={(e) => setCityy(e.target.value)}
                                     >
@@ -409,6 +490,7 @@ const EnrollNow = () => {
                                             What level are you applying for
                                         </label>
                                         <select
+                                            value={level}
                                             className="form-select enroll-input "
                                             name="level"
                                             id="level"
@@ -427,6 +509,7 @@ const EnrollNow = () => {
                                             Learning track
                                         </label>
                                         <select
+                                            value={learningtrack}
                                             className="form-select enroll-input"
                                             name="track"
                                             id="track"
@@ -436,9 +519,41 @@ const EnrollNow = () => {
                                                 Select a learning track
                                             </option>
                                             <option value="Product Design">Product Design </option>
-                                            <option value="Enterpreneurship">
-                                                Enterpreneurship
+                                            <option value="Enterpreneurship">Enterpreneurship</option>
+                                            <option value="Frontend development">
+                                                Frontend development
                                             </option>
+                                            <option value="Android Development">
+                                                Android Development{" "}
+                                            </option>
+                                            <option value="Backend Development">
+                                                Backend Development{" "}
+                                            </option>
+                                            <option value="Digital Marketing">
+                                                Digital Marketing
+                                            </option>
+                                            <option value="AutoCAD ">AutoCAD </option>
+                                            <option value="Internet of Things (IOT)">
+                                                Internet of Things (IOT)
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div className="col-md-6 mt-4 text-md-start d-md-none">
+                                        <label className="fw-bold form-label enrollalignlabel">
+                                            Learning track
+                                        </label>
+                                        <select
+                                            value={learningtrack}
+                                            className="form-select enroll-input"
+                                            name="track"
+                                            id="track"
+                                            onChange={(e) => setLearningtrack(e.target.value)}
+                                        >
+                                            <option selected disabled>
+                                                Select a learning track
+                                            </option>
+                                            <option value="Product Design">Product Design </option>
+                                            <option value="Enterpreneurship">Enterpreneurship</option>
                                             <option value="Frontend development">
                                                 Frontend development
                                             </option>
@@ -466,6 +581,7 @@ const EnrollNow = () => {
                                             How did you hear about kodecamp
                                         </label>
                                         <select
+                                            value={referal}
                                             className="form-select enroll-input"
                                             name="gender"
                                             id="gender"
@@ -479,9 +595,7 @@ const EnrollNow = () => {
                                             <option value="Twitter">Twitter</option>
                                             <option value="Instagram">Instagram </option>
                                             <option value="From a Friend">From a Friend</option>
-                                            <option value="Newspaper Advert">
-                                                Newspaper Advert
-                                            </option>
+                                            <option value="Newspaper Advert">Newspaper Advert</option>
                                             <option value="Youtube">Youtube </option>
                                             <option value="Others">Others</option>
                                         </select>
@@ -532,7 +646,7 @@ const EnrollNow = () => {
                     </div>
                 </div>
             </div>
-            </PageWrapper>
+        </PageWrapper>
     );
 };
 
