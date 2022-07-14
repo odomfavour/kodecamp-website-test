@@ -3,16 +3,15 @@ import "../../App.css";
 import "./LandTestimony.css";
 import PageWrapper from '../../layout/PageWapper/PageWrapper';
 import LandTestimonyDesktop from './LandTestimonyDesktop';
+import LandTestimonyMobile from './LandTestimonyMobile';
 
 function LandTestimony() {
   return (
     <>
         <PageWrapper>
-          <div className=' my-5'>
-
+          <div className='container-fluid my-5'>
             <LandTestimonyDesktop/>
-            
-            
+            <LandTestimonyMobile/>
           </div>
         </PageWrapper>
     </>

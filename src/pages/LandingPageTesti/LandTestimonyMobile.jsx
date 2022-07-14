@@ -6,12 +6,11 @@ import nexticon from '../../Images/landing-card-images/next-icon.svg';
 import previousicon from '../../Images/landing-card-images/previous-icon.svg';
 import LandingPageAccordSection from './LandingPageAccordSection';
 
-function LandTestimonyDesktop() {
+function LandTestMobile() {
     const [index, setIndex] = useState(0);
-
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
-    };  
+    };
     const onPrevClick = () => {
       if (index > 0) {
         setIndex(index - 1);
@@ -21,14 +20,13 @@ function LandTestimonyDesktop() {
       if (index === 2) {
         setIndex(2);
       } else if (index === 0 || index > 0) setIndex(index + 1);
-  
     };
   return (
-    <>
-        <section className='d-none d-xl-block'>
+    <div>
+        <section className='d-block d-lg-none'>
             <LandingPageAccordSection/>
         </section>
-        <section className='d-none d-xl-block'>
+        <section className='d-block d-xl-none'>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
                 controls={false}
@@ -41,31 +39,26 @@ function LandTestimonyDesktop() {
             >        
                 <Carousel.Item className =''>
                     <div className=' row d-flex justify-content-evenly '>
-                        <Col className='col col-sm-4 col-md-4 col-lg-3  '><LandTestimonyCard/></Col>
-                        <Col className=' col col-sm-4 col-md-4 col-lg-3 '><LandTestimonyCard/></Col>    
-                        <Col className='col col-sm-4 col-md-4 col-lg-3    '><LandTestimonyCard/></Col>
-                        
+                        <Col className='col-10 col-sm-10 col-md-10 col-lg-4 '><LandTestimonyCard/></Col>
+                        <Col className=' col-sm-10 col-md-5 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>
                     </div>
-                            
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div className=' container-fluid row d-flex justify-content-evenly'>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className=' col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
+                    <div className='  row d-flex justify-content-evenly'>
+                        <Col className='col-10 col-sm-10 col-md-10 col-lg-4'><LandTestimonyCard/></Col>
+                        <Col className=' col-10 col-sm-10 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>
                     </div>
                 </Carousel.Item>        
                 <Carousel.Item>
-                    <div className=' container-fluid row d-flex justify-content-evenly '>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
+                    <div className=' row d-flex justify-content-evenly '>
+                        <Col className='ol-10 col-sm-10 col-md-10 col-lg-4 '><LandTestimonyCard/></Col>
+                        <Col className='col-10 col-sm-10 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>    
                     </div>
                 </Carousel.Item>                  
             </Carousel>
             <Container>
-                <Row className=' '>
-                    <Col className='me-auto col-1'>
+                <Row className='container '>
+                    <Col className='me-auto  col-1'>
                         <button aria-disabled="false" className='btn btninactive text-white bg-green-100 ' size="sm" onClick={onPrevClick}>
                             <img src={previousicon} alt="prev-icon" srcset="" />
                         </button>
@@ -78,8 +71,8 @@ function LandTestimonyDesktop() {
                 </Row>
             </Container>
         </section>
-    </>
+    </div>
   )
 }
 
-export default LandTestimonyDesktop
+export default LandTestMobile
