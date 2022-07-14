@@ -36,7 +36,7 @@
   font-size: 20px;
 }
 .footer .form-control::placeholder {
-  color: red;
+  color: #d2d2d2 !important;
 }
 /* media query */
 @media screen and (max-width: 991px) {
@@ -44,7 +44,6 @@
     background-image: url("../../Images/mobile_footer_vector.svg");
     background-position: top -15px right;
     background-repeat: no-repeat;
-    /* background-color: red; */
   }
 }
 @media screen and (max-width: 420px) {

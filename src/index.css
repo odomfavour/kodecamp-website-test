@@ -16,10 +16,12 @@
   --sonic-silver: #757575;
 }
 body {
-  margin: 0;
+  /* margin: 0; */
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px !important;
+  margin: auto !important;
 }
 *,
 button,
@@ -110,5 +112,5 @@ a {
   background-color: var(--white-100) !important;
 }
 .sonic-silver {
-  color: var(--sonic-silver); 
+  color: var(--sonic-silver);
 }

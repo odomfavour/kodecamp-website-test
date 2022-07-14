@@ -8,7 +8,7 @@ const Works = () => {
   return (
     <PageWrapper>
       <Container>
-        <Row className="container-lg my-4 d-flex gap-3 justify-content-center ">
+        <Row className="container-lg mx-auto my-4 d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center p-0">
           <Analytics cohort={"1.0"} value={65} />
           <Analytics cohort={"2.0"} value={85} />
         </Row>
