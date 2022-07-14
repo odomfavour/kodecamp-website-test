@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import { Container } from "react-bootstrap";
 import "./Explorevideo.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { IconContext } from "react-icons";
+// import { IconContext } from "react-icons";
 
 const Explorevideo = () => {
   const [videoText, setVideoText] = useState(true);
@@ -15,20 +15,19 @@ const Explorevideo = () => {
   return (
     <>
       <Container className="my-5">
-        <div className="explore-video my-5">
-          {/* <Button className="explore-video-enroll-btn bg-green-100">
-            Enroll
-          </Button> */}
-        </div>
+        <div className="my-5"></div>
 
         <div className="d-flex justify-content-center align-items-center video-container">
           {videoText && (
-            <div className="video-text bg-deep-blue-100 d-flex  justify-content-center align-items-center p-md-3 p-lg-4 white-100 rounded-3 position-absolute">
+            <div
+              className="video-text f-1 bg-deep-blue-100  d-none  d-lg-flex d-md-flex justify-content-center align-items-center p-md-3 p-lg-4 white-100 rounded-3 position-absolute"
+              style={{ width: "300px", height: "200px" }}
+            >
               <p>A short video about how kodecamp works</p>
             </div>
           )}
           <div className="exp-vid-holder">
-            <p className="  my-2 updates deep-blue-100">
+            <p className="  my-2 deep-blue-100 fs-3 fs-md-1 fs-lg-1 fs-lg-1 fw-bold">
               Check out our latest updates
             </p>
             <ReactPlayer
@@ -40,18 +39,18 @@ const Explorevideo = () => {
               className="py-3 exp-vid"
             />
           </div>
-          <div className="controls d-sm-none d-lg-flex d-md-flex px-md-3 px-lg-4">
-            <div className="left-control arrow d-flex justify-content-center align-items-center mx-3">
-              <IconContext.Provider
-                value={{ className: "back-arrow white-100" }}
-              >
-                <IoIosArrowBack />
-              </IconContext.Provider>
+          <div className="d-none d-lg-flex d-md-flex px-md-3 px-lg-4">
+            <div
+              style={{ width: "64px", height: "64px" }}
+              className="  bg-deep-blue-100 d-flex justify-content-center align-items-center mx-3"
+            >
+              <IoIosArrowBack className="white-100 fs-1 " />
             </div>
-            <div className="right-control arrow d-flex justify-content-center align-items-center rounded-3">
-              <IconContext.Provider value={{ className: "forward-arrow" }}>
-                <IoIosArrowForward />
-              </IconContext.Provider>
+            <div
+              style={{ width: "64px", height: "64px" }}
+              className="border-secondary d-flex justify-content-center align-items-center rounded-3"
+            >
+              <IoIosArrowForward className="black-60 fs-1 border-secondary" />
             </div>
           </div>
         </div>
