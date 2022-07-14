@@ -8,7 +8,7 @@ import Sponsor from "./pages/sponsor/Sponsor";
 import Explorevideo from "./pages/exploreVideo/Explorevideo";
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 import Explore from "./pages/ExplorePage/Explore";
-import LandTestimonyCard from "./pages/LandingPageTesti/LandTestimonyCard";
+import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
 
 
 
@@ -22,7 +22,7 @@ function App() {
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
       <Route path="/explorevideo" element={<Explorevideo />} />
-      <Route path="/testimonial" element={<LandTestimonyCard />} />
+      <Route path="/testimonial" element={<LandTestimony />} />
     </Routes>
   );
 }

@@ -8,7 +8,7 @@ function ExploreCard() {
             <div className='mb-3'>
                 <div className=' col mb-4'>
                     <Card className='explore-card-container h-100 bg-white-100'>
-                        <div className=' explore-card-bg text-white  '>
+                        <div className=' explore-card-bg text-white'>
                             <div className='px-3 py-3 h-100 d-flex flex-column justify-content-start'>
                                 <div className='mb-auto'>
                                     <p className='explore-fs-20-600 d-flex fw-semibold white-100' >Product Design</p>
