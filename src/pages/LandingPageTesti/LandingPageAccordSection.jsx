@@ -1,16 +1,15 @@
-import React from 'react'
 import {Col} from 'react-bootstrap';
+// import { getAccordData } from './CardData';
 import LandingPageAccordion from './LandingPageAccordion';
 
 function LandinPageAccordSection() {
-    
-
+    // const accordiondata = getAccordData();
   return (
     <>
         <section>
             <div className='container my-4 py-4'>
                 <div className='row d-flex align-items-center'>
-                    <Col className="col-lg-6 col-sm-10 my-5">
+                    <Col className="col col-lg-6 col-sm-10 my-5">
                         <div>
                             <h5 className='line-height-base fw-bold'>AVAILABLE TRACKS</h5>
                             <p className='landing-fs-52 font-size-lg line-height-lg fw-bolder black-100'>
@@ -27,15 +26,19 @@ function LandinPageAccordSection() {
                             </h4>  
                         </div>
                     </Col>
-                    <Col className="col-lg-6 col-sm-10">
+                    <Col className="col col-lg-6 col-sm-10">
+                        {/* {
+                                accordiondata.map(accdata => (
+                                    (               
+                                        <LandingPageAccordion desc={accdata.desc} category={accdata.category}  key={accdata.id}/>          
+                                    )
+                                ))
+                        } */}
                         <LandingPageAccordion/>
                     </Col>
                 </div>
             </div>
         </section>
-    
-    
-    
     </>
   )
 }

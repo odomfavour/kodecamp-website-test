@@ -1,5 +1,3 @@
-import React from 'react';
-import "../../App.css";
 import "./LandTestimony.css";
 import PageWrapper from '../../layout/PageWapper/PageWrapper';
 import LandTestimonyDesktop from './LandTestimonyDesktop';
@@ -10,8 +8,8 @@ function LandTestimony() {
     <>
         <PageWrapper>
           <div className='container-fluid my-5'>
-            <LandTestimonyDesktop/>
             <LandTestimonyMobile/>
+            <LandTestimonyDesktop/>
           </div>
         </PageWrapper>
     </>

@@ -1,19 +1,19 @@
 .card{
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);   
     z-index: 1;
     transform: rotate(0deg) !important;
 }
 .dotted .card{
-    border: 1px dashed black !important;
+    border: 1px dashed var(--green-100) !important;
     transform: rotate(4deg) ;
-    height: 350px;    
+    height: 350px;        
 }
 .not-dotted .card{
-    border: 0.5px solid  !important;
-    transform: rotate(4deg) !important; 
+    border: 0.1px solid grey  !important;
+    transform: rotate(4deg) !important;
 }
 .not-dotted .card:hover{
-    border: 0.5px solid  !important;
+    border: 0.3px solid gray !important;
     transform: rotate(-4deg) !important; 
 }
 .dotted .card:hover {
@@ -28,10 +28,6 @@
 .carousel-indicators [data-bs-target] {
     width: 14px !important;
     height: 14px !important;
-}
-.landing-fs-20{
-    font-size: 20px;
-    line-height: 24px;
 }
 .accordion-button:not(.collapsed)::after {
     content: url("../../Images/landing-card-images/close-icon-2.svg") !important;
@@ -61,12 +57,26 @@
 .black100acc .accordion-button {
     background-color: var(--black-100) !important;
 }
-@media (max-width: 1399.98px) {
+@media (min-width: 1399.98px) {
     .dotted .card:hover {
         transform: scale(0.52);
-        width: 310px;
+        width: 400px;
     }
     .not-dotted .card:hover{
-        border: 0.5px solid  !important;
+        transform: rotate(-4deg) !important;
+        width: 400px !important;
     }
+    .card{
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12) !important;   
+        transform: rotate(0deg) !important;
+    }
+}
+@media (min-width: 424.98px) and (max-width: 1023.98px) {
+    .not-dotted .card:hover{
+        transform: rotate(-4deg) !important;
+        width: 320px !important;
+    }
+    .dotted .card:hover {
+        width: 320px !important;
+    }   
 }

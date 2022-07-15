@@ -1,15 +1,15 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-function LandingPageAccordion() {
+function LandingPageAccordion({id, category, desc}) {
+
   return (
     <>
-        <Accordion defaultActiveKey="0" flush>
-            <Accordion.Item eventKey="0" className='mb-4 blue100acc'>
-                <Accordion.Header className='fw-semibold'> Andriod Development</Accordion.Header>
+        <Accordion  >
+            <Accordion.Item eventKey="0" className='mb-4 blue100acc' flush key={id} >
+                <Accordion.Header className='fw-semibold'> Android Development</Accordion.Header>
                 <Accordion.Body>
-                    This track will teach you how to use framework to build mobile applications for Android.
-                    You will be creating amazing applications using various tools that would be enlisted
-                    on google.
+                    This track will teach you how to use framework to build mobile applications for Android. 
+                    You will be creating amazing applications using various tools that would be enlisted on google.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1" className='mb-4 deepblue100acc'>

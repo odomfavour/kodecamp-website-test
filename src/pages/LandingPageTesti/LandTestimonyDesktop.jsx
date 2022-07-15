@@ -1,14 +1,13 @@
-import React from 'react'
 import LandTestimonyCard from './LandTestimonyCard';
 import {Col, Carousel,Row, Container} from 'react-bootstrap';
 import { useState } from 'react';
 import nexticon from '../../Images/landing-card-images/next-icon.svg';
 import previousicon from '../../Images/landing-card-images/previous-icon.svg';
-import LandingPageAccordSection from './LandingPageAccordSection';
+import { getCardData } from './CardData';
 
 function LandTestimonyDesktop() {
+    const testimonials = getCardData();
     const [index, setIndex] = useState(0);
-
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };  
@@ -20,14 +19,10 @@ function LandTestimonyDesktop() {
     const onNextClick = () => {
       if (index === 2) {
         setIndex(2);
-      } else if (index === 0 || index > 0) setIndex(index + 1);
-  
+      } else if (index === 0 || index > 0) setIndex(index + 1);  
     };
   return (
     <>
-        <section className='d-none d-xl-block'>
-            <LandingPageAccordSection/>
-        </section>
         <section className='d-none d-xl-block'>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
@@ -40,26 +35,45 @@ function LandTestimonyDesktop() {
                 aria-hidden='false'
             >        
                 <Carousel.Item className =''>
-                    <div className=' row d-flex justify-content-evenly '>
-                        <Col className='col col-sm-4 col-md-4 col-lg-3  '><LandTestimonyCard/></Col>
-                        <Col className=' col col-sm-4 col-md-4 col-lg-3 '><LandTestimonyCard/></Col>    
-                        <Col className='col col-sm-4 col-md-4 col-lg-3    '><LandTestimonyCard/></Col>
-                        
+                    <div className=' container-fluid row d-flex justify-content-evenly'>
+                
+                            {
+                                testimonials.map(testimony => (
+                                    (
+                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
+                                        </Col>        
+                                    )
+                                ))
+                            }
+                    
                     </div>
                             
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className=' container-fluid row d-flex justify-content-evenly'>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className=' col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
+                            {
+                                testimonials.map(testimony => (
+                                    (
+                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
+                                        </Col>        
+                                    )
+                                ))
+                            }
                     </div>
                 </Carousel.Item>        
                 <Carousel.Item>
-                    <div className=' container-fluid row d-flex justify-content-evenly '>
-                        <Col className='col-sm-6 col-md-6 col-lg-3 '><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
-                        <Col className='col-sm-6 col-md-6 col-lg-3'><LandTestimonyCard/></Col>
+                    <div className=' container-fluid row d-flex justify-content-evenly'>
+                            {
+                                testimonials.map(testimony => (
+                                    (
+                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id} />
+                                        </Col>        
+                                    )
+                                ))
+                            }
                     </div>
                 </Carousel.Item>                  
             </Carousel>

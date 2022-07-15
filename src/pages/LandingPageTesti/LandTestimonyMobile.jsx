@@ -1,10 +1,12 @@
-import React from 'react'
-import LandTestimonyCard from './LandTestimonyCard';
 import {Col, Carousel,Row, Container} from 'react-bootstrap';
 import { useState } from 'react';
 import nexticon from '../../Images/landing-card-images/next-icon.svg';
 import previousicon from '../../Images/landing-card-images/previous-icon.svg';
 import LandingPageAccordSection from './LandingPageAccordSection';
+import LandMobileCard from './LandMobileCard';
+import LandMobileCard2 from './LandMobileCard2';
+import LandMobileCard3 from './MobileCard3';
+
 
 function LandTestMobile() {
     const [index, setIndex] = useState(0);
@@ -23,7 +25,7 @@ function LandTestMobile() {
     };
   return (
     <div>
-        <section className='d-block d-lg-none'>
+        <section className='d-block'>
             <LandingPageAccordSection/>
         </section>
         <section className='d-block d-xl-none'>
@@ -34,25 +36,24 @@ function LandTestMobile() {
                 variant="dark" 
                 interval='10000' 
                 slide='false' 
-                wrap='false' 
                 aria-hidden='false'
             >        
-                <Carousel.Item className =''>
-                    <div className=' row d-flex justify-content-evenly '>
-                        <Col className='col-10 col-sm-10 col-md-10 col-lg-4 '><LandTestimonyCard/></Col>
-                        <Col className=' col-sm-10 col-md-5 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>
-                    </div>
-                </Carousel.Item>
                 <Carousel.Item>
                     <div className='  row d-flex justify-content-evenly'>
-                        <Col className='col-10 col-sm-10 col-md-10 col-lg-4'><LandTestimonyCard/></Col>
-                        <Col className=' col-10 col-sm-10 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard/></Col>
+                        <Col className=' col-10 col-sm-10 col-md-6 col-lg-4 d-none d-lg-block d-xl-none'><LandMobileCard2/></Col>
+                    </div>
+                </Carousel.Item> 
+                <Carousel.Item>
+                    <div className='  row d-flex justify-content-evenly'>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard3/></Col>
+                        <Col className=' col-10 col-sm-10 col-md-6 col-lg-4 d-none d-lg-block d-xl-none'><LandMobileCard2/></Col>
                     </div>
                 </Carousel.Item>        
                 <Carousel.Item>
                     <div className=' row d-flex justify-content-evenly '>
-                        <Col className='ol-10 col-sm-10 col-md-10 col-lg-4 '><LandTestimonyCard/></Col>
-                        <Col className='col-10 col-sm-10 col-lg-4 d-none d-lg-block d-xl-none'><LandTestimonyCard/></Col>    
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4 '><LandMobileCard2/></Col>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4  d-none d-lg-block d-xl-none'><LandMobileCard/></Col>    
                     </div>
                 </Carousel.Item>                  
             </Carousel>
