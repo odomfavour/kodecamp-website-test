@@ -64,7 +64,7 @@ const AboutUs = () => {
 
             <Container className="d-block d-sm-none mt-4 mb-5">
                 <Row className="position-relative">
-                    <Col xs={12}>
+                    <Col xs={11} className="mx-auto">
                         <div className="values text-center bg-blue-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"180px"}}>
                             <div className="values-content-container">
                                 <p className="white-100 px-4 py-5">
@@ -81,7 +81,7 @@ const AboutUs = () => {
             <Container className="mission-vision-container">
                 <Row className="position-relative">
                 <img src={Vector} className="position-absolute vector-about d-none d-lg-block" width="300"  height="280" alt="vector-connect-mission-vision" />
-                    <Col xs={12} lg={6}>
+                    <Col xs={11} lg={6} className="mx-auto">
                         <div className="mission text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={Icon} className="mission-icon mt-4 mt-lg-3" alt="mission-icon" />
@@ -96,7 +96,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} lg={6} className="">   
+                    <Col xs={11} lg={6} className="mx-auto">   
                         <div className="vision text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={VisionIcon} className="vision-icon mt-4 mt-lg-3" alt="vision-icon" />
