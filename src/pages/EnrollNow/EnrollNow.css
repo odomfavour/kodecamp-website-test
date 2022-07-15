@@ -12,13 +12,13 @@
 }
 
 .enroll-input {
-    width: 500px;
+    /* width: 500px; */
     line-height: 20px;
     height: 60px;
     margin-right: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .enroll-input {
         width: 400px;
     }
@@ -28,8 +28,11 @@
     .enroll-input {
         width: 340px;
     }
-}
-
+} */
+/* .mobilewidth{
+    width: 280.81px !important;
+    margin-left: 35px;
+} */
 .dropdown-menu {
     overflow: hidden;
     overflow-y: auto;
