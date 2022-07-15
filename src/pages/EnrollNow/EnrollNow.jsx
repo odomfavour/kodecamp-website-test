@@ -119,7 +119,7 @@ const EnrollNow = () => {
     }
     return (
         <PageWrapper>
-            <div className="container-md">
+            <div className="container">
                 <div className="row imgs justify-content-center align-items-center">
                     <div className="col-md-6 text-center text-md-start d-none d-md-block">
                         <img
@@ -193,11 +193,11 @@ const EnrollNow = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 my-4 text-md-start d-md-none d-lg-none">
-                                    <label
-                                     style={fontwgt}
+                                <div className="row  my-4 text-md-start d-md-none d-lg-none">
+                                    <label 
+                                    style={fontwgt}
                                         htmlFor="name"
-                                        className="fw-bold form-label enrollalignlabel"
+                                        className="form-label enrollalignlabel"
                                     >
                                         Last Name
                                     </label>
@@ -243,7 +243,7 @@ const EnrollNow = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6 my-4  text-md-start  d-md-none  d-lg-none">
+                                <div className="row my-4    text-md-start  d-md-none  d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Phone Number
                                     </label>
@@ -306,7 +306,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="col-md-6 my-4 text-md-start  d-md-none d-lg-none">
+                                <div className="col-md-6 row my-4 text-md-start   d-md-none d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Country
                                     </label>
@@ -382,7 +382,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="col-md-6 my-4 text-md-start  d-md-none  d-lg-none">
+                                <div className="row my-4 text-md-start   d-md-none  d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         City
                                     </label>
