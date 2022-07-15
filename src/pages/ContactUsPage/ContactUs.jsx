@@ -11,7 +11,7 @@ function ContactUs() {
             <ContactUsHero/>
             <ContactUsForm/>
         </div>
-      </PageWrapper>  
+      </PageWrapper>
     </>
   )
 }
