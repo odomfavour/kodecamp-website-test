@@ -22,13 +22,20 @@
     height: 59px;
 }
 
+.polygon-values {
+    transform: translate(0px, -210px);
+    width: 100%;
+    
+}
 .polygon-mission, .polygon-vision {
     transform: translate(0px, -330px);
     width: 600px;
 }
 
+
 .vector-about {
     transform: translate(100px, -80px);
+    position: absolute;
 }
 
 .culture {

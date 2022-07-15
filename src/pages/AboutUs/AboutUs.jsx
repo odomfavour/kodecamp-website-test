@@ -10,9 +10,10 @@ import WomenOnPcDesktop from "../../Images/AboutUsAssets/women-on-pc-desktop.png
 import ManAndWomenOnPcDesktop from "../../Images/AboutUsAssets/man-and-women-on-pc-desktop.png";
 import ManWithDreadsOnPcDesktop from "../../Images/AboutUsAssets/man-with-dreads-on-pc-desktop.png";
 import LadyOnGlassesDesktop from "../../Images/AboutUsAssets/lady-on-glasses-desktop.png";
-import MissionIcon from "../../Images/AboutUsAssets/mission-icon.svg";
+import Icon from "../../Images/AboutUsAssets/mission-icon.svg";
 import VisionIcon from "../../Images/AboutUsAssets/vision-icon.svg";
 import Polygon from "../../Images/AboutUsAssets/polygon.svg";
+import PolygonValues from "../../Images/AboutUsAssets/polygon-values.png";
 import Vector from "../../Images/AboutUsAssets/vector-connect-mission-vision.svg";
 import "./AboutUs.css";
 
@@ -61,13 +62,29 @@ const AboutUs = () => {
                 </Row>
             </Container>
 
+            <Container className="d-block d-sm-none mt-4 mb-5">
+                <Row className="position-relative">
+                    <Col xs={12}>
+                        <div className="values text-center bg-blue-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"180px"}}>
+                            <div className="values-content-container">
+                                <p className="white-100 px-4 py-5">
+                                    These are the values that we hold dear. These culture and ethics have shaped us into one of the best tech 
+                                    learning institutions in the industry.
+                                </p>
+                                <img src={PolygonValues} alt="polygon-values" className="polygon-values" />
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
             <Container className="mission-vision-container">
                 <Row className="position-relative">
                 <img src={Vector} className="position-absolute vector-about d-none d-lg-block" width="300"  height="280" alt="vector-connect-mission-vision" />
                     <Col xs={12} lg={6}>
                         <div className="mission text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
-                                <img src={MissionIcon} className="mission-icon mt-4 mt-lg-3" alt="mission-icon" />
+                                <img src={Icon} className="mission-icon mt-4 mt-lg-3" alt="mission-icon" />
                                 <h2 className="white-100 pt-3 pt-lg-0" style={{fontWeight: "700", fontSize: "1.25em"}}>
                                     Mission
                                 </h2>
