@@ -5,6 +5,9 @@
 
 
 .navbar {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: fit-content;
   background: rgba(33, 37, 41, 0.02);
   box-shadow: 0px 2px 2px rgba(102, 158, 0, 0.02);
@@ -33,6 +36,11 @@
   height: 70px;
 }
 
+#kodecamp-icon-desktop {
+  width: 100px;
+  height: 100px;
+}
+
 .navbar-links-desktop {
   color: rgba(33, 37, 41, 0.6) !important;
   line-height: 24px;
@@ -43,6 +51,10 @@
   line-height: 24px !important;
   padding: 10px !important;
   border-radius: 4px;
+}
+
+.btn-login:focus, .btn-enroll:focus {
+  box-shadow: none !important;
 }
 
 .btn-login {
@@ -98,6 +110,10 @@
 
 @media (min-width: 992px) {
   
+  .navbar {
+    height: 90px;
+  }
+
   #responsive-navbar-nav {
     display: none !important;
   }

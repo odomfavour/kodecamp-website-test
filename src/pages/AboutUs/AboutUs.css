@@ -1,0 +1,124 @@
+.experience {
+    font-size: 2em;
+}
+
+.mission-vision-container {
+    margin-top: 32px;
+}
+
+.mission, .vision {
+    height: 274.42px;
+    max-height: 389px;
+    max-width: 550px;
+}
+
+.mission-icon {
+    width: 48.75px;
+    height: 48.75px;
+}
+
+.vision-icon {
+    width: 59px;
+    height: 59px;
+}
+
+.polygon-mission, .polygon-vision {
+    transform: translate(0px, -330px);
+    width: 600px;
+}
+
+.vector-about {
+    transform: translate(100px, -80px);
+}
+
+.culture {
+    font-size: 2em;
+}
+
+.text-below-culture {
+    font-size: 1.5em;
+}
+
+.square-div {
+    width: 70px;
+    height: 70px;
+}
+
+.square-div-text {
+    font-size: 3.125em;
+}
+
+.text-below-square-div {
+    font-size: 1.25em;
+}
+
+@media (min-width: 768px) {
+    .mission-icon {
+        width: 97.5px;
+        height: 97.5px;
+    }
+
+    .vision-icon {
+        width: 99px;
+        height: 100px;
+    }
+
+    .polygon-vision {
+        transform: translate(0px, -280px);
+    }
+
+    .experience {
+        font-size: 2.7em;
+    }
+}
+
+@media (min-width: 992px) {
+    .experience {
+        font-size: 3.25em;
+    }
+
+    .mission-vision-container {
+        margin-top: 120px;
+    }
+
+    .polygon-mission {
+        width: 470px;
+    }
+
+    .polygon-vision {
+        width: 100%;
+    }
+
+    .vision {
+        margin-top: 195px;
+    }
+
+    .culture-container {
+        background-color: rgba(25,54,77, 0.05);
+    }
+
+    .culture {
+        font-size: 3em;
+    }
+
+    .square-div {
+        width: 90px;
+        height: 90px;
+    }
+
+    .square-div-text {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+    #equity, #novelty {
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .polygon-mission {
+        width: 100%;
+    }
+}

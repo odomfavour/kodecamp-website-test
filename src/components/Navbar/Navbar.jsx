@@ -20,7 +20,7 @@ const NavigationBar = () => {
 
     return (
     <Navbar collapseOnSelect expand="lg" className="navbar">
-        <Container fluid>
+        <Container fluid className="">
             {
                 showNavAndOverlay &&
                 <div id="overlay" className=""></div>
@@ -30,21 +30,23 @@ const NavigationBar = () => {
             <img src={kodecampIconDesktop} alt="kodecamp-icon" id="kodecamp-icon-tablet" className="d-none d-sm-block d-lg-none kodecamp-icon" />
             <img src={kodecampIconDesktop} alt="kodecamp-icon" id="kodecamp-icon-desktop" className="d-none d-lg-block kodecamp-icon" />
         </Navbar.Brand>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-            Home
-        </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-            About Us
-        </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-            Contact Us
-        </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-            Explore
-        </Link>
-        <Link to="/works" className="d-none d-lg-block navbar-links-desktop">
-            How It Works
-        </Link>
+        <div className="d-flex" style={{fontWeight: "500"}}>
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Home
+            </Link>
+            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                About Us
+            </Link>
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Contact Us
+            </Link>
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Explore
+            </Link>
+            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                How It Works
+            </Link>
+        </div>
 
         <div className="d-flex">
             <div className="d-flex justify-content-end">
@@ -79,7 +81,7 @@ const NavigationBar = () => {
                 
                 <div className="mt-3">
                     <img src={navbarAboutIcon} alt="navbar-about-icon" className="ps-2" />
-                    <Link to="/" className="navbar-links-mobile ps-3">
+                    <Link to="/about-us" className="navbar-links-mobile ps-3">
                         About Us
                     </Link>
                 </div>
@@ -106,7 +108,7 @@ const NavigationBar = () => {
                 
                 <div className="mt-3">
                     <img src={navbarWorksIcon} alt="navbar-works-icon" className="ps-2" />
-                    <Link to="/" className="navbar-links-mobile ps-3">
+                    <Link to="/works" className="navbar-links-mobile ps-3">
                         How It Works
                     </Link>
                 </div>
