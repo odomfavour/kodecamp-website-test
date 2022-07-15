@@ -99,7 +99,7 @@ const KodeCamp30 = () => {
                 </Row>
                 <Row className="time-days-container mx-auto" style={timeDaysContainer}>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Days
                         </p>
@@ -110,7 +110,7 @@ const KodeCamp30 = () => {
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Hours
                         </p>
@@ -121,7 +121,7 @@ const KodeCamp30 = () => {
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Mins
                         </p>
@@ -132,7 +132,7 @@ const KodeCamp30 = () => {
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Secs
                         </p>
@@ -149,7 +149,7 @@ const KodeCamp30 = () => {
             <Container id="data_container" style={Data_Container_Style}>
                 <Row>
                     <Col>
-                        <h3 className="deep-blue-100 text-center mx-auto mt-5" id="data_heading" style={Data_Style}>
+                        <h3 className="deep-blue-100 text-center mx-auto mt-sm-5" id="data_heading" style={Data_Style}>
                             Your Data is Safe with us
                         </h3>
                     </Col>

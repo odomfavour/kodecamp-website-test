@@ -17,10 +17,10 @@ const NavigationBar = () => {
   const [showNavAndOverlay, setShowNavAndOverlay] = useState(false);
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar">
+    <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
       <Container fluid>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
-        <Navbar.Brand href="#home" className="pt-10">
+        <Navbar.Brand href="#home" className="">
           <img
             src={kodecampIconMobile}
             alt="kodecamp-icon"
@@ -40,28 +40,27 @@ const NavigationBar = () => {
             className="d-none d-lg-block kodecamp-icon"
           />
         </Navbar.Brand>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-          Home
-        </Link>
-        <Link to="/" className="d-none d-lg-block navbar-links-desktop">
-          About Us
-        </Link>
-        <Link
-          to="/contactus"
-          className="d-none d-lg-block navbar-links-desktop"
-        >
-          Contact Us
-        </Link>
-        <Link to="/explore" className="d-none d-lg-block navbar-links-desktop">
-          Explore
-        </Link>
-        <Link to="/works" className="d-none d-lg-block navbar-links-desktop">
-          How It Works
-        </Link>
+        <div className="d-flex" style={{fontWeight: "500"}}>
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Home
+            </Link>
+            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                About Us
+            </Link>
+            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Contact Us
+            </Link>
+            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                Explore
+            </Link>
+            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+                How It Works
+            </Link>
+        </div>
 
         <div className="d-flex">
           <div className="d-flex justify-content-end">
-            <Link to="/" className="btn">
+            <Link to="/" className="btn enrol-login">
               <Button
                 variant=""
                 className="d-inline-block d-none d-md-block btn-login"
@@ -118,7 +117,7 @@ const NavigationBar = () => {
                 alt="navbar-about-icon"
                 className="ps-2"
               />
-              <Link to="/" className="navbar-links-mobile ps-3">
+              <Link to="/about-us" className="navbar-links-mobile ps-3">
                 About Us
               </Link>
             </div>
@@ -131,7 +130,7 @@ const NavigationBar = () => {
                 alt="navbar-contact-icon"
                 className="ps-2"
               />
-              <Link to="/" className="navbar-links-mobile ps-3">
+              <Link to="/contactus" className="navbar-links-mobile ps-3">
                 Contact Us
               </Link>
             </div>
@@ -144,7 +143,7 @@ const NavigationBar = () => {
                 alt="navbar-explore-icon"
                 className="ps-2"
               />
-              <Link to="/" className="navbar-links-mobile ps-3">
+              <Link to="/explore" className="navbar-links-mobile ps-3">
                 Explore
               </Link>
             </div>
@@ -157,7 +156,7 @@ const NavigationBar = () => {
                 alt="navbar-works-icon"
                 className="ps-2"
               />
-              <Link to="/" className="navbar-links-mobile ps-3">
+              <Link to="/works" className="navbar-links-mobile ps-3">
                 How It Works
               </Link>
             </div>
