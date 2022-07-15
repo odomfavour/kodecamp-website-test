@@ -20,9 +20,9 @@ function ContactUsForm() {
     console.log(inputField);
   //  setLoading(true);
 
-  //  setTimeout(() => {
-  //    setLoading(false);
-  //  }, 3000)
+   setTimeout(() => {
+    //  setLoading(false);
+   }, 3000)
   }
 
   return (
@@ -31,7 +31,7 @@ function ContactUsForm() {
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
-        <Form onSubmit={handleSubmit}>          
+        <Form onSubmit={handleSubmit}>        
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
@@ -42,9 +42,8 @@ function ContactUsForm() {
               onChange={handleChange} 
               placeholder="Jane Cooper" 
               value={inputField.full_name}
-            />
+            />      
           </Form.Group>
-
           <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
@@ -57,7 +56,6 @@ function ContactUsForm() {
               value={inputField.email}
             />
           </Form.Group>
-
           <Form.Group className="mb-4 col-lg-6 col input-style" controlId="formBasicPhone">
             <Form.Label className='contact-fs-24-500 black-100 '>Phone Number</Form.Label>
             <Form.Control
