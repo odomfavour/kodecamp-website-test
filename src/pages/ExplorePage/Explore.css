@@ -1,14 +1,12 @@
 .explore-card-container{
-  /* width: 300px;
-  height: 299.7px; */
   box-shadow: 3px 3px 3px rgba(25, 54, 77, 0.4);
 }
 .explore-card-bg{
   height: 299.7px;  
   background-image: url('../../Images/explore-image/productdesign-figma.jpg');
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
   border-radius: 6px 6px 0px 0px;
 }
 .explore-fs-20-600{
