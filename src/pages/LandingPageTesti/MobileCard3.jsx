@@ -18,7 +18,7 @@ function LandMobileCard3({id, name, track,description,image}) {
                                             <div className=''>
                                                 <Card.Text className=''>
                                                     <div className=' mx-auto '>
-                                                        <p className=' line-height-sm font-size-sm fw-normal light-blue px-2'>
+                                                        <p className=' line-height-sm fs-mobile font-size-sm fw-normal light-blue px-2'>
                                                             “At KodeCamp, you gain access relevant and valuable training 
                                                             and mentorship that will propel 
                                                             your tech journey”

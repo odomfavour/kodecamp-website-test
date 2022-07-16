@@ -29,6 +29,9 @@ function LandTestMobile() {
             <LandingPageAccordSection/>
         </section>
         <section className='d-block d-xl-none'>
+            <div className="text-center">
+              <p className="fs-mobile-head fw-bold">What Our Interns Have To Say</p>
+            </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
                 controls={false}

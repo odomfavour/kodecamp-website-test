@@ -8,6 +8,7 @@ function LandTestimony() {
     <>
         <PageWrapper>
           <div className='container-fluid my-5'>
+            
             <LandTestimonyMobile/>
             <LandTestimonyDesktop/>
           </div>
