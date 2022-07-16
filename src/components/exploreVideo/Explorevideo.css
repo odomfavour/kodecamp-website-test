@@ -1,0 +1,22 @@
+.video-text {
+  top: 40px;
+  right: 130px;
+  box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.215);
+}
+@media screen and (max-width: 780px) {
+  .video-text {
+    width: 220px !important;
+    height: 150px !important;
+    right: 100px;
+  }
+  .exp-vid {
+    width: 500px !important;
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .exp-vid {
+    width: 387px !important;
+    height: 250px !important;
+  }
+}

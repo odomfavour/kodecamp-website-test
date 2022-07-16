@@ -121,6 +121,10 @@ a {
 }
 
 
+a:hover {
+  border: none;
+}
+
 /* form control focus removal */
 .form-control:focus {
   box-shadow: none !important;
