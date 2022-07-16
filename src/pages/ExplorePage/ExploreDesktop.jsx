@@ -70,7 +70,9 @@ function ExploreDesktop() {
                 <Col className='col-4 col-md-6 col-lg-4'><ExploreCard/></Col>
               </div>
             </section>    
-        </div>
+      </div>
+      
+      
     </>
   )
 }
