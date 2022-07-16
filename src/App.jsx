@@ -10,7 +10,7 @@ import Explore from "./pages/ExplorePage/Explore";
 import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
 import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
-
+import Explorevideo from "./components/exploreVideo/Explorevideo";
 
 
 function App() {
