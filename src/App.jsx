@@ -5,9 +5,9 @@ import EnrollNow from "./components/EnrollNow/EnrollNow";
 import Home from "./pages/Index";
 import Works from "./pages/Works/Works";
 import Sponsor from "./pages/sponsor/Sponsor";
-
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 import Explore from "./pages/ExplorePage/Explore";
+import FAQS from "./pages/faq/FAQS";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <Route path="/explore" element={<Explore />} />
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
+      <Route path="/faq" element={<FAQS />} />
     </Routes>
   );
 }
