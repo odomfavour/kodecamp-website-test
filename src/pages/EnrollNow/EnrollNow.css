@@ -1,0 +1,76 @@
+.enroll-h4 {
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.enroll-h6 {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+.enroll-input {
+    /* width: 500px; */
+    line-height: 20px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .enroll-input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    .enroll-input {
+        width: 340px;
+    }
+} */
+/* .mobilewidth{
+    width: 280.81px !important;
+    margin-left: 35px;
+} */
+.dropdown-menu {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+}
+
+.form-check-input:checked~.custom-radio::before {
+    background-color: var(--black-100);
+
+}
+
+.custom-radio {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: none;
+    border: 4px solid var(--black-100);
+    position: relative;
+}
+
+.custom-radio::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-check-label {
+    display: flex !important;
+    gap: 15px;
+    align-items: center !important;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: inherit !important;
+}

@@ -1,3 +1,9 @@
+@media (max-width: 350px) {
+    #text-below-data {
+        margin-top: 35px !important;
+    }
+}
+
 @media (min-width: 768px) {
     #kodecamp3_0_heading {
         width:  18.75em !important;
