@@ -10,7 +10,6 @@ import intern from "../../Images/LandingPage/internship.svg"
 import remote from "../../Images/LandingPage/remote.png"
 import mentor from "../../Images/LandingPage/mentorship.png"
 import "./Land.css"
-import { Link } from 'react-router-dom';
 const Land = () => {
     const contain = {
         position: "relative"
@@ -30,7 +29,7 @@ const Land = () => {
         right: "8%"
     }
     const moonsty = {
-        width: "100px",
+        width: "80px",
         position: "absolute",
         top: "20%",
         left: "-2%"
@@ -86,16 +85,16 @@ const Land = () => {
         left: "-2%"
     }
     return (
-        <div className="container-lg">
+        <div className="container py-2">
             <div className="row rowlg mt-5">
                 <div className="col d-none d-md-block d-lg-block  ">
-                    <h1 className='display-5 deep-blue-100 fw-bold my-4'>
+                    <h1 className='display-5 deep-blue-100 fw-bolder my-4'>
                         Kickstart and
                         Develop your career
                         in <span className="green-100">Tech</span>.</h1>
                     <h5 className='my-2 lh-base  deep-blue-100'>
-                        Join the KodeCamp internship and gain <br />
-                        relevant skills to kickstart and develop your  <br />
+                        Join the KodeCamp internship and gain 
+                        relevant skills to kickstart and develop your
                         career in the ever growing tech space.
                     </h5>
                     <button className='border-0  rounded bg-green-100 white-100 btnpadding mt-4 '>Get Started</button>
@@ -132,13 +131,13 @@ const Land = () => {
             <hr className='d-none d-md-block d-lg-block' />
 
             <div className="rowmobile text-center d-md-none d-lg-none">
-                <h1 className='display-3 my-1 deep-blue-100 fw-bold text-center'>
+                <h1 className='hero-header lh-md mb-5 deep-blue-100 fw-bolder text-center'>
                     Kickstart and 
                     Develop your career
                     in  <span className="green-100">Tech</span>.
                 </h1>
-                <div className=" mt-4  ">
-                    <div style={contain}>
+                <div>
+                    <div  style={contain}>
                         <img src={land} alt="" className='img-fluid' />
                         <img src={moon} style={moonsty} alt="" className="img-fluid" />
                         <img src={cross} style={crossty} alt="" className="img-fluid" />
@@ -149,14 +148,9 @@ const Land = () => {
                     </div>
                 </div>
                 <div className="mt-5">
-                    <button className='btn bg-green-100 white-100 mt-4 imagepaddingmobile '>Get Started</button>
+                    <button className= 'btn bg-green-100 white-100 imagepaddingmobile fw-semibold'>Get Started</button>
                 </div>
-                <div className="mt-5">
-                     <Link to="
-                /availabletracks" className="text-decoration-none deep-blue-100 avail fw-bold">
-                AVAILABLE TRACKS
-                </Link>
-                </div>
+               
             </div>
         </div>
     )

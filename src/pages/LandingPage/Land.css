@@ -7,6 +7,10 @@
     margin-right: 0 !important;
     display: none;
 }
+.hero-header{
+    font-size: 32px ;
+    
+}
 .imagepaddingmobile{
     padding: 8px 30px;
     margin-top: 50px;
