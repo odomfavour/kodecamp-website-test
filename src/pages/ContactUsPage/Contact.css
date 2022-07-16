@@ -13,11 +13,10 @@
   border-color: var(--black-60) !important;
 }
 .input-style{
-  height: 75px;
+  height: 43px !important;
 }
 textarea{
   resize: none!important;
-  height: 179px;
 }
 .contact-send-btn{
   width: 201px;
@@ -26,12 +25,12 @@ textarea{
   border-radius: 4px;
 }
 .contact-send-btn-text{
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 }
 .contact-fs-32-500{ 
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 39px;
 }
 .contact-fs-24-400{ 
@@ -40,8 +39,8 @@ textarea{
 }
 .contact-fs-24-500{
   font-weight: 500;
-  font-size: 24px;
-  line-height: 120%;  
+  font-size: 20px;
+  line-height: 90%;  
 }
 .contact-fs-22-600{ 
   font-size: 22px;

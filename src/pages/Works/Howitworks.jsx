@@ -8,6 +8,7 @@ const Howitworks = () => {
 
     return (
                 <Container className="py-3 mb-2" >
+                    <h2 className = "text-center deep-blue-100 fw-semibold">How it works</h2>
                     <Row className="py-2 py-lg-5 d-flex flex-column align-items-center justify-content-center gap-3 flex-lg-row justify-content-lg-around">
                         <Col className = "col-6 col-lg-3 ">
                         <img src={image1} className="img-fluid" alt="" />
@@ -51,6 +52,7 @@ const Howitworks = () => {
                         </div>
                         </Col>
                     </Row>  
+                    <hr />
                 </Container>     
     )
 }

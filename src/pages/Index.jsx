@@ -1,11 +1,12 @@
 import React from "react";
 import PageWrapper from "../layout/PageWapper/PageWrapper";
+import Land from "./LandingPage/Land";
 
 const Index = () => {
   return (
     <>
       <PageWrapper>
-        <div className="container">Index</div>
+        <Land />
       </PageWrapper>
     </>
   );

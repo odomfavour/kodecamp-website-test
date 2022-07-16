@@ -1,0 +1,120 @@
+.card{
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);   
+    z-index: 1;
+    transform: rotate(0deg) !important;
+}
+
+
+.dotted .card{
+    border: 1px dashed var(--green-100) !important;
+    transform: rotate(4deg) ;
+    height: 350px;        
+}
+.not-dotted .card{
+    border: 0.1px solid grey  !important;
+    transform: rotate(4deg) !important;
+}
+.not-dotted .card:hover{
+    border: 0.3px solid gray !important;
+    transform: rotate(-4deg) !important; 
+}
+.dotted .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    width: 350px;
+}
+.landing-fs-52{
+    font-size: 52px;
+    line-height: 63px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 14px !important;
+    height: 14px !important;
+}
+.landingpageacc .accordion-button:not(.collapsed)::after {
+    content: url("../../Images/landing-card-images/close-icon-2.svg") !important;
+    background-image: none !important;
+} 
+.landingpageacc .accordion-button.collapsed::after {   
+    content: url("../../Images/landing-card-images/add-icon.svg");
+    background-image: none !important;
+}
+.landingpageacc .accordion-button{
+    color: var(--white-100) !important;
+    padding-left: 20px !important;
+}
+.landingpageacc .accordion-button:focus {
+    box-shadow: none !important;
+    background-color: var(--blue-100) !important;
+}
+.blue100acc .accordion-button {
+    background-color: var(--blue-100) !important;
+}
+.deepblue100acc .accordion-button {
+    background-color: var(--deep-blue-100) !important;
+}
+.green100acc .accordion-button {
+    background-color: var(--green-100) !important;
+}
+.black100acc .accordion-button {
+    background-color: var(--black-100) !important;
+}
+.fs-mobile-head{
+    font-size: 22px !important;
+}
+@media (min-width: 1399.98px) {
+    .dotted .card:hover {
+        transform: scale(0.52);
+        width: 400px;
+    }
+    .not-dotted .card:hover{
+        transform: rotate(-4deg) !important;
+        width: 400px !important;
+    }
+    .card{
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12) !important;   
+        transform: rotate(0deg) !important;
+    }
+}
+@media (min-width: 425px) and (max-width: 1023.98px) {
+    .not-dotted .card:hover{
+        transform: rotate(-4deg) !important;
+        width: 320px !important;
+    }
+    .dotted .card:hover {
+        width: 320px !important;
+    }  
+}
+
+@media (max-width: 424.98px){
+    .landingpageacc .accordion-button{
+        font-size: 14px !important;
+    }
+    .card{
+        transition: none !important;   
+    }
+    .not-dotted .card:hover{
+        transform: rotate(-4deg) !important;
+        width: initial !important;
+    }
+    .dotted .card:hover {
+        width:initial !important;
+    }
+    .not-dotted .card .fs-mobile {
+        font-size: 14px;
+    }
+    .landing-fs-52{
+        font-size: 45px !important;
+        line-height: 42px !important;
+    }
+    .fs-mobile-head{
+        font-size: 18px !important;
+    }
+    
+}
+
+@media (max-width: 767.98px){
+    .landing-fs-52{
+        line-height: 52px !important;
+    }
+}
