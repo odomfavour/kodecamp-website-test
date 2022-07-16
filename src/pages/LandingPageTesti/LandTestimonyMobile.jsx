@@ -28,6 +28,9 @@ function LandTestMobile() {
         <section className='d-block'>
             <LandingPageAccordSection/>
         </section>
+        <div className='container'>
+            <hr className='d-none d-md-block d-lg-block' />
+        </div>
         <section className='d-block d-xl-none'>
             <div className="text-center">
               <p className="fs-mobile-head fw-bold">What Our Interns Have To Say</p>

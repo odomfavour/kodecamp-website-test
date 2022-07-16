@@ -31,7 +31,7 @@
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
-  display: none !important;
+    display: none !important;
 }
 
 .carousel-indicators .active {
@@ -44,3 +44,4 @@
   border-radius: 100% !important;
   background-color: rgba(102, 158, 0, 0.2) ;
 }
+
