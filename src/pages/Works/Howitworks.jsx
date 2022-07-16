@@ -51,6 +51,7 @@ const Howitworks = () => {
                         </div>
                         </Col>
                     </Row>  
+                    <hr />
                 </Container>     
     )
 }
