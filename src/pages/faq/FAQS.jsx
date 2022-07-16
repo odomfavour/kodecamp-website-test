@@ -21,7 +21,7 @@ function FAQS({ id, category, desc }) {
                 <Accordion.Item
                   eventKey="0"
                   className="mb-4 blue100acc rounded-1"
-                  flush
+                  flush="true" 
                   key={id}
                 >
                   <Accordion.Header className="fw-bold fs-2 outline-0">
