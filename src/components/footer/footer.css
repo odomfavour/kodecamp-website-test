@@ -51,7 +51,7 @@
     background-position: top;
   }
   .footer-col {
-    padding-left: 5px !important;
+    padding-left: 15px !important;
   }
 }
 @media (min-width: 990px) and (max-width: 1202px) {
