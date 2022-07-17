@@ -20,9 +20,9 @@ function ContactUsForm() {
     console.log(inputField);
   //  setLoading(true);
 
-  //  setTimeout(() => {
-  //    setLoading(false);
-  //  }, 3000)
+   setTimeout(() => {
+    //  setLoading(false);
+   }, 3000)
   }
 
   return (
@@ -31,25 +31,24 @@ function ContactUsForm() {
         {/* {loading &&
           <div>Sending Message...</div>
         } */}
-        <Form onSubmit={handleSubmit}>          
-          <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicFullName">
+        <Form onSubmit={handleSubmit}>        
+          <Form.Group className="mb-4 col-lg-6 col " controlId="formBasicFullName">
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
-              className="contact-fs-24-400 black-100 "
-              size="lg"
+              className="contact-fs-24-400 black-100 input-style "
+              size=""
               type="text" 
               name="full_name" 
               onChange={handleChange} 
               placeholder="Jane Cooper" 
               value={inputField.full_name}
-            />
+            />      
           </Form.Group>
-
-          <Form.Group className="mb-4 mb-xl-5 col-lg-6 col input-style" controlId="formBasicEmail">
+          <Form.Group className="mb-4  col-lg-6 col" controlId="formBasicEmail">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
-              size="lg"
-              className="contact-fs-24-400 black-100"
+              size=""
+              className="contact-fs-24-400 black-100 input-style"
               type="email" 
               name="email" 
               onChange={handleChange} 
@@ -57,12 +56,11 @@ function ContactUsForm() {
               value={inputField.email}
             />
           </Form.Group>
-
-          <Form.Group className="mb-4 col-lg-6 col input-style" controlId="formBasicPhone">
+          <Form.Group className="mb-4 col-lg-6 col" controlId="formBasicPhone">
             <Form.Label className='contact-fs-24-500 black-100 '>Phone Number</Form.Label>
             <Form.Control
-              size="lg"
-              className="contact-fs-24-400 black-100"
+              size=""
+              className="contact-fs-24-400 black-100 input-style"
               type="tel"
               name="phone" 
               onChange={handleChange} 
@@ -74,9 +72,10 @@ function ContactUsForm() {
           <Form.Group className="mb-4 col-lg-10 col "  controlId="formBasicMessage">
             <Form.Label className='contact-fs-24-500 black-100 '>Message</Form.Label>
             <Form.Control
-              size="lg"
+              size=""
               className=" contact-fs-24-400 black-100 contact-textarea"
               as="textarea"
+              style={{ height: '100px' }}
               name="message"
               onChange={handleChange}
               placeholder='Can I take three courses together' 

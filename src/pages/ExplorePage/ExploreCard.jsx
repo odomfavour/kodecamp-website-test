@@ -1,9 +1,6 @@
 import { Card } from "react-bootstrap";
-// import figmaicon from "../../Images/explore-image/figma-logo.svg";
 
-const test = "../../Images/explore-image/HTML.jpg";
 function ExploreCard({ track_name, track_image, track_icon, track_desc }) {
-  //   console.log(track_name, track_image, "test");
   return (
     <>
       <div>
@@ -17,11 +14,7 @@ function ExploreCard({ track_name, track_image, track_icon, track_desc }) {
                 }}
               >
                 <div className="px-3 py-3 h-100 d-flex flex-column justify-content-start">
-                  <div className="mb-auto">
-                    {/* <p className="explore-fs-20-600 d-flex fw-semibold white-100">
-                      {track_name}
-                    </p> */}
-                  </div>
+                  <div className="mb-auto"></div>
                   <div className="text-start">
                     <img src={track_icon} alt={track_icon} />
                   </div>

@@ -34,7 +34,7 @@ const Footer = () => {
             <p className=" footer-subtitle">Quick Links</p>
             <ul className="list-unstyled">
               <li className="footer-list">
-                <Link to="/">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li className="footer-list ">
                 <Link to="/">Contact Us</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <Link to="/">Explore</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">How it works</Link>
+                <Link to="/works">How it works</Link>
               </li>
               <li className="footer-list">
                 <Link to="/">Sponsors</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Link to="/">Copyright Policy</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">FAQs</Link>
+                <Link to="/faq">FAQs</Link>
               </li>
             </ul>
           </Col>
@@ -133,7 +133,7 @@ const Footer = () => {
         </Row>
         <p
           style={{ fontWeight: "500" }}
-          className=" text-center mt-0 pt-4 white-100"
+          className=" text-center mt-0 pt-5 white-100"
         >
           &copy; 2022 KodeCamp
         </p>

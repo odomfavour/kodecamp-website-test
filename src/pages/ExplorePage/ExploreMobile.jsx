@@ -10,7 +10,7 @@ function ExploreMobile() {
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
                 FrontEnd Development
               </p>
             </div>

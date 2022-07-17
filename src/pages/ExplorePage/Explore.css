@@ -1,12 +1,9 @@
 .explore-card-container {
-  /* width: 300px;
-  height: 299.7px; */
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .explore-card-bg {
   height: 299.7px;
-  /* background-image: url("./HTML.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +17,6 @@
 }
 
 .explore-fs-14-500 {
-  /* background-color: red; */
   height: 100px;
   font-style: normal;
   font-weight: 500;
@@ -38,7 +34,6 @@
 .carousel-control-prev-icon {
   display: none !important;
 }
-
 .carousel-indicators .active {
   background-color: var(--green-100) !important;
 }

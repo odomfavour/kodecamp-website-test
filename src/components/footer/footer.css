@@ -38,6 +38,12 @@
 .footer .form-control::placeholder {
   color: #d2d2d2 !important;
 }
+.footer .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: var(--white-100) !important;
+}
+
 /* media query */
 @media screen and (max-width: 991px) {
   .footer {
@@ -51,7 +57,10 @@
     background-position: top;
   }
   .footer-col {
-    padding-left: 15px !important;
+    padding-left: 20px !important;
+  }
+  .footer-logo {
+    transform: translateX(-15px);
   }
 }
 @media (min-width: 990px) and (max-width: 1202px) {
