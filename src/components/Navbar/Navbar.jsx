@@ -41,19 +41,19 @@ const NavigationBar = () => {
           />
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 Home
             </Link>
-            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
                 About Us
             </Link>
-            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
                 Contact Us
             </Link>
-            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
                 Explore
             </Link>
-            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <Link to="/works" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 How It Works
             </Link>
         </div>
