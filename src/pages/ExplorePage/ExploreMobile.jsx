@@ -11,7 +11,7 @@ function ExploreMobile() {
           <div className="pt-4 container">
             <div className="container">
               <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
-                FrontEnd Development
+                Frontend Development
               </p>
             </div>
           </div>
@@ -45,8 +45,8 @@ function ExploreMobile() {
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
-                BackEnd Development
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
+                Backend Development
               </p>
             </div>
           </div>
@@ -80,8 +80,8 @@ function ExploreMobile() {
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
-                Andriod Development
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
+                Android Development
               </p>
             </div>
           </div>
@@ -115,8 +115,8 @@ function ExploreMobile() {
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
-                Project Management
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
+                Product Management
               </p>
             </div>
           </div>
@@ -130,27 +130,27 @@ function ExploreMobile() {
             indicators="false"
             aria-hidden="false"
           >
-            {Tracks.filter((item) => item.category === "project_maagement").map(
-              (item) => (
-                <Carousel.Item key={item.id} className="">
-                  <div className="text-center container d-flex justify-content-center">
-                    <ExploreCard
-                      track_image={item.track_image}
-                      track_name={item.track_name}
-                      track_desc={item.track_desc}
-                      track_icon={item.track_icon}
-                    />
-                  </div>
-                </Carousel.Item>
-              )
-            )}
+            {Tracks.filter(
+              (item) => item.category === "product_management"
+            ).map((item) => (
+              <Carousel.Item key={item.id} className="">
+                <div className="text-center container d-flex justify-content-center">
+                  <ExploreCard
+                    track_image={item.track_image}
+                    track_name={item.track_name}
+                    track_desc={item.track_desc}
+                    track_icon={item.track_icon}
+                  />
+                </div>
+              </Carousel.Item>
+            ))}
           </Carousel>
         </section>
         {/* newly added tracks */}
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
                 Newly Added
               </p>
             </div>
@@ -185,7 +185,7 @@ function ExploreMobile() {
         <section className="mt-4">
           <div className="pt-4 container">
             <div className="container">
-              <p className="explore-fs-24-700 fw-bold deep-blue-100">
+              <p className="explore-fs-24-700 fw-bold deep-blue-100 lh-sm">
                 Product Design
               </p>
             </div>

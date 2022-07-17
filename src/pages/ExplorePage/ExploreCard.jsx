@@ -28,7 +28,7 @@ function ExploreCard({ track_name, track_image, track_icon, track_desc }) {
                 </Card.Title>
 
                 <div>
-                  <Card.Text className="explore-fs-14-500 deep-blue-100 text-start ">
+                  <Card.Text className="explore-fs-14-500 deep-blue-100 text-start track-desc">
                     {track_desc}
                   </Card.Text>
                 </div>
