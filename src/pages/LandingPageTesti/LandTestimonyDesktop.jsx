@@ -32,7 +32,7 @@ function LandTestimonyDesktop() {
                 controls={false}
                 className='pb-5 ' 
                 variant="dark" 
-                interval='10000' 
+                interval='10000'
                 slide='false' 
                 wrap='false' 
                 aria-hidden='false'
