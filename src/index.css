@@ -121,7 +121,7 @@ a {
 }
 
 a:hover {
-  border: none;
+  border: none !important;
 }
 
 /* form control focus removal */
