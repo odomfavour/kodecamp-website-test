@@ -33,7 +33,7 @@ const EnrollNow = () => {
         setReferal("");
         setAboutyou("");
         setAim("");
-        alert("form submited");
+        alert("form Submitted")
     }
 
     const [country, setCountry] = useState([]);
@@ -43,6 +43,14 @@ const EnrollNow = () => {
     const countries = [
         { id: "1", name: "Nigeria" },
         { id: "2", name: "USA" },
+        { id: "3", name: "Canada" },
+        { id: "4", name: "Ghana" },
+        { id: "5", name: "Togo" },
+        { id: "6", name: "Cameroun" },
+        { id: "7", name: "India" },
+        { id: "8", name: "Ghana" },
+        { id: "9", name: "Japan" },
+        { id: "10", name: "China" },
     ];
 
     const states = [
@@ -65,20 +73,61 @@ const EnrollNow = () => {
         { id: "17", countryId: "1", name: "Kaduna" },
         { id: "18", countryId: "1", name: "Kano" },
         { id: "19", countryId: "1", name: "Kastina" },
-        { id: "23", countryId: "2", name: "Texas" },
-        { id: "24", countryId: "2", name: "California" },
+        { id: "20", countryId: "1", name: "Kebbi" },
+        { id: "21", countryId: "1", name: "Kogi" },
+        { id: "22", countryId: "1", name: "Kwara"},
+        { id: "23", countryId: "1", name: "Lagos" },
+        { id: "24", countryId: "1", name: "Nasarawa" },
+        { id: "25", countryId: "1", name: " Niger" },
+        { id: "26", countryId: "1", name: "Ogun" },
+        { id: "27", countryId: "1", name: "Ondo"},
+        { id: "28", countryId: "1", name: "Osun" },
+        { id: "29", countryId: "1", name: "Oyo" },
+        { id: "30", countryId: "1", name: "Plateau" },
+        { id: "31", countryId: "1", name: "River" },
+        { id: "32", countryId: "1", name: "Sokoto" },
+        { id: "33", countryId: "1", name: "Taraba"},
+        { id: "34", countryId: "1", name: "Yobe" },
+        { id: "35", countryId: "1", name: "Nasarawa" },
+        { id: "36", countryId: "1", name: "Zamfara" },
+        { id: "37", countryId: "2", name: "Texas" },
+        { id: "38", countryId: "2", name: "California" },
     ];
 
     const cities = [
-        { id: "1", stateId: "1", name: "lekki" },
-        { id: "2", stateId: "1", name: "Ikeja" },
+        { id: "1", stateId: "23", name: "lekki" },
+        { id: "2", stateId: "23", name: "Ikeja" },
         { id: "3", stateId: "3", name: "Uyo" },
         { id: "4", stateId: "3", name: "Eket" },
-        { id: "1", stateId: "23", name: "Houston" },
-        { id: "2", stateId: "23", name: "Austin" },
-        { id: "3", stateId: "24", name: "Los Angeles" },
-        { id: "4", stateId: "24", name: "Son Diego" },
-        { id: "5", stateId: "1", name: "Agbara" },
+        { id: "5", stateId: "37", name: "Houston" },
+        { id: "6", stateId: "37", name: "Austin" },
+        { id: "7", stateId: "38", name: "Los Angeles" },
+        { id: "8", stateId: "38", name: "Son Diego" },
+        { id: "9", stateId: "23", name: "Agbara" },
+        { id: "10", stateId: "1", name: "Umuahia" },
+        { id: "11", stateId: "1", name: "ABA" },
+        { id: "12", stateId: "1", name: "Eluoma" },
+        { id: "13", stateId: "1", name: "Alayi" },
+        { id: "14", stateId: "1", name: "Abiriba" },
+        { id: "15", stateId: "1", name: "Arochukwu" },
+        { id: "16", stateId: "1", name: "Ohuhu" },
+        { id: "17", stateId: "1", name: "Umukabia" },
+        { id: "18", stateId: "23", name: "Ikorodu" },
+        { id: "19", stateId: "23", name: "Agbara" },
+        { id: "20", stateId: "23", name: "Agege" },
+        { id: "21", stateId: "23", name: "Alimosho" },
+        { id: "22", stateId: "23", name: "Ifako-Ijaye" },
+        { id: "23", stateId: "23", name: "Shomolu" },
+        { id: "24", stateId: "23", name: "Oshodi-isolo" },
+        { id: "25", stateId: "23", name: "Apapa" },
+        { id: "26", stateId: "23", name: "Ajeromi-Ifelodun" },
+        { id: "27", stateId: "23", name: "Lagos-Island" },
+        { id: "28", stateId: "38", name: "Son Diego" },
+        { id: "29", stateId: "23", name: "Agbara" },
+        { id: "30", stateId: "23", name: "Ojo" },
+        { id: "31", stateId: "23", name: "Epe" },
+        { id: "32", stateId: "3", name: "Ikot Ekepene" },
+      
     ];
     useEffect((country) => {
         setCountry(countries);
@@ -193,7 +242,7 @@ const EnrollNow = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="row  my-4 text-md-start d-md-none d-lg-none">
+                                <div className=" my-4 text-md-start d-md-none d-lg-none">
                                     <label 
                                     style={fontwgt}
                                         htmlFor="name"
@@ -243,7 +292,7 @@ const EnrollNow = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="row my-4    text-md-start  d-md-none  d-lg-none">
+                                <div className=" my-4 text-md-start  d-md-none  d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Phone Number
                                     </label>
@@ -306,7 +355,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="col-md-6 row my-4 text-md-start   d-md-none d-lg-none">
+                                <div className=" my-4 text-md-start   d-md-none d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         Country
                                     </label>
@@ -382,7 +431,7 @@ const EnrollNow = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="row my-4 text-md-start   d-md-none  d-lg-none">
+                                <div className="my-4 text-md-start   d-md-none  d-lg-none">
                                     <label  style={fontwgt} className="form-label enrollalignlabel">
                                         City
                                     </label>

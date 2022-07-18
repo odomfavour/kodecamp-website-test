@@ -9,8 +9,7 @@ import ContactUs from "./pages/ContactUsPage/ContactUs";
 import Explore from "./pages/ExplorePage/Explore";
 import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
-
-
+import Dean from "./Dean"
 
 function App() {
   return (
@@ -23,6 +22,7 @@ function App() {
       <Route path="/sponsor" element={<Sponsor />} />
       <Route path="/faq" element={<FAQS />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/dean" element={<Dean />} />
     </Routes>
   );
 }
