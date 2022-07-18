@@ -11,7 +11,7 @@ import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
 import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Explorevideo from "./components/exploreVideo/Explorevideo";
-
+import Terms from "./pages/Terms/Terms";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
       <Route path="/testimonial" element={<LandTestimony />} />
       <Route path="/faq" element={<FAQS />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/terms" element={<Terms />} />
     </Routes>
   );
 }
