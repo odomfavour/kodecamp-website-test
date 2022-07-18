@@ -24,7 +24,7 @@ function LandTestimonyDesktop() {
   return (
     <>
         <section className='d-none d-xl-block'>
-            <div className="text-center">
+            <div className="text-center mt-5">
               <p className=" fs-3 fw-bold">What Our Interns Have To Say</p>
             </div>
             <Carousel  activeIndex={index}
@@ -32,7 +32,7 @@ function LandTestimonyDesktop() {
                 controls={false}
                 className='pb-5 ' 
                 variant="dark" 
-                interval='10000' 
+                interval='10000'
                 slide='false' 
                 wrap='false' 
                 aria-hidden='false'
