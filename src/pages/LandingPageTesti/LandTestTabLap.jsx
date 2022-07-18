@@ -2,12 +2,11 @@ import {Col, Carousel,Row, Container} from 'react-bootstrap';
 import { useState } from 'react';
 import nexticon from '../../Images/landing-card-images/next-icon.svg';
 import previousicon from '../../Images/landing-card-images/previous-icon.svg';
-import LandingPageAccordSection from './LandingPageAccordSection';
-import { getCardData } from './CardData';
-import LandTestimonyCard from './LandTestimonyCard';
+import LandMobileCard from './LandMobileCard';
+import LandMobileCard2 from './LandMobileCard2';
+import LandMobileCard3 from './MobileCard3';
 
-function LandTestMobile() {
-    const testimonials = getCardData();
+function LandTestTabLap() {
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
@@ -24,38 +23,39 @@ function LandTestMobile() {
     };
   return (
     <div>
-        <section className='d-block'>
-            <LandingPageAccordSection/>
-        </section>
-        <div className='container'>
-            <hr className='d-none d-md-block d-lg-block' />
-        </div>
-        <section className='d-block d-md-none'>
+        
+        
+        <section className='d-none d-md-block d-xl-none'>
             <div className="text-center mt-5">
-              <p className="fs-mobile-head fw-bold">What Our Interns Have To Say</p>
+              <p className="fs-3 fw-bold">What Our Interns Have To Say</p>
             </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
                 controls={false}
-                className='pb-5 ' 
+                className='pb-5  ' 
                 variant="dark" 
                 interval='10000' 
                 slide='false' 
                 aria-hidden='false'
-            >   
-
-                {
-                    testimonials.map(testimony => (
-                            (
-                                
-                                <Carousel.Item key={testimony.id}>
-                                        <div className='  row d-flex justify-content-evenly'>
-                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
-                                        </div>
-                                </Carousel.Item>         
-                            )
-                    ))
-                } 
+            >     
+                <Carousel.Item className='ps-5'>
+                    <div className='  row d-flex justify-content-around'>
+                        <Col className=' col-sm-10 col-md-5 col-lg-4'><LandMobileCard3/></Col>
+                        <Col className='  col-sm-10 col-md-5 col-lg-4 '><LandMobileCard2/></Col>
+                    </div>
+                </Carousel.Item>        
+                <Carousel.Item className='ps-5'>
+                    <div className=' row d-flex justify-content-evenly '>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4 '><LandMobileCard2/></Col>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard/></Col>    
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item className='ps-5'>
+                    <div className='  row d-flex justify-content-evenly'>
+                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard3/></Col>
+                        <Col className=' col-10 col-sm-10 col-md-6 col-lg-4 '><LandMobileCard2/></Col>
+                    </div>
+                </Carousel.Item>                  
             </Carousel>
             <Container>
                 <Row className='container '>
@@ -76,4 +76,4 @@ function LandTestMobile() {
   )
 }
 
-export default LandTestMobile
+export default LandTestTabLap

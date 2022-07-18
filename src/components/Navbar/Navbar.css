@@ -27,9 +27,6 @@
   overflow: hidden;
 }
 
-.kodecamp-icon {
-  margin-left: 20px;
-}
 
 #kodecamp-icon-tablet {
   width: 70px;
@@ -60,14 +57,14 @@
 .btn-login {
   color: var(--green-100) !important;
   border: 1px solid var(--green-100) !important;
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
 }
 
 .btn-enroll {
   border-color: var(--green-100) !important;
-  width: 179px;
-  height: 60px;
+  width: 140px;
+  height: 50px;
   margin-right: 20px;
 }
 
@@ -96,10 +93,6 @@
   width: 100%;
   opacity: 0.5;
   border-top: 1px solid var(--deep-blue-100) !important;
-}
-
-#navbarToggle {
-  margin-right: 20px;
 }
 
 #navbarToggle, #closeCollapseBarIcon {

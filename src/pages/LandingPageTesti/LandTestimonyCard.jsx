@@ -7,8 +7,8 @@ function LandTestimonyCard({id, name, track,description,image}) {
         <div className=''>
             <div className=' my-4'>
                 <div className='uniform mb-4' key={id}>
-                    <div className=' dotted'>
-                        <Card className='  rounded-2 bg-white-100 '>
+                    <div className=' dotted position-relative'>
+                        <Card className='  dotted rounded-2 bg-white-100 '>
                             <Card.Body className='text-center container-fluid position-relative'>
                                 <div className='not-dotted '>
                                     <Card className=' position-absolute top-0 start-0 translate-middle rounded-2 bg-white-100 shadow-sm'>
@@ -29,7 +29,7 @@ function LandTestimonyCard({id, name, track,description,image}) {
                                             </div>
                                             <div>
                                                 <p className='fw-bold font-size-sm lh-sm '>{name}</p>
-                                                <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>{track} </p>
+                                                <p className='landtesti-fs-12  font-size-sm lh-sm fw-bold blue-100'>{track} </p>
                                             </div>
                                         </Card.Body>
                                     </Card>

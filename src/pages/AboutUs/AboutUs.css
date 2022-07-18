@@ -2,6 +2,51 @@
     font-size: 2em;
 }
 
+.women-on-pc-circle {
+        border: thin solid var(--blue-100);
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 65px;
+        right: 45px;
+}
+
+.man-and-women-on-pc-circle {
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: thin solid var(--deep-blue-100);
+    border-radius: 50%;
+    bottom: 8px;
+    right: 26px;
+}
+
+.man-with-dreads-on-pc-circle {
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: thin solid var(--green-100);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.lady-on-glasses-circle {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border: thin solid var(--black-100);
+    border-radius: 50%;
+    top: 5px;
+    left: 55px;
+}
+
+
 .mission-vision-container {
     margin-top: 32px;
 }
@@ -34,7 +79,7 @@
 
 
 .vector-about {
-    transform: translate(100px, -80px);
+    transform: translate(-8px, -80px);
     position: absolute;
 }
 
@@ -57,6 +102,13 @@
 
 .text-below-square-div {
     font-size: 1.25em;
+}
+
+@media (max-width: 359px) {
+    .polygon-mission {
+        transform: translate(-30px, -330px);
+        width: 420px;
+    }
 }
 
 @media (min-width: 768px) {

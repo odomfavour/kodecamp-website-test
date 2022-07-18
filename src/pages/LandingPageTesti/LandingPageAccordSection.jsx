@@ -7,12 +7,12 @@ function LandinPageAccordSection() {
   return (
     <>
         <section>
-            <div className='container my-4 py-4'>
+            <div className='container pb-5'>
                 <div className='row d-flex align-items-center'>
-                    <Col className="col col-lg-6 col-sm-10 my-5">
+                    <Col className="col col-lg-6 col-sm-10">
                         <div>
-                            <h5 className='line-height-base fw-bold'>AVAILABLE TRACKS</h5>
-                            <p className='landing-fs-52 font-size-lg line-height-lg fw-bolder black-100'>
+                            <h5 className='line-height-base fw-bold border-bottom col-8 deep-blue-100'>AVAILABLE TRACKS</h5>
+                            <p className='landing-fs-52 font-size-lg line-height-lg fw-bolder deep-blue-100'>
                                 <span className='green-100'>Checkout</span>  some of our available tracks 
                             </p>
                             <h4 className='line-height-lg fs-md-4  fw-normal'>
@@ -26,7 +26,7 @@ function LandinPageAccordSection() {
                             </h4>  
                         </div>
                     </Col>
-                    <Col className="col col-lg-6 col-sm-10">
+                    <Col className="col col-lg-6 col-sm-10 mt-4">
                         {/* {
                                 accordiondata.map(accdata => (
                                     (               
