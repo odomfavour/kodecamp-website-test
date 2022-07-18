@@ -41,7 +41,6 @@ const Analytics = ({ cohort, value }) => {
               })}
             />
           </div>
-          ;
         </Card.Body>
       </Card>
     </Col>

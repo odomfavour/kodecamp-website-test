@@ -20,8 +20,8 @@ function FAQS({ id, category, desc }) {
               <Accordion className="py-5 px-3 px-lg-5">
                 <Accordion.Item
                   eventKey="0"
-                  className="mb-4 blue100acc rounded-1"
-                  flush
+                  className="mb-4 rounded-1"
+                  flush="true"
                   key={id}
                 >
                   <Accordion.Header className="fw-bold fs-2 outline-0">

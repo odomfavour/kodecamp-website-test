@@ -7,9 +7,11 @@ import Works from "./pages/Works/Works";
 import Sponsor from "./pages/sponsor/Sponsor";
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 import Explore from "./pages/ExplorePage/Explore";
+import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
 import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Dean from "./Dean"
+import Explorevideo from "./components/exploreVideo/Explorevideo";
+
 
 function App() {
   return (
@@ -20,9 +22,10 @@ function App() {
       <Route path="/explore" element={<Explore />} />
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
+      <Route path="/explorevideo" element={<Explorevideo />} />
+      <Route path="/testimonial" element={<LandTestimony />} />
       <Route path="/faq" element={<FAQS />} />
       <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/dean" element={<Dean />} />
     </Routes>
   );
 }
