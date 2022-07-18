@@ -34,7 +34,7 @@
 
 
 .vector-about {
-    transform: translate(100px, -80px);
+    transform: translate(-8px, -80px);
     position: absolute;
 }
 
@@ -57,6 +57,13 @@
 
 .text-below-square-div {
     font-size: 1.25em;
+}
+
+@media (max-width: 359px) {
+    .polygon-mission {
+        transform: translate(-30px, -330px);
+        width: 420px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -128,4 +135,14 @@
     .polygon-mission {
         width: 100%;
     }
+    /* .women-on-pc-desktopView::before {
+        color: black !important;
+        background-color: yellow !important;
+        border: 2px solid black;
+        z-index: 100;
+
+        content: "?";
+        width: 300px !important;
+        height: 500px;
+    } */
 }

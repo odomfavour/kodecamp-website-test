@@ -45,7 +45,7 @@ const AboutUs = () => {
                             <Col xs={6} className="mt-4 text-center d-md-none">
                                 <img src={LadyOnGlasses} alt="lady-on-glasses" />
                             </Col>
-                            <Col xs={6} className="d-none d-md-block text-center">
+                            <Col xs={6} className="d-none d-md-block text-center women-on-pc-desktopView">
                                 <img src={WomenOnPcDesktop} alt="women-on-pc" width="150" height="150"/>
                             </Col>
                             <Col xs={6} className="d-none d-md-block mt-4">

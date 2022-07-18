@@ -28,7 +28,6 @@
 }
 
 .kodecamp-icon {
-  margin-left: 20px;
 }
 
 #kodecamp-icon-tablet {
@@ -96,10 +95,6 @@
   width: 100%;
   opacity: 0.5;
   border-top: 1px solid var(--deep-blue-100) !important;
-}
-
-#navbarToggle {
-  margin-right: 20px;
 }
 
 #navbarToggle, #closeCollapseBarIcon {
