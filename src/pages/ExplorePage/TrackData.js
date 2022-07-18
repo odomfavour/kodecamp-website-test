@@ -15,6 +15,7 @@ import KotlinIcon from "../../Images/explore-image/Kotlin-icon.svg";
 import Flutter from "../../Images/explore-image/Flutter.jpg";
 import ProductBoard from "../../Images/explore-image/Product-board.jpg";
 import Trello from "../../Images/explore-image/Trello.jpg";
+import Jira from "../../Images/explore-image/Jira.jpg";
 import Figjam from "../../Images/explore-image/Figjam.jpg";
 import ProjectManagement from "../../Images/explore-image/Project-Management.jpg";
 import DigitalMarketing from "../../Images/explore-image/Digital-Marketing.jpg";
@@ -98,23 +99,23 @@ const Tracks = [
     track_name: "Product Board",
     track_image: ProductBoard,
     track_desc:
-      "Learn how one of the most versatile programming language is used on a server for web development, software development and data science applications.",
+      "Product-board is a customer driven product managemant system that empowers teams to      get the right products to market faster.",
     category: "product_management",
   },
   {
     id: 9,
-    track_name: "Jira/Trello",
-    track_image: Trello,
+    track_name: "Jira",
+    track_image: Jira,
     track_desc:
-      "PHP is a server-side programming language that works well with HTML and databases. PHP is great for building dynamic web applications.",
+      "Jira is a software application used for issue tracking and project management. The tool, has become widely used by agile development teams for tasks.",
     category: "product_management",
   },
   {
     id: 10,
-    track_name: "Figjam",
-    track_image: Figjam,
+    track_name: "Trello",
+    track_image: Trello,
     track_desc:
-      "PHP is a server-side programming language that works well with HTML and databases. PHP is great for building dynamic web applications.",
+      "Trello is a popular, simple and easy-to-use collaboration tool that enables you to organize projects and everything related to them into boards.",
     category: "product_management",
   },
   {
@@ -155,6 +156,14 @@ const Tracks = [
     track_image: AdobeXd,
     track_desc:
       "This track is designed to help you materialize your game-changing idea and transform it into a product using Adobe XD.",
+    category: "product_design",
+  },
+  {
+    id: 15,
+    track_name: "Figjam",
+    track_image: Figjam,
+    track_desc:
+      "FigJam is an online whiteboard for teams to ideate and brainstorm together. A browser-based tool, teams can use FigJam to critique, organize ideas and anything else that calls for collaborative work.",
     category: "product_design",
   },
 ];
