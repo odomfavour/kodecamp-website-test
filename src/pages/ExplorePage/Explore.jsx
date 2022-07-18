@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import ExploreDesktop from "./ExploreDesktop";
 import ExploreMobile from "./ExploreMobile";
@@ -8,6 +9,7 @@ import ButtonEnrol from "../../components/Buttons/ButtonEnrol";
 import Explorevideo from "../../components/exploreVideo/Explorevideo";
 
 function Explore() {
+ 
   return (
     <>
       <PageWrapper>
