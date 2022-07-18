@@ -11,7 +11,7 @@ function Explore() {
   return (
     <>
       <PageWrapper>
-        <div className="container my-5">
+        <div className="container explore-page my-5">
           <SearchBar />
           <ExploreMobile />
           <ExploreDesktop />
