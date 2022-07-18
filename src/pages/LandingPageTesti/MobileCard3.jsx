@@ -8,7 +8,7 @@ function LandMobileCard3({id, name, track,description,image}) {
     <>
         <div className=''>
             <div className=' my-4'>
-                <div className='uniform mb-4' key={id}>
+                <div className='uniform mb-4' >
                     <div className=' dotted'>
                         <Card className='  rounded-2 bg-white-100 '>
                             <Card.Body className='text-center container-fluid position-relative'>
