@@ -1,0 +1,15 @@
+.video-text {
+  top: -30px;
+  right: -50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.215);
+}
+@media screen and (max-width: 580px) {
+  .video-text {
+    width: 280px !important;
+    height: 190px !important;
+    right: -320px;
+  }
+  s .exp-vid {
+    height: 350px !important;
+  }
+}

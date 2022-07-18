@@ -1,11 +1,15 @@
 import React from "react";
 import PageWrapper from "../layout/PageWapper/PageWrapper";
+import Land from "./LandingPage/Land";
+import LandTestimony from "./LandingPageTesti/LandTestimony";
+
 
 const Index = () => {
   return (
     <>
       <PageWrapper>
-        <div className="container">Index</div>
+        <Land />
+        <LandTestimony/>
       </PageWrapper>
     </>
   );

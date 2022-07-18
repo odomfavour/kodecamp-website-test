@@ -5,11 +5,12 @@ import EnrollNow from "./pages/EnrollNow/EnrollNow";
 import Home from "./pages/Index";
 import Works from "./pages/Works/Works";
 import Sponsor from "./pages/sponsor/Sponsor";
-import Explorevideo from "./pages/exploreVideo/Explorevideo";
 import ContactUs from "./pages/ContactUsPage/ContactUs";
 import Explore from "./pages/ExplorePage/Explore";
+import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
+import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
-
+import Explorevideo from "./components/exploreVideo/Explorevideo";
 
 
 function App() {
@@ -17,11 +18,13 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/enroll" element={<EnrollNow />} />
-      <Route path="/contactus" element={<ContactUs/>} />
-      <Route path="/explore" element={<Explore/>} />
+      <Route path="/contactus" element={<ContactUs />} />
+      <Route path="/explore" element={<Explore />} />
       <Route path="/works" element={<Works />} />
       <Route path="/sponsor" element={<Sponsor />} />
       <Route path="/explorevideo" element={<Explorevideo />} />
+      <Route path="/testimonial" element={<LandTestimony />} />
+      <Route path="/faq" element={<FAQS />} />
       <Route path="/about-us" element={<AboutUs />} />
     </Routes>
   );
