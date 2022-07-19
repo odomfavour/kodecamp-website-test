@@ -87,6 +87,13 @@
   color: var(--black-60) !important;
 }
 
+.navbar .btn:focus {
+  border: none !important;
+}
+.navbar .btn:focus-visible{
+  border: none !important;
+}
+
 .active {
   color: var(--blue-100) !important;
 }
