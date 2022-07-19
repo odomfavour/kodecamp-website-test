@@ -70,7 +70,7 @@ const NavigationBar = () => {
                 Login
               </Button>
             </Link>
-            <Link to="/enroll" className="btn">
+            <Link to="/enrol" className="btn">
               <Button className="d-inline-block btn-enroll bg-green-100">
                 Enroll Now
               </Button>
