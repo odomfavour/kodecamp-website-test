@@ -1,4 +1,4 @@
-import { Container, Navbar, Button } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import closeCollapseBarIcon from "../../Images/NavbarAssets/close-collapsebar-icon.svg";
 import kodecampIconMobile from "../../Images/NavbarAssets/kodecamp-icon-mobile.svg";
 import kodecampIconDesktop from "../../Images/NavbarAssets/kodecamp-icon-desktop.svg";
@@ -63,17 +63,16 @@ const NavigationBar = () => {
         <div className="d-flex">
           <div className="d-flex justify-content-end">
             <Link to="/" className="btn enrol-login">
-              <Button
-                variant=""
+              <div
                 className="d-inline-block d-none d-md-block btn-login"
               >
                 Login
-              </Button>
+              </div>
             </Link>
             <Link to="/enroll" className="btn">
-              <Button className="d-inline-block btn-enroll bg-green-100">
+              <div className="d-inline-block btn-enroll bg-green-100 white-100 text-center">
                 Enroll Now
-              </Button>
+              </div>
             </Link>
           </div>
 
