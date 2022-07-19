@@ -2,6 +2,11 @@
   padding: 20px;
   font-size: 22px;
   font-weight: 600;
+  color: var(--black-100);
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: var(--blue-100) !important;
 }
 
 .faq .accordion-button:focus {
@@ -13,7 +18,7 @@
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: #669e00 !important;
+  color: var(--black-100) !important;
   background-color: white !important;
 }
 
@@ -21,15 +26,25 @@
   right: 15px;
   position: absolute;
   background-image: url("../../Images/FAQ-image/faq-plus-icon.png") !important;
+  background-size: 70% !important;
 }
 
 .faq .accordion-button:not(.collapsed)::after {
   background-image: url("../../Images/FAQ-image/faq-minus-icon.png") !important;
+  background-size: 70% !important;
 }
 
 .questions-p {
   max-width: 60%;
   font-size: 20px;
+}
+
+.faq-contact-btn {
+  border: none !important;
+}
+
+.faq-contact-btn:focus {
+  box-shadow: none !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -52,8 +67,8 @@
     font-size: 16px !important;
   }
 
-  .faq .accordion-button:not(.collapsed) {
-    color: var(--blue-100) !important;
+  .faq .accordion-button {
+    color: var(--black-100) !important;
   }
 
   .faq .accordion-body {
