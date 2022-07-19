@@ -60,7 +60,7 @@ const Footer = () => {
                 <Link to="/terms">Terms Of Service</Link>
               </li>
               <li className="footer-list">
-                <Link to="#copy">Copyright Policy</Link>
+                <Link to="/">Copyright Policy</Link>
               </li>
               <li className="footer-list">
                 <Link to="/faq">FAQs</Link>
