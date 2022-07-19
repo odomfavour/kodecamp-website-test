@@ -13,9 +13,9 @@ function BenefitsDesktop() {
             
             <div className='container d-none d-lg-block '>
                 <div className='text-center d-none d-md-block mt-4 mb-5'>
-                    <p className='fs-3 fw-bold deep-blue-100 pb-5'>BENEFITS OF JOINING KODECAMP INTERNSHIP</p>
+                    <p className='fs-3 fw-bold deep-blue-100 pb-4'>BENEFITS OF JOINING KODECAMP INTERNSHIP</p>
                 </div>
-                <Row className='d-flex justify-content-around '>
+                <Row className='d-flex justify-content-around mb-3 '>
                     <Col className='col-md-5 col-lg-3'>
                         <Card style={{ width: '280px',boxShadow:'3.10185px 3.10185px 1.55093px 1.55093px rgba(0, 0, 0, 0.25)' }} className="border-rounded bg-deep-blue-100 white-100 text-center pt-4 pb-2">
                             <div className='text-center '>
@@ -61,12 +61,12 @@ function BenefitsDesktop() {
                     </Col>
                 </Row>
             </div>
-            <div className='container d-none d-lg-block'>
+            <div className='container d-none d-lg-block mb-5'>
                 <Row className='d-flex justify-content-around'>
                     <Col className='col-md-5 col-lg-3'>
                         <div className='text-center'>
                             <p className='green-100 fs-2 fw-bold mb-0'>10,000</p>
-                            <p className='px-5 mx-3 mx-xl-5 fs-6 fw-semibold'>interns per cohort</p>
+                            <p className='px-5 mx-3 mx-xl-4 fs-6 fw-semibold'>interns <br></br>per cohort</p>
                         </div>
                     </Col>
                     <Col className='col-md-5 col-lg-3'>
@@ -78,7 +78,7 @@ function BenefitsDesktop() {
                     <Col className='col-md-5 col-lg-3 d-none d-lg-block'>
                         <div className='text-center'>
                             <p className='green-100 fs-2 fw-bold mb-0'>78%</p>
-                            <p className='px-xl-5 px-3 fs-6 fw-semibold'>Employment/placement rate after completion</p>
+                            <p className=' px-3 mx-xl-4 fs-6 fw-semibold'>Employment/placement rate after completion</p>
                         </div>
                     </Col>
                 </Row>

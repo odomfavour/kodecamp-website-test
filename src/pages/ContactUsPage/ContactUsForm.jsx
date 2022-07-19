@@ -49,9 +49,10 @@ function ContactUsForm() {
               value={inputField.full_name}
               required
             />
-            <div className="valid-feedback">
-              Looks good!
-            </div>
+            <Form.Control.Feedback type="invalid">
+              Please input your name
+            </Form.Control.Feedback>
+            
           </Form.Group>
           <Form.Group className="mb-4  col-lg-6 col" controlId="validationCustom02">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
@@ -63,9 +64,9 @@ function ContactUsForm() {
               onChange={handleChange} 
               placeholder="janecooper@gmail.com" 
               value={inputField.email}
-              
+              required
             />
-            <Form.Control.Feedback type="valid">
+            <Form.Control.Feedback type="invalid">
               Please a valid email address e.g (kodecamp@gmail.com)
             </Form.Control.Feedback> 
           </Form.Group>
@@ -104,7 +105,7 @@ function ContactUsForm() {
             </Form.Control.Feedback>
           </Form.Group>
           <div className='text-center my-5 '>
-            <button className='bg-green-100  contact-send-btn contact-send-btn-text font-weight-semibold white-100 '  type="submit">
+            <button onSubmit={handleSubmit} className='bg-green-100  contact-send-btn contact-send-btn-text font-weight-semibold white-100 '  type="submit">
               Send Message
             </button>
           </div>
