@@ -18,7 +18,7 @@ const NavigationBar = () => {
 
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
-      <Container fluid>
+      <Container>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
         <Navbar.Brand className="">
           <Link to="/">
@@ -38,7 +38,7 @@ const NavigationBar = () => {
               src={kodecampIconDesktop}
               alt="kodecamp-icon"
               id="kodecamp-icon-desktop"
-              className="d-none d-lg-block kodecamp-icon ms-lg-3"
+              className="d-none d-lg-block kodecamp-icon"
             />
           </Link>
         </Navbar.Brand>

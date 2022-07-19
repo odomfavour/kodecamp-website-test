@@ -31,8 +31,8 @@ function LandTestMobile() {
             <hr className='d-none d-md-block d-lg-block' />
         </div>
         <section className='d-block d-md-none'>
-            <div className="text-center mt-5">
-              <p className="fs-mobile-head fw-bold">What Our Interns Have To Say</p>
+            <div className="text-center mt-5 container">
+              <p className="fs-mobile-head fw-bold border-bottom">What Our Interns Have To Say</p>
             </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
