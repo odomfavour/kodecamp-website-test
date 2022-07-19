@@ -14,7 +14,7 @@ function ExploreCard() {
                                     <p className='explore-fs-20-600 d-flex fw-semibold white-100' >Product Design</p>
                                 </div>
                                 <div className='text-start'>
-                                    <img src={figmaicon} alt="tool icon" />
+                                    <img src={figmaicon}  alt="tool icon" />
                                 </div>
                             </div>       
                         </div>

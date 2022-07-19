@@ -23,9 +23,9 @@ function LandTestimonyDesktop() {
     };
   return (
     <>
-        <section className='d-none d-xl-block'>
+        <section className='d-none d-xl-block landing-desktop'>
             <div className="text-center mt-5">
-              <p className=" fs-3 fw-bold">What Our Interns Have To Say</p>
+              <p className=" fs-3 fw-bold deep-blue-100">WHAT OUR INTERNS HAVE TO SAY</p>
             </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}

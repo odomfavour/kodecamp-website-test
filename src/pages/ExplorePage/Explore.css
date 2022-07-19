@@ -32,8 +32,8 @@
   background-color: var(--green-100) !important;
 }
 .carousel-indicators [data-bs-target] {
-  width: 8px !important;
-  height: 8px !important;
+  width: 14px !important;
+  height: 14px !important;
   border-radius: 100% !important;
-  background-color: rgba(102, 158, 0, 0.2) ;
+  background-color: var(--green-100) ;
 }
