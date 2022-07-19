@@ -37,16 +37,16 @@ const Footer = () => {
                 <Link to="/about-us">About Us</Link>
               </li>
               <li className="footer-list ">
-                <Link to="/">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Explore</Link>
+                <Link to="/explore">Explore</Link>
               </li>
               <li className="footer-list">
                 <Link to="/works">How it works</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Sponsors</Link>
+                <Link to="/sponsor">Sponsors</Link>
               </li>
             </ul>
           </Col>
@@ -57,10 +57,10 @@ const Footer = () => {
                 <Link to="/">Privacy Policy</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Terms Of Service</Link>
+                <Link to="/terms">Terms Of Service</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Copyright Policy</Link>
+                <Link to="#copy">Copyright Policy</Link>
               </li>
               <li className="footer-list">
                 <Link to="/faq">FAQs</Link>

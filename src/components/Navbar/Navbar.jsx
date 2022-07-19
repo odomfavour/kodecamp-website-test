@@ -1,4 +1,4 @@
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Navbar, Button } from "react-bootstrap";
 import closeCollapseBarIcon from "../../Images/NavbarAssets/close-collapsebar-icon.svg";
 import kodecampIconMobile from "../../Images/NavbarAssets/kodecamp-icon-mobile.svg";
 import kodecampIconDesktop from "../../Images/NavbarAssets/kodecamp-icon-desktop.svg";
@@ -11,15 +11,14 @@ import LoginIconMobile from "../../Images/NavbarAssets/login-icon-mobile.svg";
 import navbarToggle from "../../Images/NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
-
   const [showNavAndOverlay, setShowNavAndOverlay] = useState(false);
 
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
-      <Container>
+      <Container fluid>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
         <Navbar.Brand className="">
           <Link to="/">
@@ -39,41 +38,42 @@ const NavigationBar = () => {
               src={kodecampIconDesktop}
               alt="kodecamp-icon"
               id="kodecamp-icon-desktop"
-              className="d-none d-lg-block kodecamp-icon"
+              className="d-none d-lg-block kodecamp-icon ms-lg-3"
             />
           </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <NavLink to="/" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4" >
+            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Home
-            </NavLink>
-            <NavLink to="/about-us" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
+            </Link>
+            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 About Us
-            </NavLink>
-            <NavLink to="/contactus" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
+            </Link>
+            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Contact Us
-            </NavLink>
-            <NavLink to="/explore" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
+            </Link>
+            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Explore
-            </NavLink>
-            <NavLink to="/works" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
+            </Link>
+            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 How It Works
-            </NavLink>
+            </Link>
         </div>
 
         <div className="d-flex">
           <div className="d-flex justify-content-end">
             <Link to="/" className="btn enrol-login">
-              <div
+              <Button
+                variant=""
                 className="d-inline-block d-none d-md-block btn-login"
               >
                 Login
-              </div>
+              </Button>
             </Link>
-            <Link to="/enrol" className="btn">
-              <div className="d-inline-block btn-enroll bg-green-100 white-100 text-center">
-                Enrol Now
-              </div>
+            <Link to="/enroll" className="btn">
+              <Button className="d-inline-block btn-enroll bg-green-100">
+                Enroll Now
+              </Button>
             </Link>
           </div>
 
@@ -106,9 +106,9 @@ const NavigationBar = () => {
                 alt="navbar-home-icon"
                 className="ps-2"
               />
-              <NavLink to="/" className="navbar-Navlinks-mobile ps-3">
+              <Link to="/" className="navbar-links-mobile ps-3">
                 Home
-              </NavLink>
+              </Link>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -119,9 +119,9 @@ const NavigationBar = () => {
                 alt="navbar-about-icon"
                 className="ps-2"
               />
-              <NavLink to="/about-us" className="navbar-Navlinks-mobile ps-3">
+              <Link to="/about-us" className="navbar-links-mobile ps-3">
                 About Us
-              </NavLink>
+              </Link>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -132,9 +132,9 @@ const NavigationBar = () => {
                 alt="navbar-contact-icon"
                 className="ps-2"
               />
-              <NavLink to="/contactus" className="navbar-Navlinks-mobile ps-3">
+              <Link to="/contactus" className="navbar-links-mobile ps-3">
                 Contact Us
-              </NavLink>
+              </Link>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -145,9 +145,9 @@ const NavigationBar = () => {
                 alt="navbar-explore-icon"
                 className="ps-2"
               />
-              <NavLink to="/explore" className="navbar-Navlinks-mobile ps-3">
+              <Link to="/explore" className="navbar-links-mobile ps-3">
                 Explore
-              </NavLink>
+              </Link>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -158,9 +158,9 @@ const NavigationBar = () => {
                 alt="navbar-works-icon"
                 className="ps-2"
               />
-              <NavLink to="/works" className="navbar-Navlinks-mobile ps-3">
+              <Link to="/works" className="navbar-links-mobile ps-3">
                 How It Works
-              </NavLink>
+              </Link>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -171,13 +171,13 @@ const NavigationBar = () => {
                 alt="navbar-works-icon"
                 className="ps-2"
               />
-              <NavLink
+              <Link
                 to="/"
                 id="navbar-mobile-login"
-                className="navbar-Navlinks-mobile green-100 ps-3"
+                className="navbar-links-mobile green-100 ps-3"
               >
                 Login
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
