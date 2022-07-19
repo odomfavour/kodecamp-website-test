@@ -9,15 +9,13 @@ function BenefitsDesktop() {
   return (
     <>
         <section >
-            <div className='container'>
-                <hr className='d-none d-lg-block' />
-            </div>
             
-            <div className='container d-none d-lg-block my-5'>
-                <div className='text-center d-none d-md-block'>
-                    <p className='fs-3 fw-bold deep-blue-100'>BENEFITS OF JOINING KODECAMP INTERNSHIP</p>
+            
+            <div className='container d-none d-lg-block '>
+                <div className='text-center d-none d-md-block mt-4 mb-5'>
+                    <p className='fs-3 fw-bold deep-blue-100 pb-5'>BENEFITS OF JOINING KODECAMP INTERNSHIP</p>
                 </div>
-                <Row className='d-flex justify-content-around'>
+                <Row className='d-flex justify-content-around '>
                     <Col className='col-md-5 col-lg-3'>
                         <Card style={{ width: '280px',boxShadow:'3.10185px 3.10185px 1.55093px 1.55093px rgba(0, 0, 0, 0.25)' }} className="border-rounded bg-deep-blue-100 white-100 text-center pt-4 pb-2">
                             <div className='text-center '>
