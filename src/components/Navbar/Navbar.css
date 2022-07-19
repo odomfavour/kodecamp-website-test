@@ -78,6 +78,15 @@
   z-index: 5;
 }
 
+a {
+  text-decoration: none !important;
+  color: var(--black-60) !important;
+}
+
+.active {
+  color: var(--blue-100) !important;
+}
+
 .navbar-links-mobile {
   color: var(--deep-blue-100);
   text-decoration: none;

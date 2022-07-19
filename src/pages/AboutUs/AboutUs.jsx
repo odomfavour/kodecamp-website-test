@@ -23,10 +23,10 @@ const AboutUs = () => {
             <Container>
                 <Row className="mt-5">
                     <Col xs={12} lg={6}>
-                        <h1 className="deep-blue-100 experience text-center mt-4 mt-md-5" style={{fontWeight: "800"}}>
+                        <h1 className="deep-blue-100 experience text-center text-lg-start mt-4 mt-md-5" style={{fontWeight: "800"}}>
                             The <span className="green-100">KodeCamp</span> Experience
                         </h1>
-                        <p className="deep-blue-100 text-center d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.5em"}}>
+                        <p className="deep-blue-100 text-start d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.5em"}}>
                             KodeCamp is designed to support capacity development in the field of information and communication technology (ICT) 
                             by providing training, mentorship, leadership, and career opportunities to young Nigerians.
                         </p>

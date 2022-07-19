@@ -11,9 +11,10 @@ import LoginIconMobile from "../../Images/NavbarAssets/login-icon-mobile.svg";
 import navbarToggle from "../../Images/NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
+
   const [showNavAndOverlay, setShowNavAndOverlay] = useState(false);
 
   return (
@@ -43,21 +44,21 @@ const NavigationBar = () => {
           </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink to="/" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4" >
                 Home
-            </Link>
-            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink to="/about-us" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
                 About Us
-            </Link>
-            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink to="/contactus" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
                 Contact Us
-            </Link>
-            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink to="/explore" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
                 Explore
-            </Link>
-            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink to="/works" className="d-none d-lg-block navbar-Navlinks-desktop px-lg-2 px-xl-4">
                 How It Works
-            </Link>
+            </NavLink>
         </div>
 
         <div className="d-flex">
@@ -106,9 +107,9 @@ const NavigationBar = () => {
                 alt="navbar-home-icon"
                 className="ps-2"
               />
-              <Link to="/" className="navbar-links-mobile ps-3">
+              <NavLink to="/" className="navbar-Navlinks-mobile ps-3">
                 Home
-              </Link>
+              </NavLink>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -119,9 +120,9 @@ const NavigationBar = () => {
                 alt="navbar-about-icon"
                 className="ps-2"
               />
-              <Link to="/about-us" className="navbar-links-mobile ps-3">
+              <NavLink to="/about-us" className="navbar-Navlinks-mobile ps-3">
                 About Us
-              </Link>
+              </NavLink>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -132,9 +133,9 @@ const NavigationBar = () => {
                 alt="navbar-contact-icon"
                 className="ps-2"
               />
-              <Link to="/contactus" className="navbar-links-mobile ps-3">
+              <NavLink to="/contactus" className="navbar-Navlinks-mobile ps-3">
                 Contact Us
-              </Link>
+              </NavLink>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -145,9 +146,9 @@ const NavigationBar = () => {
                 alt="navbar-explore-icon"
                 className="ps-2"
               />
-              <Link to="/explore" className="navbar-links-mobile ps-3">
+              <NavLink to="/explore" className="navbar-Navlinks-mobile ps-3">
                 Explore
-              </Link>
+              </NavLink>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -158,9 +159,9 @@ const NavigationBar = () => {
                 alt="navbar-works-icon"
                 className="ps-2"
               />
-              <Link to="/works" className="navbar-links-mobile ps-3">
+              <NavLink to="/works" className="navbar-Navlinks-mobile ps-3">
                 How It Works
-              </Link>
+              </NavLink>
             </div>
 
             <div className="navbar-mobile-line mt-3"></div>
@@ -171,13 +172,13 @@ const NavigationBar = () => {
                 alt="navbar-works-icon"
                 className="ps-2"
               />
-              <Link
+              <NavLink
                 to="/"
                 id="navbar-mobile-login"
-                className="navbar-links-mobile green-100 ps-3"
+                className="navbar-Navlinks-mobile green-100 ps-3"
               >
                 Login
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
