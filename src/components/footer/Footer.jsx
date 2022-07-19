@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className=" py-4 pt-5 footer  ">
       <Container className="text-left container-xl px-lg-0 footer-container">
-        <Row className="align-items-start justify-content-between px-xl-0 px-xxl-5  mb-3 ">
+        <Row className="align-items-start justify-content-between px-xl-0 mb-3 ">
           <Col className="col-7 col-md-3 col-lg-3 mb-5 mb-lg-0 footer-col footer-logo">
             <img src={KodocampWhite} className="img-fluid" alt="" />
           </Col>

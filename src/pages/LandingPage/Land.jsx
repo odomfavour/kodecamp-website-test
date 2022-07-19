@@ -7,9 +7,10 @@ import pattern from "../../Images/LandingPage/pattern.png"
 import cross from "../../Images/LandingPage/cross.png"
 import moon from "../../Images/LandingPage/moon.png"
 import intern from "../../Images/LandingPage/internship.svg"
-import remote from "../../Images/LandingPage/remote.png"
-import mentor from "../../Images/LandingPage/mentorship.png"
+import remote from "../../Images/LandingPage/remote.svg"
+import mentor from "../../Images/LandingPage/mentorship.svg"
 import "./Land.css"
+import {Link} from "react-router-dom"
 const Land = () => {
     const contain = {
         position: "relative"
@@ -87,8 +88,8 @@ const Land = () => {
     return (
         <div className="container py-2">
             <div className="row rowlg mt-5">
-                <div className="col d-none d-md-block d-lg-block  ">
-                    <h1 className='display-5 deep-blue-100 fw-bolder my-4'>
+                <div className="col d-none d-lg-block  ">
+                    <h1 className='display-5 deep-blue-100 fntwgt my-4'>
                         Kickstart and
                         Develop your career
                         in <span className="green-100">Tech</span>.</h1>
@@ -97,10 +98,13 @@ const Land = () => {
                         relevant skills to kickstart and develop your
                         career in the ever growing tech space.
                     </h5>
-                    <button className='border-0  rounded bg-green-100 white-100 btnpadding mt-4 '>Get Started</button>
+                    <Link to="/enrol" >
+                <button className='border-0  rounded bg-green-100 white-100 btnpadding mt-4 fwbd'>Get Started</button>
+            </Link>
+                   
                 </div>
-                <div className="col d-none d-md-block d-lg-block" style={contain}>
-                    <img className='img-fluid' src={land} alt="" />
+                <div className="col d-none d-lg-block" style={contain}>
+                    <img className='img-fluid ' src={land} alt="" />
                     <img src={moon} style={deskmoonsty} alt="" className="img-fluid" />
                     <img src={cross} style={deskcrossty} alt="" className="img-fluid" />
                     <img src={pattern} style={deskpatternsty} alt="" className="img-fluid" />
@@ -109,8 +113,8 @@ const Land = () => {
                     <img src={remote} style={deskremotesty} alt="" className="img-fluid" />
                 </div>
             </div>
-            <hr className='d-none d-md-block d-lg-block' />
-            <div className="row rowlg d-none d-md-block d-lg-block text-center mt-5">
+            <hr className='d-none d-lg-block' />
+            <div className="row rowlg d-none d-lg-block text-center mt-5">
                 <h1 className='my-5 sponsorfontsize1 deep-blue-100 fw-bold'>
                     OUR SPONSORS
                 </h1>
@@ -121,16 +125,19 @@ const Land = () => {
                 </h3>
                 <div className="row d-flex flex-row mt-5 ">
                     <div className="col"></div>
-                        <img className="col" src={sponsor1} alt="" />
-                        <img className="col" src={sponsor2} alt="" />   
-                        <img className="col" src={sponsor3} alt="" />
+                        <img className="col mx-3" src={sponsor1} alt="" />
+                        <img className="col mx-3" src={sponsor2} alt="" />   
+                        <img className="col mx-3" src={sponsor3} alt="" />
                     <div className="col"></div>
                 </div>
-                <button className='btn bg-green-100 white-100 my-5 rounded sponsorwidth '>Become a sponsor</button>
+                <Link to="/sponsor" >
+                <button className='btn bg-green-100 white-100 my-5 rounded sponsorwidth fwbd'>Become a sponsor</button>
+            </Link>
+                
             </div>
-            <hr className='d-none d-md-block d-lg-block' />
-
-            <div className="rowmobile text-center d-md-none d-lg-none">
+            <hr className=' d-none d-lg-block' />
+            
+            <div className="rowmobile text-center d-lg-none">
                 <h1 className='hero-header lh-md mb-5 deep-blue-100 fw-bolder text-center'>
                     Kickstart and 
                     Develop your career
@@ -148,10 +155,12 @@ const Land = () => {
                     </div>
                 </div>
                 <div className="mt-5">
-                    <button className= 'btn bg-green-100 white-100 imagepaddingmobile fw-semibold'>Get Started</button>
+                <Link to="/enrol">
+                <button className='btn bg-green-100 white-100 imagepaddingmobile fw-semibold fwbd'>Get Started</button>
+            </Link>
                 </div>
-               
             </div>
+            
         </div>
     )
 }

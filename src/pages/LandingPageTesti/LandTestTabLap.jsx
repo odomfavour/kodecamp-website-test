@@ -27,7 +27,7 @@ function LandTestTabLap() {
         
         <section className='d-none d-md-block d-xl-none'>
             <div className="text-center mt-5">
-              <p className="fs-3 fw-bold">What Our Interns Have To Say</p>
+              <p className="fs-3 fw-bold deep-blue-100">What Our Interns Have To Say</p>
             </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
@@ -40,8 +40,8 @@ function LandTestTabLap() {
             >     
                 <Carousel.Item className='ps-5'>
                     <div className='  row d-flex justify-content-around'>
-                        <Col className=' col-sm-10 col-md-5 col-lg-4'><LandMobileCard3/></Col>
-                        <Col className='  col-sm-10 col-md-5 col-lg-4 '><LandMobileCard2/></Col>
+                        <Col className=' col-sm-10 col-md-6 col-lg-4'><LandMobileCard3/></Col>
+                        <Col className='  col-sm-10 col-md-6 col-lg-4 '><LandMobileCard2/></Col>
                     </div>
                 </Carousel.Item>        
                 <Carousel.Item className='ps-5'>

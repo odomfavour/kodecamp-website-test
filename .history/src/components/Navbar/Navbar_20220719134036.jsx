@@ -69,9 +69,14 @@ const NavigationBar = () => {
                 Login
               </div>
             </Link>
-            <Link to="/enrol" className="btn">
+<<<<<<< HEAD
+            <Link to="/enroll" className="btn">
               <div className="d-inline-block btn-enroll bg-green-100 white-100 text-center">
-                Enrol Now
+=======
+            <Link to="/enrol" className="btn">
+              <Button className="d-inline-block btn-enroll bg-green-100">
+>>>>>>> 4670479667b4a12602c07ef0485e5b0374d0407a
+                Enroll Now
               </div>
             </Link>
           </div>
