@@ -24,7 +24,7 @@ function FAQS({ id, category, desc }) {
                   flush="true"
                   key={id}
                 >
-                  <Accordion.Header className="fw-bold fs-2 outline-0">
+                  <Accordion.Header className="fw-bold fs-2 outline-0 ">
                     {" "}
                     What are the courses offered
                   </Accordion.Header>
@@ -96,7 +96,7 @@ function FAQS({ id, category, desc }) {
               always contact us. We will answer you shortly.
             </p>
             <Link to="/contactus">
-              <Button className="bg-green-100 px-5 py-3 my-3 fw-bold ">
+              <Button className="bg-green-100 px-5 py-3 my-3 fw-bold faq-contact-btn">
                 Contact us
               </Button>
             </Link>

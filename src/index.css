@@ -21,7 +21,7 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1440px !important;
+  /* max-width: 1440px !important; */
   margin: auto !important;
 }
 *,
@@ -121,7 +121,7 @@ a {
 }
 
 a:hover {
-  border: none;
+  border: none !important;
 }
 
 /* form control focus removal */

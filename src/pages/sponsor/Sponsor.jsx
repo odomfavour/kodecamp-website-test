@@ -7,7 +7,7 @@ const Sponsor = () => {
   const [newSponsor, setNewSponsor] = useState({
     firstName: "",
     lastName: "",
-    
+
     email: "",
     phone: "",
     business: "",
@@ -48,7 +48,7 @@ const Sponsor = () => {
                     className="mb-lg-4 "
                     controlId="formBasicFirstName"
                   >
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       First name
                     </Form.Label>
                     <Form.Control
@@ -62,7 +62,7 @@ const Sponsor = () => {
                   </Form.Group>
 
                   <Form.Group className="mb-lg-4" controlId="formBasicLastName">
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Last name
                     </Form.Label>
                     <Form.Control
@@ -78,7 +78,7 @@ const Sponsor = () => {
 
                 <div className="right ms-lg-3 ms-md-3">
                   <Form.Group className="mb-lg-4" controlId="formBasicEmail">
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Email address
                     </Form.Label>
                     <Form.Control
@@ -95,7 +95,7 @@ const Sponsor = () => {
                     className="mb-lg-4"
                     controlId="formBasicPhoneNumber"
                   >
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Phone number
                     </Form.Label>
                     <Form.Control
@@ -111,7 +111,7 @@ const Sponsor = () => {
               </div>
 
               <Form.Group className="mb-3" controlId="formBasicBusinessName">
-                <Form.Label className="sponsor-text pt-3">
+                <Form.Label className="sponsor-text pt-4">
                   Business name (optional)
                 </Form.Label>
                 <Form.Control
@@ -124,7 +124,7 @@ const Sponsor = () => {
                 />
               </Form.Group>
 
-              <Button variant="success" type="submit" className="sponsor-btn">
+              <Button type="submit" className="sponsor-btn my-4">
                 Become a sponsor
               </Button>
             </Form>

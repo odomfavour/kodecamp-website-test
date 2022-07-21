@@ -9,7 +9,7 @@ function ExploreDesktop() {
   return (
     <>
       {searchValue ? (
-        <section className="search-results d-none d-sm-block my-5">
+        <section className=" d-none d-sm-block my-5">
           <div className="row d-flex justify-content-start">
             {Tracks.filter((item) => {
               if (

@@ -26,7 +26,22 @@
 .sponsorfontsize2{
     font-size: 24px;
 }
-
+.fntwgt{
+    font-weight: 800 !important;
+}
+.fwbd{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+@media screen and (max-width: 992px)and (min-width: 920px){
+    .rowmobile{
+        display: block;
+    }
+    .imagepaddingmobile{
+        padding: 15px 60px !important ;
+        margin-top: 100px !important;
+    }
+}
 @media screen and (max-width: 920px) {
     .imgwidth{
         margin-top: 0px !important;

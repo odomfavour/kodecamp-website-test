@@ -20,25 +20,27 @@ const NavigationBar = () => {
     <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
       <Container fluid>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
-        <Navbar.Brand href="#home" className="">
-          <img
-            src={kodecampIconMobile}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-mobile"
-            className="d-sm-none kodecamp-icon"
-          />
-          <img
-            src={kodecampIconDesktop}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-tablet"
-            className="d-none d-sm-block d-lg-none kodecamp-icon"
-          />
-          <img
-            src={kodecampIconDesktop}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-desktop"
-            className="d-none d-lg-block kodecamp-icon"
-          />
+        <Navbar.Brand className="">
+          <Link to="/">
+            <img
+              src={kodecampIconMobile}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-mobile"
+              className="d-sm-none kodecamp-icon ms-1"
+            />
+            <img
+              src={kodecampIconDesktop}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-tablet"
+              className="d-none d-sm-block d-lg-none kodecamp-icon ms-sm-3"
+            />
+            <img
+              src={kodecampIconDesktop}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-desktop"
+              className="d-none d-lg-block kodecamp-icon ms-lg-3"
+            />
+          </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
             <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
@@ -68,7 +70,7 @@ const NavigationBar = () => {
                 Login
               </Button>
             </Link>
-            <Link to="/enroll" className="btn">
+            <Link to="/enrol" className="btn">
               <Button className="d-inline-block btn-enroll bg-green-100">
                 Enroll Now
               </Button>
@@ -78,7 +80,7 @@ const NavigationBar = () => {
           <img
             src={navbarToggle}
             id="navbarToggle"
-            className="d-lg-none d-xl-none"
+            className="d-lg-none d-xl-none me-1 me-sm-4"
             onClick={() => setShowNavAndOverlay(true)}
             alt=""
           />
