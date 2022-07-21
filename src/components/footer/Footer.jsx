@@ -111,7 +111,7 @@ const Footer = () => {
               <InputGroup className="mb-2 mt-4 bg-none">
                 <Form.Control
                   className="bg-transparent py-3 fw-light white-100"
-                  placeholder="Email Address"
+                  placeholder="Email address"
                   value={subscribeEmail}
                   onChange={(e) => {
                     setSubscribeEmail(e.target.value);

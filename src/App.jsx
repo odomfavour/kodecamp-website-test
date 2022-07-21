@@ -11,7 +11,7 @@ import LandTestimony from "./pages/LandingPageTesti/LandTestimony";
 import FAQS from "./pages/faq/FAQS";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Explorevideo from "./components/exploreVideo/Explorevideo";
-
+import { SearchContext } from "./contexts/SearchContext";
 
 function App() {
   return (
