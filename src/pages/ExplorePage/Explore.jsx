@@ -11,7 +11,7 @@ import Explorevideo from "../../components/exploreVideo/Explorevideo";
 import { SearchContext } from "../../contexts/SearchContext";
 
 function Explore() {
-  const [searchValue, setSearchValue] = useState("in");
+  const [searchValue, setSearchValue] = useState("");
   return (
     <>
       <PageWrapper>
