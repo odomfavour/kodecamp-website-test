@@ -27,14 +27,12 @@ function ContactUsForm() {
     setIsSubmit(true);
   }
 
-
   useEffect(() => {
     // console.log(inputErrors);
     if (Object.keys(inputErrors).length === 0 && isSubmit){
       console.log(inputField);
     }
   }, [inputErrors, inputField, isSubmit])
-  
 
   const validate = (values) =>{
       const errors = {};
@@ -53,12 +51,10 @@ function ContactUsForm() {
       if(!values.message){
         errors.message = "Please input your message"
       }
-      
-
+    
       return errors;
   }
  
-
   return (
     <>
       <div className='my-5 container'>
@@ -72,42 +68,35 @@ function ContactUsForm() {
             <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
             <Form.Control
               className="contact-fs-24-400 black-100 input-style "
-              size=""
               type="text" 
               name="full_name" 
               onChange={handleChange} 
               placeholder="Jane Cooper" 
-              value={inputField.full_name}
-              
+              value={inputField.full_name}  
             />
-            <p className='text-danger fw-semibold'>{inputErrors.full_name}</p>
-            
+            <p className='text-danger fw-semibold'>{inputErrors.full_name}</p>           
           </Form.Group>
           <Form.Group className="mb-4  col-lg-6 col" controlId="validationCustom02">
             <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
             <Form.Control
-              size=""
               className="contact-fs-24-400 black-100 input-style"
               type="" 
               name="email" 
               onChange={handleChange} 
               placeholder="janecooper@gmail.com" 
               value={inputField.email}
-              
             />
             <p className='text-danger fw-semibold'>{inputErrors.email}</p>
           </Form.Group>
           <Form.Group className="mb-4 col-lg-6 col" controlId="validationCustom03">
             <Form.Label className='contact-fs-24-500 black-100 '>Phone Number</Form.Label>
             <Form.Control
-              size=""
               className="contact-fs-24-400 black-100 input-style"
               type="tel"
               name="phone" 
               onChange={handleChange} 
               placeholder="+234 812 555 0126" 
               value={inputField.phone}
-              
             />
             <p className='text-danger fw-semibold'>{inputErrors.phone}</p>
           </Form.Group>
@@ -115,7 +104,6 @@ function ContactUsForm() {
           <Form.Group className="mb-4 col-lg-10 col "  controlId="validationCustom04" >
             <Form.Label className='contact-fs-24-500 black-100 '>Message</Form.Label>
             <Form.Control
-              size=""
               className=" contact-fs-24-400 black-100 contact-textarea"
               as="textarea"
               style={{ height: '100px' }}
@@ -123,7 +111,6 @@ function ContactUsForm() {
               onChange={handleChange}
               placeholder='Can I take three courses together' 
               value={inputField.message}
-              
             />
             <p className='text-danger fw-semibold '>{inputErrors.message}</p>
           </Form.Group>
