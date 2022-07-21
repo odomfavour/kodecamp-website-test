@@ -44,7 +44,7 @@ const Tracks = [
   },
   {
     id: 3,
-    track_name: "JS",
+    track_name: "JavaScript",
     track_image: JS,
     track_icon: JSIcon,
     track_desc:
@@ -95,7 +95,7 @@ const Tracks = [
     category: "android_development",
   },
   {
-    id: 8,
+    id: 9,
     track_name: "Product Board",
     track_image: ProductBoard,
     track_desc:
@@ -103,7 +103,7 @@ const Tracks = [
     category: "product_management",
   },
   {
-    id: 9,
+    id: 10,
     track_name: "Jira",
     track_image: Jira,
     track_desc:
@@ -111,7 +111,7 @@ const Tracks = [
     category: "product_management",
   },
   {
-    id: 10,
+    id: 11,
     track_name: "Trello",
     track_image: Trello,
     track_desc:
@@ -119,7 +119,7 @@ const Tracks = [
     category: "product_management",
   },
   {
-    id: 11,
+    id: 12,
     track_name: "Project Management",
     track_image: ProjectManagement,
     track_desc:
@@ -127,7 +127,7 @@ const Tracks = [
     category: "newly_added",
   },
   {
-    id: 12,
+    id: 13,
     track_name: "Digital Marketing",
     track_image: DigitalMarketing,
     track_desc:
@@ -135,7 +135,7 @@ const Tracks = [
     category: "newly_added",
   },
   {
-    id: 13,
+    id: 14,
     track_name: "Entrepreneurship",
     track_image: Entrepreneurship,
     track_desc:
@@ -143,7 +143,7 @@ const Tracks = [
     category: "newly_added",
   },
   {
-    id: 13,
+    id: 15,
     track_name: "Figma",
     track_image: Figma,
     track_desc:
@@ -151,7 +151,7 @@ const Tracks = [
     category: "product_design",
   },
   {
-    id: 14,
+    id: 16,
     track_name: "Adobe Xd",
     track_image: AdobeXd,
     track_desc:
@@ -159,7 +159,7 @@ const Tracks = [
     category: "product_design",
   },
   {
-    id: 15,
+    id: 17,
     track_name: "Figjam",
     track_image: Figjam,
     track_desc:

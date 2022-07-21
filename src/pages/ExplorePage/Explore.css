@@ -1,5 +1,5 @@
 .explore-card-container {
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .explore-card-bg {
@@ -45,13 +45,13 @@
   border-radius: 100% !important;
   background-color: var(--green-100) !important ;
 }
-.explore-page .carousel-indicators  {
+.explore-page .carousel-indicators {
   bottom: -10px !important;
-  
 }
 .explore-page .carousel-indicators button {
-  width: 14px !important;
-  height: 14px !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 5px;
   border-radius: 100% !important;
   background-color: var(--green-100) !important;
 }
