@@ -22,7 +22,6 @@
   max-width: 865px;
   font-size: 24px;
   line-height: 120%;
-
   font-weight: 500;
 }
 
@@ -50,9 +49,18 @@
   color: #fcfcfc;
   padding: 10px;
   background-color: #669e00 !important;
-  box-shadow: 0px 6px 8px rgba(25, 54, 77, 0.2);
+  /* box-shadow: 0px 6px 8px rgba(25, 54, 77, 0.2); */
+  border: none !important;
 }
 
+.sponsor-btn:focus {
+  box-shadow: none !important;
+}
+
+.sponsor-form .form-control:focus {
+  box-shadow: none !important;
+  background: white !important;
+}
 @media screen and (max-width: 1240px) {
   .sponsor-header {
     font-size: 30px;

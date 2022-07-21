@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import "./Sponsor.css";
 
 const Sponsor = () => {
-  const [newSponsor, setNewSponsor] = useState({
+  const initialValues = {
     firstName: "",
     lastName: "",
-    
     email: "",
     phone: "",
     business: "",
-  });
+  };
+
+  const [newSponsor, setNewSponsor] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
   // useEffect(() => {}, [newSponsor])
 
@@ -27,8 +30,38 @@ const Sponsor = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    setFormErrors(validate(newSponsor));
+    setIsSubmit(true);
     console.log(newSponsor);
   }
+
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(newSponsor);
+    }
+  }, [formErrors]);
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.firstName) {
+      errors.firstName = "First name is required";
+    }
+    if (!values.lastName) {
+      errors.lastName = "Last name is required";
+    }
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format";
+    }
+    if (!values.phone) {
+      errors.phone = "Pnone number is required";
+    }
+
+    return errors;
+  };
 
   return (
     <>
@@ -60,6 +93,7 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
+                  <p className="text-danger fw-bold">{formErrors.firstName}</p>
 
                   <Form.Group className="mb-lg-4" controlId="formBasicLastName">
                     <Form.Label className="sponsor-text pt-3">
@@ -74,6 +108,7 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
+                  <p className="text-danger fw-bold">{formErrors.lastName}</p>
                 </div>
 
                 <div className="right ms-lg-3 ms-md-3">
@@ -90,6 +125,7 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
+                  <p className="text-danger fw-bold">{formErrors.email}</p>
 
                   <Form.Group
                     className="mb-lg-4"
@@ -107,6 +143,7 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
+                  <p className="text-danger fw-bold">{formErrors.phone}</p>
                 </div>
               </div>
 
@@ -127,6 +164,12 @@ const Sponsor = () => {
               <Button variant="success" type="submit" className="sponsor-btn">
                 Become a sponsor
               </Button>
+
+              {Object.keys(formErrors).length === 0 && isSubmit ? (
+                alert("You have successfully registered as a Sponsor")
+              ) : (
+                <p>{""} </p>
+              )}
             </Form>
           </Container>
         </div>
