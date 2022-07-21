@@ -89,7 +89,7 @@ const Land = () => {
         <div className="container py-2">
             <div className="row rowlg mt-5">
                 <div className="col d-none d-lg-block  ">
-                    <h1 className='display-5 deep-blue-100 fw-bolder my-4'>
+                    <h1 className='display-5 deep-blue-100 fntwgt my-4'>
                         Kickstart and
                         Develop your career
                         in <span className="green-100">Tech</span>.</h1>
@@ -98,8 +98,8 @@ const Land = () => {
                         relevant skills to kickstart and develop your
                         career in the ever growing tech space.
                     </h5>
-                    <Link to="/enroll" >
-                <button className='border-0  rounded bg-green-100 white-100 btnpadding mt-4 '>Get Started</button>
+                    <Link to="/enrol" >
+                <button className='border-0  rounded bg-green-100 white-100 btnpadding mt-4 fwbd'>Get Started</button>
             </Link>
                    
                 </div>
@@ -125,13 +125,13 @@ const Land = () => {
                 </h3>
                 <div className="row d-flex flex-row mt-5 ">
                     <div className="col"></div>
-                        <img className="col" src={sponsor1} alt="" />
-                        <img className="col" src={sponsor2} alt="" />   
-                        <img className="col" src={sponsor3} alt="" />
+                        <img className="col mx-3" src={sponsor1} alt="" />
+                        <img className="col mx-3" src={sponsor2} alt="" />   
+                        <img className="col mx-3" src={sponsor3} alt="" />
                     <div className="col"></div>
                 </div>
                 <Link to="/sponsor" >
-                <button className='btn bg-green-100 white-100 my-5 rounded sponsorwidth '>Become a sponsor</button>
+                <button className='btn bg-green-100 white-100 my-5 rounded sponsorwidth fwbd'>Become a sponsor</button>
             </Link>
                 
             </div>
@@ -155,10 +155,9 @@ const Land = () => {
                     </div>
                 </div>
                 <div className="mt-5">
-                <Link to="/enroll">
-                <button className= 'btn bg-green-100 white-100 imagepaddingmobile fw-semibold'>Get Started</button>
+                <Link to="/enrol">
+                <button className='btn bg-green-100 white-100 imagepaddingmobile fw-semibold fwbd'>Get Started</button>
             </Link>
-                    
                 </div>
             </div>
             

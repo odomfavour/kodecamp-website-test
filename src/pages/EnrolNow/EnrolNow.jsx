@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import img1 from "../../Images/EnrollNow/image2.jpg";
 import img2 from "../../Images/EnrollNow/image1.jpg";
-import "./EnrollNow.css";
+import "./EnrolNow.css";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 const EnrollNow = () => {
     const [firstname, setFirstname] = useState("");
