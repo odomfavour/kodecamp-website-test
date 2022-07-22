@@ -136,3 +136,7 @@ a:hover {
   outline: none !important;
   border-color: var(--black-60) !important;
 }
+
+.err-message {
+  color: rgb(253, 111, 111);
+}
