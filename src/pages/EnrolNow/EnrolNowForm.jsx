@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import React from "react";
-
 import "./EnrolNow.css";
 const EnrolNowForm = () => {
     const [firstname, setFirstname] = useState("");
@@ -33,7 +32,6 @@ const EnrolNowForm = () => {
         setAim("");
         alert("form Submitted")
     }
-
     const [country, setCountry] = useState([]);
     const [state, setState] = useState([]);
     const [city, setCity] = useState([]);
@@ -145,7 +143,6 @@ const EnrolNowForm = () => {
         fontWeight: "500"
     }
     return (
-
         <div className="container">
             <form onSubmit={handleSubmit}>
                 <div className="my-4">
@@ -559,7 +556,7 @@ const EnrolNowForm = () => {
                     ></textarea>
                 </div>
                 <div className="justify-content-center align-items-center text-center">
-                    <button type="submit" className="btn px-5 py-3 fwbd m-4 bg-green-100 white-100"  >
+                    <button type="submit" className="fwbd px-4 py-3 btn m-4 bg-green-100 white-100"  >
                         Join the Cohort
                     </button>
                 </div>
