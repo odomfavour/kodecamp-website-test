@@ -1,0 +1,79 @@
+.btnpadding{
+    padding: 15px 140px;
+    font-size: 16px;
+}
+
+.rowmobile{
+    margin-right: 0 !important;
+    display: none;
+}
+.hero-header{
+    font-size: 32px ;
+    
+}
+.imagepaddingmobile{
+    padding: 8px 30px;
+    margin-top: 50px;
+}
+.sponsorwidth{
+    width: 400px !important;
+    margin: 0 33% ;
+    height: 56px !important;
+}
+.sponsorfontsize1{
+    font-size: 32px;
+}
+.sponsorfontsize2{
+    font-size: 24px;
+}
+.fntwgt{
+    font-weight: 800 !important;
+}
+.fwbd{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+@media screen and (max-width: 992px)and (min-width: 920px){
+    .rowmobile{
+        display: block;
+    }
+    .imagepaddingmobile{
+        padding: 15px 60px !important ;
+        margin-top: 100px !important;
+    }
+}
+@media screen and (max-width: 920px) {
+    .imgwidth{
+        margin-top: 0px !important;
+    }
+    .rowmobile{
+        display: block;
+    }
+    .avail{
+        padding-top: 100px !important;
+        font-size: 14px !important;
+    }
+    .imagepaddingmobile{
+        padding: 15px 60px !important;
+        font-size: 28px;
+        margin-top: 50px !important;
+    }
+    .rowlg{
+        display: none;
+    }
+    .imgpadding{
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .imagepaddingmobile{
+        padding: 15px 60px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .rowlg{
+    padding: 0px 50px;
+    }
+}

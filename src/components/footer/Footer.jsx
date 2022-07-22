@@ -24,9 +24,9 @@ const Footer = () => {
     alert("Email has been subscribed");
   };
   return (
-    <footer className=" py-4 pt-5 footer container-xxl ">
+    <footer className=" py-4 pt-5 footer  ">
       <Container className="text-left container-xl px-lg-0 footer-container">
-        <Row className="align-items-start justify-content-between px-xl-0 px-xxl-5  mb-3 ">
+        <Row className="align-items-start justify-content-between px-xl-0 mb-3 ">
           <Col className="col-7 col-md-3 col-lg-3 mb-5 mb-lg-0 footer-col footer-logo">
             <img src={KodocampWhite} className="img-fluid" alt="" />
           </Col>
@@ -34,19 +34,19 @@ const Footer = () => {
             <p className=" footer-subtitle">Quick Links</p>
             <ul className="list-unstyled">
               <li className="footer-list">
-                <Link to="/">About Us</Link>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li className="footer-list ">
-                <Link to="/">Contact Us</Link>
+                <Link to="/contactus">Contact Us</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Explore</Link>
+                <Link to="/explore">Explore</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">How it works</Link>
+                <Link to="/works">How it works</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Sponsors</Link>
+                <Link to="/sponsor">Sponsors</Link>
               </li>
             </ul>
           </Col>
@@ -57,13 +57,13 @@ const Footer = () => {
                 <Link to="/">Privacy Policy</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">Terms Of Service</Link>
+                <Link to="/terms">Terms Of Service</Link>
               </li>
               <li className="footer-list">
                 <Link to="/">Copyright Policy</Link>
               </li>
               <li className="footer-list">
-                <Link to="/">FAQs</Link>
+                <Link to="/faq">FAQs</Link>
               </li>
             </ul>
           </Col>
@@ -110,7 +110,7 @@ const Footer = () => {
             <form onSubmit={handleSubmit}>
               <InputGroup className="mb-2 mt-4 bg-none">
                 <Form.Control
-                  className="bg-transparent py-3 fw-light"
+                  className="bg-transparent py-3 fw-light white-100"
                   placeholder="Email Address"
                   value={subscribeEmail}
                   onChange={(e) => {
@@ -131,7 +131,10 @@ const Footer = () => {
             </form>
           </Col>
         </Row>
-        <p className="fw-semibold text-center mt-0 pt-4 white-100">
+        <p
+          style={{ fontWeight: "500" }}
+          className=" text-center mt-0 pt-5 white-100"
+        >
           &copy; 2022 KodeCamp
         </p>
       </Container>

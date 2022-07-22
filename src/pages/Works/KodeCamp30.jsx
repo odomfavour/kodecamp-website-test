@@ -1,9 +1,44 @@
+import { useState } from "react";
 import { Container, Button  } from "react-bootstrap";
 import  Row  from "react-bootstrap/esm/Row";
 import Col  from "react-bootstrap/esm/Col";
 import { Link } from "react-router-dom";
+import dayjs from "dayjs";
+import { useEffect } from "react";
 
 const KodeCamp30 = () => {
+
+    let countDownTimeMs = Date.parse("Jul 22 2022 00:00:00");
+    const [ remainingTime, setRemainingTime ] = useState({
+        seconds: "00",
+        minutes: "00",
+        hours: "00",
+        days: "00"
+    });
+
+    useEffect(() => {
+        const intervalId =  setInterval(() => {
+            updateRemainingTime(countDownTimeMs);
+        }, 1000)
+        return () => clearInterval(intervalId);
+    }, [countDownTimeMs])
+
+    function updateRemainingTime(countdown) {
+        const timeStampDayJs = dayjs(countdown);
+        const now = dayjs();
+        const seconds = timeStampDayJs.diff(now, 'seconds') % 60; 
+        const minutes = timeStampDayJs.diff(now, 'minutes') % 60; 
+        const hours = timeStampDayJs.diff(now, 'hours') % 24; 
+        const days = timeStampDayJs.diff(now, 'days');
+        setRemainingTime({
+            seconds: seconds,
+            minutes: minutes,
+            hours: hours,
+            days: days
+        }); 
+    }
+
+
     const KodeCamp3_0_Style = {
         fontSize: "1.5em",
         fontWeight: "600",
@@ -99,46 +134,46 @@ const KodeCamp30 = () => {
                 </Row>
                 <Row className="time-days-container mx-auto" style={timeDaysContainer}>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Days
                         </p>
                         <div className="num-days-container text-center bg-deep-blue-100" style={numDaysContainer}>
                             <p className="white-100 num-days text-center" style={numDays}>
-                                24
+                                { remainingTime.days > 9 ?remainingTime.days: "0"+remainingTime.days }
                             </p>
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Hours
                         </p>
                         <div className="num-days-container text-center bg-deep-blue-100" style={numDaysContainer}>
                             <p className="white-100 num-days text-center" style={numDays}>
-                                12
+                                { remainingTime.hours > 9 ?remainingTime.hours: "0"+remainingTime.hours }
                             </p>
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Mins
                         </p>
                         <div className="num-days-container text-center bg-deep-blue-100" style={numDaysContainer}>
                             <p className="white-100 num-days text-center" style={numDays}>
-                                12
+                                { remainingTime.minutes > 9 ?remainingTime.minutes: "0"+remainingTime.minutes }
                             </p>
                         </div>
                     </Col>
                     
-                    <Col>
+                    <Col xs={3}>
                         <p className="text-time black-60" style={textTime}>
                             Secs
                         </p>
                         <div className="num-days-container text-center bg-deep-blue-100" style={numDaysContainer}>
                             <p className="white-100 num-days text-center" style={numDays}>
-                                12
+                                { remainingTime.seconds > 9 ?remainingTime.seconds: "0"+remainingTime.seconds }
                             </p>
                         </div>
                     </Col>
@@ -149,7 +184,7 @@ const KodeCamp30 = () => {
             <Container id="data_container" style={Data_Container_Style}>
                 <Row>
                     <Col>
-                        <h3 className="deep-blue-100 text-center mx-auto mt-5" id="data_heading" style={Data_Style}>
+                        <h3 className="deep-blue-100 text-center mx-auto mt-sm-5" id="data_heading" style={Data_Style}>
                             Your Data is Safe with us
                         </h3>
                     </Col>

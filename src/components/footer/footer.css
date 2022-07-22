@@ -36,15 +36,20 @@
   font-size: 20px;
 }
 .footer .form-control::placeholder {
-  color: #fcfcfc;
+  color: #d2d2d2 !important;
 }
+.footer .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: var(--white-100) !important;
+}
+
 /* media query */
 @media screen and (max-width: 991px) {
   .footer {
     background-image: url("../../Images/mobile_footer_vector.svg");
     background-position: top -15px right;
     background-repeat: no-repeat;
-    /* background-color: red; */
   }
 }
 @media screen and (max-width: 420px) {
@@ -52,7 +57,10 @@
     background-position: top;
   }
   .footer-col {
-    padding-left: 5px !important;
+    padding-left: 20px !important;
+  }
+  .footer-logo {
+    transform: translateX(-15px);
   }
 }
 @media (min-width: 990px) and (max-width: 1202px) {

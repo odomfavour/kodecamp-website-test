@@ -1,0 +1,183 @@
+.experience {
+    font-size: 2em;
+}
+
+.women-on-pc-circle {
+        border: thin solid var(--blue-100);
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 65px;
+        right: 45px;
+}
+
+.man-and-women-on-pc-circle {
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: thin solid var(--deep-blue-100);
+    border-radius: 50%;
+    bottom: 8px;
+    right: 26px;
+}
+
+.man-with-dreads-on-pc-circle {
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: thin solid var(--green-100);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.lady-on-glasses-circle {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border: thin solid var(--black-100);
+    border-radius: 50%;
+    top: 5px;
+    left: 55px;
+}
+
+
+.mission-vision-container {
+    margin-top: 32px;
+}
+
+.mission, .vision {
+    height: 274.42px;
+    max-height: 389px;
+    max-width: 550px;
+}
+
+.mission-icon {
+    width: 48.75px;
+    height: 48.75px;
+}
+
+.vision-icon {
+    width: 59px;
+    height: 59px;
+}
+
+.polygon-values {
+    transform: translate(0px, -225px);
+    width: 100%;
+    
+}
+.polygon-mission, .polygon-vision {
+    transform: translate(0px, -330px);
+    width: 600px;
+}
+
+
+.vector-about {
+    transform: translate(-8px, -80px);
+    position: absolute;
+}
+
+.culture {
+    font-size: 2em;
+}
+
+.text-below-culture {
+    font-size: 1.5em;
+}
+
+.square-div {
+    width: 70px;
+    height: 70px;
+}
+
+.square-div-text {
+    font-size: 3.125em;
+}
+
+.text-below-square-div {
+    font-size: 1.25em;
+}
+
+@media (max-width: 359px) {
+    .polygon-mission {
+        transform: translate(-30px, -330px);
+        width: 420px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mission-icon {
+        width: 97.5px;
+        height: 97.5px;
+    }
+
+    .vision-icon {
+        width: 99px;
+        height: 100px;
+    }
+
+    .polygon-vision {
+        transform: translate(0px, -280px);
+    }
+
+    .experience {
+        font-size: 2.7em;
+    }
+}
+
+@media (min-width: 992px) {
+    .experience {
+        font-size: 3.25em;
+    }
+
+    .mission-vision-container {
+        margin-top: 120px;
+    }
+
+    .polygon-mission {
+        width: 470px;
+    }
+
+    .polygon-vision {
+        width: 100%;
+    }
+
+    .vision {
+        margin-top: 195px;
+    }
+
+    .culture-container {
+        background-color: rgba(25,54,77, 0.05);
+    }
+
+    .culture {
+        font-size: 3em;
+    }
+
+    .square-div {
+        width: 90px;
+        height: 90px;
+    }
+
+    .square-div-text {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+    #equity, #novelty {
+        margin: 0 auto !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .polygon-mission {
+        width: 100%;
+    }
+}

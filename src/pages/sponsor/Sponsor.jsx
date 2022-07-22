@@ -16,8 +16,6 @@ const Sponsor = () => {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
-  // useEffect(() => {}, [newSponsor])
-
   function handleChange(e) {
     const { name, value } = e.target;
     setNewSponsor(function (prevSponsorData) {
@@ -81,7 +79,7 @@ const Sponsor = () => {
                     className="mb-lg-4 "
                     controlId="formBasicFirstName"
                   >
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       First name
                     </Form.Label>
                     <Form.Control
@@ -93,10 +91,10 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
-                  <p className="text-danger fw-bold">{formErrors.firstName}</p>
+                  <p className="err-message ">{formErrors.firstName}</p>
 
                   <Form.Group className="mb-lg-4" controlId="formBasicLastName">
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Last name
                     </Form.Label>
                     <Form.Control
@@ -108,12 +106,12 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
-                  <p className="text-danger fw-bold">{formErrors.lastName}</p>
+                  <p className="err-message">{formErrors.lastName}</p>
                 </div>
 
                 <div className="right ms-lg-3 ms-md-3">
                   <Form.Group className="mb-lg-4" controlId="formBasicEmail">
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Email address
                     </Form.Label>
                     <Form.Control
@@ -125,13 +123,13 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
-                  <p className="text-danger fw-bold">{formErrors.email}</p>
+                  <p className="err-message">{formErrors.email}</p>
 
                   <Form.Group
                     className="mb-lg-4"
                     controlId="formBasicPhoneNumber"
                   >
-                    <Form.Label className="sponsor-text pt-3">
+                    <Form.Label className="sponsor-text pt-4">
                       Phone number
                     </Form.Label>
                     <Form.Control
@@ -143,12 +141,12 @@ const Sponsor = () => {
                       className="sponsor-input mb-2 mb-md-4 mb-lg-4"
                     />
                   </Form.Group>
-                  <p className="text-danger fw-bold">{formErrors.phone}</p>
+                  <p className="err-message">{formErrors.phone}</p>
                 </div>
               </div>
 
               <Form.Group className="mb-3" controlId="formBasicBusinessName">
-                <Form.Label className="sponsor-text pt-3">
+                <Form.Label className="sponsor-text pt-4">
                   Business name (optional)
                 </Form.Label>
                 <Form.Control
@@ -161,7 +159,7 @@ const Sponsor = () => {
                 />
               </Form.Group>
 
-              <Button variant="success" type="submit" className="sponsor-btn">
+              <Button type="submit" className="sponsor-btn my-4">
                 Become a sponsor
               </Button>
 
