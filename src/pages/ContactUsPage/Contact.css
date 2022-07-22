@@ -1,11 +1,4 @@
-.contact-us-hero-img{  
-  height: 560px; /* You must set a specified height */
-  background: linear-gradient(0deg, rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.8)), url("../../Images/contactus_images/contactus-hero-img.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  border-radius: 4px;
-}
+
 .form-control:focus {
   box-shadow: none !important;
   -webkit-appearance:none !important;
@@ -31,7 +24,7 @@ textarea{
 .contact-fs-32-500{ 
   font-weight: 500;
   font-size: 28px;
-  line-height: 39px;
+  line-height: 40px !important;
 }
 .contact-fs-24-400{ 
   font-size: 24px;
