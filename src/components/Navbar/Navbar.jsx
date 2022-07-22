@@ -1,4 +1,4 @@
-import { Container, Navbar, Button } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import closeCollapseBarIcon from "../../Images/NavbarAssets/close-collapsebar-icon.svg";
 import kodecampIconMobile from "../../Images/NavbarAssets/kodecamp-icon-mobile.svg";
 import kodecampIconDesktop from "../../Images/NavbarAssets/kodecamp-icon-desktop.svg";
@@ -11,14 +11,14 @@ import LoginIconMobile from "../../Images/NavbarAssets/login-icon-mobile.svg";
 import navbarToggle from "../../Images/NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
   const [showNavAndOverlay, setShowNavAndOverlay] = useState(false);
 
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
-      <Container fluid>
+      <Container fluid style={{maxWidth: "1600px"}}>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
         <Navbar.Brand className="">
           <Link to="/">
@@ -43,37 +43,36 @@ const NavigationBar = () => {
           </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <Link to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Home
-            </Link>
-            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink  to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 About Us
-            </Link>
-            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink  to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Contact Us
-            </Link>
-            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink  to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Explore
-            </Link>
-            <Link to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            </NavLink>
+            <NavLink  to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 How It Works
-            </Link>
+            </NavLink>
         </div>
 
         <div className="d-flex">
           <div className="d-flex justify-content-end">
             <Link to="/" className="btn enrol-login">
-              <Button
-                variant=""
+              <div
                 className="d-inline-block d-none d-md-block btn-login"
               >
                 Login
-              </Button>
+              </div>
             </Link>
             <Link to="/enrol" className="btn">
-              <Button className="d-inline-block btn-enroll bg-green-100">
-                Enroll Now
-              </Button>
+              <div className="d-inline-block btn-enrol bg-green-100 white-100">
+                Enrol Now
+              </div>
             </Link>
           </div>
 
