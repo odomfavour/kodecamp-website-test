@@ -38,7 +38,7 @@ const Sponsor = () => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(newSponsor);
     }
-  }, [formErrors]);
+  }, [formErrors, newSponsor, isSubmit]);
 
   const validate = (values) => {
     const errors = {};
