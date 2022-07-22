@@ -23,63 +23,65 @@ function LandTestimonyDesktop() {
     };
   return (
     <>
-        <section className='d-none d-xl-block'>
-            <div className="text-center">
-              <p className=" fs-3 fw-bold">What Our Interns Have To Say</p>
+        <section className='d-none d-xl-block landing-desktop'>
+            <div className="text-center mt-5">
+              <p className=" fs-3 fw-bold deep-blue-100">WHAT OUR INTERNS HAVE TO SAY</p>
             </div>
-            <Carousel  activeIndex={index}
-                onSelect={handleSelect}
-                controls={false}
-                className='pb-5 ' 
-                variant="dark" 
-                interval='10000' 
-                slide='false' 
-                wrap='false' 
-                aria-hidden='false'
-            >        
-                <Carousel.Item className =''>
-                    <div className=' container-fluid row d-flex justify-content-evenly'>
-                
-                            {
-                                testimonials.map(testimony => (
-                                    (
-                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
-                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
-                                        </Col>        
-                                    )
-                                ))
-                            }
+            <Container>
+                <Carousel  activeIndex={index}
+                    onSelect={handleSelect}
+                    controls={false}
+                    className='pb-5 ' 
+                    variant="dark" 
+                    interval='10000'
+                    slide='false' 
+                    wrap='false' 
+                    aria-hidden='false'
+                >        
+                    <Carousel.Item className =''>
+                        <div className=' container-fluid row d-flex justify-content-evenly'>
                     
-                    </div>
-                            
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className=' container-fluid row d-flex justify-content-evenly'>
-                            {
-                                testimonials.map(testimony => (
-                                    (
-                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
-                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
-                                        </Col>        
-                                    )
-                                ))
-                            }
-                    </div>
-                </Carousel.Item>        
-                <Carousel.Item>
-                    <div className=' container-fluid row d-flex justify-content-evenly'>
-                            {
-                                testimonials.map(testimony => (
-                                    (
-                                        <Col className='col-sm-6 col-md-6 col-lg-3'>
-                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id} />
-                                        </Col>        
-                                    )
-                                ))
-                            }
-                    </div>
-                </Carousel.Item>                  
-            </Carousel>
+                                {
+                                    testimonials.map(testimony => (
+                                        (
+                                            <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                                <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
+                                            </Col>        
+                                        )
+                                    ))
+                                }
+                        
+                        </div>
+                                
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className=' container-fluid row d-flex justify-content-evenly'>
+                                {
+                                    testimonials.map(testimony => (
+                                        (
+                                            <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                                <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
+                                            </Col>        
+                                        )
+                                    ))
+                                }
+                        </div>
+                    </Carousel.Item>        
+                    <Carousel.Item>
+                        <div className=' container-fluid row d-flex justify-content-evenly'>
+                                {
+                                    testimonials.map(testimony => (
+                                        (
+                                            <Col className='col-sm-6 col-md-6 col-lg-3'>
+                                                <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id} />
+                                            </Col>        
+                                        )
+                                    ))
+                                }
+                        </div>
+                    </Carousel.Item>                  
+                </Carousel>
+            </Container>
             <Container>
                 <Row className=' '>
                     <Col className='me-auto col-1'>

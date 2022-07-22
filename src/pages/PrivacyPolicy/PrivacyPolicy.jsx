@@ -2,6 +2,7 @@ import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import { Container } from "react-bootstrap";
 
 const PrivacyPolicy = () => {
+
     return (
         <PageWrapper>
             <Container className="mt-5">
@@ -107,6 +108,8 @@ const PrivacyPolicy = () => {
                         by or through a mobile device.
                     </p>
                 </div>
+
+
 
                 <div className="mt-4">
                     <p style={{fontWeight: "600"}}>Tracking Technologies and Cookies</p>

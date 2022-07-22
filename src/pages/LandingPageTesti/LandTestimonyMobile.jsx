@@ -3,12 +3,11 @@ import { useState } from 'react';
 import nexticon from '../../Images/landing-card-images/next-icon.svg';
 import previousicon from '../../Images/landing-card-images/previous-icon.svg';
 import LandingPageAccordSection from './LandingPageAccordSection';
-import LandMobileCard from './LandMobileCard';
-import LandMobileCard2 from './LandMobileCard2';
-import LandMobileCard3 from './MobileCard3';
-
+import { getCardData } from './CardData';
+import LandTestimonyCard from './LandTestimonyCard';
 
 function LandTestMobile() {
+    const testimonials = getCardData();
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
@@ -31,9 +30,9 @@ function LandTestMobile() {
         <div className='container'>
             <hr className='d-none d-md-block d-lg-block' />
         </div>
-        <section className='d-block d-xl-none'>
-            <div className="text-center">
-              <p className="fs-mobile-head fw-bold">What Our Interns Have To Say</p>
+        <section className='d-block d-md-none'>
+            <div className="text-center mt-5 container">
+              <p className="fs-mobile-head fw-bold border-bottom">What Our Interns Have To Say</p>
             </div>
             <Carousel  activeIndex={index}
                 onSelect={handleSelect}
@@ -43,25 +42,20 @@ function LandTestMobile() {
                 interval='10000' 
                 slide='false' 
                 aria-hidden='false'
-            >        
-                <Carousel.Item>
-                    <div className='  row d-flex justify-content-evenly'>
-                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard/></Col>
-                        <Col className=' col-10 col-sm-10 col-md-6 col-lg-4 d-none d-lg-block d-xl-none'><LandMobileCard2/></Col>
-                    </div>
-                </Carousel.Item> 
-                <Carousel.Item>
-                    <div className='  row d-flex justify-content-evenly'>
-                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4'><LandMobileCard3/></Col>
-                        <Col className=' col-10 col-sm-10 col-md-6 col-lg-4 d-none d-lg-block d-xl-none'><LandMobileCard2/></Col>
-                    </div>
-                </Carousel.Item>        
-                <Carousel.Item>
-                    <div className=' row d-flex justify-content-evenly '>
-                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4 '><LandMobileCard2/></Col>
-                        <Col className='col-10 col-sm-10 col-md-6 col-lg-4  d-none d-lg-block d-xl-none'><LandMobileCard/></Col>    
-                    </div>
-                </Carousel.Item>                  
+            >   
+
+                {
+                    testimonials.map(testimony => (
+                            (
+                                
+                                <Carousel.Item key={testimony.id}>
+                                        <div className='  row d-flex justify-content-evenly'>
+                                            <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>
+                                        </div>
+                                </Carousel.Item>         
+                            )
+                    ))
+                } 
             </Carousel>
             <Container>
                 <Row className='container '>

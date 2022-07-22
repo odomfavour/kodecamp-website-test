@@ -1,4 +1,4 @@
-import { Container, Navbar, Button } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 import closeCollapseBarIcon from "../../Images/NavbarAssets/close-collapsebar-icon.svg";
 import kodecampIconMobile from "../../Images/NavbarAssets/kodecamp-icon-mobile.svg";
 import kodecampIconDesktop from "../../Images/NavbarAssets/kodecamp-icon-desktop.svg";
@@ -11,74 +11,75 @@ import LoginIconMobile from "../../Images/NavbarAssets/login-icon-mobile.svg";
 import navbarToggle from "../../Images/NavbarAssets/navbar-toggle.svg";
 import "./Navbar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationBar = () => {
   const [showNavAndOverlay, setShowNavAndOverlay] = useState(false);
 
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar pt-lg-2">
-      <Container fluid>
+      <Container fluid style={{maxWidth: "1600px"}}>
         {showNavAndOverlay && <div id="overlay" className=""></div>}
-        <Navbar.Brand href="#home" className="">
-          <img
-            src={kodecampIconMobile}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-mobile"
-            className="d-sm-none kodecamp-icon"
-          />
-          <img
-            src={kodecampIconDesktop}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-tablet"
-            className="d-none d-sm-block d-lg-none kodecamp-icon"
-          />
-          <img
-            src={kodecampIconDesktop}
-            alt="kodecamp-icon"
-            id="kodecamp-icon-desktop"
-            className="d-none d-lg-block kodecamp-icon"
-          />
+        <Navbar.Brand className="">
+          <Link to="/">
+            <img
+              src={kodecampIconMobile}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-mobile"
+              className="d-sm-none kodecamp-icon ms-1"
+            />
+            <img
+              src={kodecampIconDesktop}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-tablet"
+              className="d-none d-sm-block d-lg-none kodecamp-icon ms-sm-3"
+            />
+            <img
+              src={kodecampIconDesktop}
+              alt="kodecamp-icon"
+              id="kodecamp-icon-desktop"
+              className="d-none d-lg-block kodecamp-icon ms-lg-3"
+            />
+          </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <Link to="/" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
+            <NavLink  to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Home
-            </Link>
-            <Link to="/about-us" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
+            </NavLink>
+            <NavLink  to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 About Us
-            </Link>
-            <Link to="/contactus" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
+            </NavLink>
+            <NavLink  to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Contact Us
-            </Link>
-            <Link to="/explore" className="d-none d-lg-block navbar-links-desktop mx-lg-2  mx-xl-4">
+            </NavLink>
+            <NavLink  to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 Explore
-            </Link>
-            <Link to="/works" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
+            </NavLink>
+            <NavLink  to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
                 How It Works
-            </Link>
+            </NavLink>
         </div>
 
         <div className="d-flex">
           <div className="d-flex justify-content-end">
             <Link to="/" className="btn enrol-login">
-              <Button
-                variant=""
+              <div
                 className="d-inline-block d-none d-md-block btn-login"
               >
                 Login
-              </Button>
+              </div>
             </Link>
-            <Link to="/enroll" className="btn">
-              <Button className="d-inline-block btn-enroll bg-green-100">
-                Enroll Now
-              </Button>
+            <Link to="/enrol" className="btn">
+              <div className="d-inline-block btn-enrol bg-green-100 white-100">
+                Enrol Now
+              </div>
             </Link>
           </div>
 
           <img
             src={navbarToggle}
             id="navbarToggle"
-            className="d-lg-none d-xl-none"
+            className="d-lg-none d-xl-none me-1 me-sm-4"
             onClick={() => setShowNavAndOverlay(true)}
             alt=""
           />

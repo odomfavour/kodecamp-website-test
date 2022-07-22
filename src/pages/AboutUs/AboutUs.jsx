@@ -23,10 +23,10 @@ const AboutUs = () => {
             <Container>
                 <Row className="mt-5">
                     <Col xs={12} lg={6}>
-                        <h1 className="deep-blue-100 experience text-center mt-4 mt-md-5" style={{fontWeight: "800"}}>
+                        <h1 className="deep-blue-100 experience text-center text-lg-start mt-4 mt-md-5" style={{fontWeight: "800"}}>
                             The <span className="green-100">KodeCamp</span> Experience
                         </h1>
-                        <p className="deep-blue-100 text-center d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.5em"}}>
+                        <p className="deep-blue-100 text-start d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.5em"}}>
                             KodeCamp is designed to support capacity development in the field of information and communication technology (ICT) 
                             by providing training, mentorship, leadership, and career opportunities to young Nigerians.
                         </p>
@@ -45,17 +45,21 @@ const AboutUs = () => {
                             <Col xs={6} className="mt-4 text-center d-md-none">
                                 <img src={LadyOnGlasses} alt="lady-on-glasses" />
                             </Col>
-                            <Col xs={6} className="d-none d-md-block text-center">
+                            <Col xs={6} className="d-none d-md-block text-center position-relative">
                                 <img src={WomenOnPcDesktop} alt="women-on-pc" width="150" height="150"/>
+                                <div className="women-on-pc-circle d-none d-xl-block"></div>
                             </Col>
-                            <Col xs={6} className="d-none d-md-block mt-4">
+                            <Col xs={6} className="d-none d-md-block mt-4 position-relative">
                                 <img src={ManAndWomenOnPcDesktop} alt="man-and-women-on-pc"  width="200" height="200" />
+                                <div className="man-and-women-on-pc-circle d-none d-xl-block"></div>
                             </Col>
-                            <Col xs={6} className="d-none d-md-block mt-2 text-center">
+                            <Col xs={6} className="d-none d-md-block mt-2 text-center position-relative">
                                 <img src={ManWithDreadsOnPcDesktop} alt="man-with-dreads-on-pc"  width="250" height="250" />
+                                <div className="man-with-dreads-on-pc-circle d-none d-xl-block"></div>
                             </Col>
-                            <Col xs={6} className="d-none d-md-block text-center mt-5">
+                            <Col xs={6} className="d-none d-md-block text-center mt-5 position-relative">
                                 <img src={LadyOnGlassesDesktop} alt="lady-on-glasses"  width="150" height="150"/>
+                                <div className="lady-on-glasses-circle d-none d-xl-block"></div>
                             </Col>
                         </Row>
                     </Col>

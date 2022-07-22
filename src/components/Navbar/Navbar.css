@@ -6,12 +6,16 @@
 
 .navbar {
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   height: fit-content;
   background: rgba(33, 37, 41, 0.02);
   box-shadow: 0px 2px 2px rgba(102, 158, 0, 0.02);
   font-size: 16px;
+}
+
+.btn:hover {
+  border: none;
 }
 
 #overlay {
@@ -27,9 +31,6 @@
   overflow: hidden;
 }
 
-.kodecamp-icon {
-  margin-left: 20px;
-}
 
 #kodecamp-icon-tablet {
   width: 70px;
@@ -47,27 +48,27 @@
   text-decoration: none;
 }
 
-.btn-login, .btn-enroll {
+.btn-login, .btn-enrol {
   line-height: 24px !important;
   padding: 10px !important;
   border-radius: 4px;
 }
 
-.btn-login:focus, .btn-enroll:focus {
+.btn-login:focus, .btn-enrol:focus {
   box-shadow: none !important;
 }
 
 .btn-login {
   color: var(--green-100) !important;
   border: 1px solid var(--green-100) !important;
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
 }
 
-.btn-enroll {
+.btn-enrol {
   border-color: var(--green-100) !important;
-  width: 179px;
-  height: 60px;
+  width: 140px;
+  height: 50px;
   margin-right: 20px;
 }
 
@@ -79,6 +80,22 @@
   height: 401px  !important;
   background: #FFFFFF;
   z-index: 5;
+}
+
+.navbar a {
+  text-decoration: none !important;
+  color: var(--black-60) !important;
+}
+
+.navbar .btn:focus {
+  border: none !important;
+}
+.navbar .btn:focus-visible{
+  border: none !important;
+}
+
+.active {
+  color: var(--blue-100) !important;
 }
 
 .navbar-links-mobile {
@@ -96,10 +113,6 @@
   width: 100%;
   opacity: 0.5;
   border-top: 1px solid var(--deep-blue-100) !important;
-}
-
-#navbarToggle {
-  margin-right: 20px;
 }
 
 #navbarToggle, #closeCollapseBarIcon {
@@ -121,7 +134,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .btn-login, .btn-enroll {
+  .btn-login, .btn-enrol {
     text-align: center;
     height: 40px;
     padding-top: 6px !important;
@@ -131,7 +144,7 @@
     width: 125px;
   }
 
-  .btn-enroll {
+  .btn-enrol {
     width: 130px;
     word-wrap: break-word;
   }
