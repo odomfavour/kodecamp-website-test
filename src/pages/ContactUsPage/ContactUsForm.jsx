@@ -92,8 +92,7 @@ function ContactUsForm() {
                   placeholder="Jane Cooper" 
                   value={inputField.full_name}  
                 />
-                <p className='text-danger '>{inputErrors.full_name}</p>
-                            
+                <p className='text-danger '>{inputErrors.full_name}</p>           
               </Form.Group>
               <Form.Group className="mb-4  " controlId="validationCustom02">
                 <Form.Label className='contact-fs-24-500 black-100  '>Email</Form.Label>
