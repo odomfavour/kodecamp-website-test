@@ -43,19 +43,19 @@ const NavigationBar = () => {
           </Link>
         </Navbar.Brand>
         <div className="d-flex" style={{fontWeight: "500"}}>
-            <NavLink  to="/" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/" activeClassName="active" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 Home
             </NavLink>
-            <NavLink  to="/about-us" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/about-us" activeClassName="active" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 About Us
             </NavLink>
-            <NavLink  to="/contactus" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/contactus" activeClassName="active" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 Contact Us
             </NavLink>
-            <NavLink  to="/explore" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/explore" activeClassName="active" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 Explore
             </NavLink>
-            <NavLink  to="/works" className="d-none d-lg-block navbar-links-desktop px-lg-2 px-xl-4">
+            <NavLink  to="/works" activeClassName="active" className="d-none d-lg-block navbar-links-desktop mx-lg-2 mx-xl-4">
                 How It Works
             </NavLink>
         </div>
