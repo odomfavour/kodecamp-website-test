@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
                     Privacy Policy
                 </h1>
             </Container>
-            <Container className="mt-4 black-100" style={{fontWeight: "500", fontSize: "1.2em"}}>
+            <Container className="mt-4 black-100" style={{fontWeight: "500", fontSize: "1.2em", lineHeight: "2.5em"}}>
                 <div>
                     <p className="">
                         This Privacy Policy describes our policies and procedures on the collection, use and disclosure of Your 
