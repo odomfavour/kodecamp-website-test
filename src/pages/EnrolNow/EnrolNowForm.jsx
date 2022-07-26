@@ -1,37 +1,40 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./EnrolNow.css";
+import { useFormik } from 'formik';
+import { Formval } from "./FormVal";
 const EnrolNowForm = () => {
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
-    const [email, setEmail] = useState("");
-    const [phonenumber, setPhonenumber] = useState("");
-    const [gender, setGender] = useState("Select a Gender");
-    const [countryy, setCountryy] = useState("");
-    const [statee, setStatee] = useState("");
-    const [cityy, setCityy] = useState("");
-    const [level, setLevel] = useState("Select Level");
-    const [learningtrack, setLearningtrack] = useState("");
-    const [referal, setReferal] = useState("");
-    const [aboutyou, setAboutyou] = useState("");
-    const [aim, setAim] = useState("");
-    function handleSubmit(e) {
-        e.preventDefault();
-        setFirstname("");
-        setLastname("");
-        setEmail("");
-        setPhonenumber("");
-        setGender("");
-        setCountryy("");
-        setStatee("");
-        setCityy("");
-        setLevel("");
-        setLearningtrack("");
-        setReferal("");
-        setAboutyou("");
-        setAim("");
-        alert("form Submitted")
-    }
+    const onSubmit = async(values, actions) => {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        actions.resetForm();
+        alert("form submitted")
+    };
+    const {
+        handleSubmit,
+        errors,
+        values,
+        touched,
+        handleChange,
+        isSubmitting,
+    } = useFormik({
+        initialValues: {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phonenumber: '',
+            gender: '',
+            countryy: '',
+            statee: '',
+            cityy: '',
+            level: '',
+            learningtrack: '',
+            aboutyou: '',
+            aim: '',
+            referal: ''
+        },
+        validationSchema: Formval,
+        onSubmit,
+    });
     const [country, setCountry] = useState([]);
     const [state, setState] = useState([]);
     const [city, setCity] = useState([]);
@@ -144,7 +147,7 @@ const EnrolNowForm = () => {
     }
     return (
         <div className="container">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} >
                 <div className="my-4">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-6   text-md-start">
@@ -156,15 +159,14 @@ const EnrolNowForm = () => {
                                 First Name
                             </label>
                             <input
-                                value={firstname}
-                                onChange={(e) => {
-                                    setFirstname(e.target.value);
-                                }}
+                                onChange={handleChange}
+                                value={values.firstName}
+                                id="firstName"
                                 type="text"
                                 className="form-control enroll-input form-controll"
                                 placeholder="Name"
                                 required
-                            />
+                            /> {errors.firstName && touched.firstName && <p className="error">{errors.firstName}</p>}
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label
@@ -175,14 +177,13 @@ const EnrolNowForm = () => {
                                 Last Name
                             </label>
                             <input
-                                value={lastname}
-                                onChange={(e) => {
-                                    setLastname(e.target.value);
-                                }}
+                                onChange={handleChange}
+                                value={values.lastName}
                                 type="text"
+                                id="lastName"
                                 className="form-control enroll-input"
                                 placeholder="Last Name"
-                            />
+                            /> {errors.lastName && touched.lastName && <p className="error">{errors.lastName}</p>}
                         </div>
                     </div>
                     <div className=" my-4 text-md-start d-md-none d-lg-none">
@@ -194,14 +195,14 @@ const EnrolNowForm = () => {
                             Last Name
                         </label>
                         <input
-                            value={lastname}
-                            onChange={(e) => {
-                                setLastname(e.target.value);
-                            }}
+                            onChange={handleChange}
+                            value={values.lastName}
                             type="text"
+                            id="lastName"
                             className="form-control enroll-input"
                             placeholder="Last Name"
-                        />
+                        /> {errors.lastName && touched.lastName && <p className="error">{errors.lastName}</p>}
+                        
                     </div>
                 </div>
                 <div className="my-4">
@@ -211,28 +212,26 @@ const EnrolNowForm = () => {
                                 Email address
                             </label>
                             <input
-                                value={email}
-                                onChange={(e) => {
-                                    setEmail(e.target.value);
-                                }}
+                                onChange={handleChange}
+                                value={values.email}
                                 type="email"
+                                id="email"
                                 className="form-control enroll-input"
                                 placeholder="Enter your Email address"
-                            />
+                            /> {errors.email && touched.email && <p className="error">{errors.email}</p>}
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Phone Number
                             </label>
                             <input
-                                value={phonenumber}
-                                onChange={(e) => {
-                                    setPhonenumber(e.target.value);
-                                }}
+                                onChange={handleChange}
+                                value={values.phonenumber}
                                 type="text"
+                                id="phonenumber"
                                 className="form-control enroll-input"
                                 placeholder="Enter your Phone Number"
-                            />
+                            />{errors.phonenumber && touched.phonenumber && <p className="error">{errors.phonenumber}</p>}
                         </div>
                     </div>
                     <div className=" my-4 text-md-start  d-md-none  d-lg-none">
@@ -240,14 +239,13 @@ const EnrolNowForm = () => {
                             Phone Number
                         </label>
                         <input
-                            value={phonenumber}
-                            onChange={(e) => {
-                                setPhonenumber(e.target.value);
-                            }}
+                            onChange={handleChange}
+                            value={values.phonenumber}
                             type="text"
+                            id="phonenumber"
                             className="form-control enroll-input"
                             placeholder="Enter your Phone Number"
-                        />
+                        /> {errors.phonenumber && touched.phonenumber && <p className="error">{errors.phonenumber}</p>}
                     </div>
                 </div>
                 <div className="my-4">
@@ -257,11 +255,11 @@ const EnrolNowForm = () => {
                                 Gender
                             </label>
                             <select
-                                value={gender}
+                                onChange={handleChange}
+                                value={values.gender}
                                 className="form-select enroll-input "
                                 name="gender"
                                 id="gender"
-                                onChange={(e) => setGender(e.target.value)}
                             >
                                 <option value="level" selected disabled>
                                     Select Gender
@@ -271,19 +269,17 @@ const EnrolNowForm = () => {
                                 <option value="Prefer not to disclose">Prefer not to disclose</option>
                                 <option value="Others">Others</option>
                             </select>
+                            {errors.gender && touched.gender && <p className="error">{errors.gender}</p>}
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Country
                             </label>
                             <select
-                                id="ddlCountry"
-                                value={countryy}
+                                id="ddlCountry countryy"
+                                name="countryy"
                                 className="form-control enroll-input select-class"
-                                onChange={(e) => [
-                                    handleCountry(e.target.value),
-                                    setCountryy(e.target.value),
-                                ]}
+                                onChange={(e) => {handleCountry(e.target.value)}}
                             >
                                 <option value="0">Select Country</option>
                                 {country && country !== undefined
@@ -303,13 +299,10 @@ const EnrolNowForm = () => {
                             Country
                         </label>
                         <select
-                            id="ddlCountry"
-                            value={countryy}
+                            id="ddlCountry countryy"
+                            name="countryy"
                             className="form-control enroll-input select-class"
-                            onChange={(e) => [
-                                handleCountry(e.target.value),
-                                setCountryy(e.target.value),
-                            ]}
+                            onChange={(e) => {handleCountry(e.target.value) }}
                         >
                             <option value="0">Select Country</option>
                             {country && country !== undefined
@@ -332,12 +325,8 @@ const EnrolNowForm = () => {
                             </label>
                             <select
                                 id="ddlStates"
-                                value={statee}
                                 className="form-control enroll-input select-class"
-                                onChange={(e) => [
-                                    handleState(e.target.value),
-                                    setStatee(e.target.value),
-                                ]}
+                                onChange={(e) => {handleState(e.target.value)}}
                             >
                                 <option value="0">Select State</option>
                                 {state && state !== undefined
@@ -357,9 +346,8 @@ const EnrolNowForm = () => {
                             </label>
                             <select
                                 id="ddlCity"
-                                value={cityy}
                                 className="form-control enroll-input select-class"
-                                onChange={(e) => setCityy(e.target.value)}
+                                onChange={handleChange}
                             >
                                 <option value="0">Select City</option>
                                 {city && city !== undefined
@@ -380,9 +368,8 @@ const EnrolNowForm = () => {
                         </label>
                         <select
                             id="ddlCity"
-                            value={cityy}
                             className="form-control enroll-input select-class"
-                            onChange={(e) => setCityy(e.target.value)}
+                            onChange={handleChange}
                         >
                             <option value="0">Select City</option>
                             {city && city !== undefined
@@ -404,30 +391,30 @@ const EnrolNowForm = () => {
                                 What level are you applying for
                             </label>
                             <select
-                                value={level}
                                 className="form-select enroll-input "
                                 name="level"
                                 id="level"
-                                onChange={(e) => setLevel(e.target.value)}
+                                value={values.level}
+                                onChange={handleChange}
                             >
                                 <option value="level" selected disabled>
                                     Select Level
                                 </option>
-                                <option value="beginner">Beginner</option>
-                                <option value="intermediate">Intermediate</option>
-                                <option value="advanced">Advanced</option>
-                            </select>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select> {errors.level && touched.level && <p className="error">{errors.level}</p>}
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Learning track
                             </label>
                             <select
-                                value={learningtrack}
+                                value={values.learningtrack}
+                                onChange={handleChange}
                                 className="form-select enroll-input"
-                                name="track"
-                                id="track"
-                                onChange={(e) => setLearningtrack(e.target.value)}
+                                name="learningtrack"
+                                id="learningtrack"
                             >
                                 <option selected disabled>
                                     Select a learning track
@@ -450,18 +437,18 @@ const EnrolNowForm = () => {
                                 <option value="Internet of Things (IOT)">
                                     Internet of Things (IOT)
                                 </option>
-                            </select>
+                            </select> {errors.learningtrack && touched.learningtrack && <p className="error">{errors.learningtrack}</p>}
                         </div>
                         <div className="col-md-6 mt-4 text-md-start d-md-none">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Learning track
                             </label>
                             <select
-                                value={learningtrack}
+                                value={values.learningtrack}
+                                onChange={handleChange}
                                 className="form-select enroll-input"
-                                name="track"
-                                id="track"
-                                onChange={(e) => setLearningtrack(e.target.value)}
+                                name="learningtrack"
+                                id="learningtrack"
                             >
                                 <option selected disabled>
                                     Select a learning track
@@ -485,6 +472,7 @@ const EnrolNowForm = () => {
                                     Internet of Things (IOT)
                                 </option>
                             </select>
+                            {errors.learningtrack && touched.learningtrack && <p className="error">{errors.learningtrack}</p>}
                         </div>
                     </div>
                 </div>
@@ -495,11 +483,11 @@ const EnrolNowForm = () => {
                                 How did you hear about kodecamp
                             </label>
                             <select
-                                value={referal}
+                                value={values.referal}
+                                onChange={handleChange}
                                 className="form-select enroll-input"
-                                name="gender"
-                                id="gender"
-                                onChange={(e) => setReferal(e.target.value)}
+                                name="referal"
+                                id="referal"
                             >
                                 <option selected disabled>
                                     Select from list
@@ -513,6 +501,7 @@ const EnrolNowForm = () => {
                                 <option value="Youtube">Youtube </option>
                                 <option value="Others">Others</option>
                             </select>
+                           {errors.referal && touched.referal && <p className="error">{errors.referal}</p>}
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block"></div>
                     </div>
@@ -526,15 +515,16 @@ const EnrolNowForm = () => {
                         Tell us about yourself
                     </label>
                     <textarea
-                        value={aboutyou}
+                        value={values.aboutyou}
+                        onChange={handleChange}
                         className="form-control z-depth-1 enrollaligntextarea"
-                        onChange={(e) => setAboutyou(e.target.value)}
                         rows="3"
                         maxLength="500"
-                        name="aboutyourself"
-                        id="aboutyourself"
+                        name="aboutyou"
+                        id="aboutyou"
                         placeholder="About you"
                     ></textarea>
+                   {errors.aboutyou && touched.aboutyou && <p className="error">{errors.aboutyou}</p>}
                 </div>
                 <div className="row mx-1 justify-content-center align-items-center mt-4">
                     <label
@@ -545,18 +535,19 @@ const EnrolNowForm = () => {
                         What do you aim to achieve at the end of the program
                     </label>
                     <textarea
-                        value={aim}
+                        value={values.aim}
+                        onChange={handleChange}
                         className="form-control z-depth-1 enrollaligntextarea"
-                        onChange={(e) => setAim(e.target.value)}
                         rows="3"
                         maxLength="500"
-                        name="aboutyourself"
-                        id="aboutyourself"
+                        name="aim"
+                        id="aim"
                         placeholder="Your Aim(s)"
                     ></textarea>
+                     {errors.aim && touched.aim && <p className="error">{errors.aim}</p>}
                 </div>
                 <div className="justify-content-center align-items-center text-center">
-                    <button type="submit" className="fwbd px-4 py-3 btn m-4 bg-green-100 white-100"  >
+                    <button type="submit"  disabled={isSubmitting} className="buttondisabled fwbd px-4 py-3 btn m-4 bg-green-100 white-100"  >
                         Join the Cohort
                     </button>
                 </div>
