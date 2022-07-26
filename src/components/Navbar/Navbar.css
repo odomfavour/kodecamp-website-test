@@ -42,11 +42,16 @@
   height: 100px;
 }
 
+.navbar-links-desktop.active {
+  color: var(--blue-100) !important;
+}
+
 .navbar-links-desktop {
-  color: rgba(33, 37, 41, 0.6) !important;
+  color: rgba(33, 37, 41, 0.6);
   line-height: 24px;
   text-decoration: none;
 }
+
 
 .btn-login, .btn-enrol {
   line-height: 24px !important;

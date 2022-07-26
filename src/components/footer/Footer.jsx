@@ -54,7 +54,7 @@ const Footer = () => {
             <p className="footer-subtitle ">Terms</p>
             <ul className="list-unstyled">
               <li className="footer-list">
-                <Link to="/">Privacy Policy</Link>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li className="footer-list">
                 <Link to="/terms">Terms Of Service</Link>

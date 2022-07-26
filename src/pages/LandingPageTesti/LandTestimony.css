@@ -75,10 +75,10 @@
     .dotted .card:hover {
         transform: scale(1.1);
         transform-origin: center !important;
-        width: 320px !important;
+        width: 310px !important;
     }
     .not-dotted .card:hover{
-        width: 320px !important;
+        width: 310px !important;
     }
     .dotted .card{
         width: 300px !important;
