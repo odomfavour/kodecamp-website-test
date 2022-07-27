@@ -27,7 +27,7 @@ function LandinPageAccordSection() {
                                 </Link>
 
                             </h4>
-                            <h4 className='d-block d-sm-none text-center line-height-lg fs-5 fw-normal'>
+                            <h4 className='d-block d-sm-none text-center black-100 line-height-lg fs-5 fw-normal'>
                                 With so much to learn from enroling in 
                                 KodeCamp, these are some of the tracks
                                 available to our interns. To browse through 

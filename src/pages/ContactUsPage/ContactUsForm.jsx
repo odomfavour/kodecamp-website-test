@@ -6,14 +6,21 @@ import contactimgmobile from "../../Images/contactus_images/contact-us-image-mob
 
 function ContactUsForm() {
   // const [loading, setLoading] = useState(false);
+
+  // store the error in the input field
   const [inputErrors, setInputErrors] = useState({})
+
+  // set the initial submit state to be false
   const [isSubmit,setIsSubmit] = useState(false);
+
+  // stores the inputted values of all the input fields
   const [inputField , setInputField] = useState({
     full_name: '',
     email: '',
     phone: '',
     message: ''
   })
+
   const handleChange = (e) =>{
     let value = e.target.value;
     setInputField( {
@@ -21,6 +28,7 @@ function ContactUsForm() {
     });
     // console.log(inputField);
   }
+
   const handleSubmit = (e) =>{
     e.preventDefault();
     setInputErrors(validate(inputField));
@@ -68,10 +76,10 @@ function ContactUsForm() {
       </Container>
       <Container>
         {/* Mobile View */}
-        <Row className='  justify-content-center  my-5 container d-block d-lg-none'>
-          <Col className='  d-block d-lg-none ' >
-              <div className='mt-2 text-center '>
-                <img src={contactimgmobile} alt="contact-img"  className=' pb-5 img-fluid  rounded-circle' />
+        <Row className=' d-flex-column justify-content-center  my-5  d-block d-lg-none '>
+          <Col className='  d-block d-lg-none  ' >
+              <div className='text-center container mb-5 '>
+                <img src={contactimgmobile} alt="contact-img"  className=' img-fluid border rounded-circle' />
               </div>
           </Col>
           <Col className=''>
@@ -82,7 +90,7 @@ function ContactUsForm() {
                 <div className="text-danger fw-semibold fs-5 mb-3" ></div>
               )}
             <Form noValidate onSubmit={handleSubmit}>        
-              <Form.Group className="mb-4  " controlId="validationCustom01">
+              <Form.Group className="mb-4 " controlId="validationCustom01">
                 <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
                 <Form.Control
                   className="contact-fs-24-400 black-100 input-style "
@@ -154,7 +162,7 @@ function ContactUsForm() {
                   <div className="text-danger fw-semibold fs-5 mb-3" ></div>
                 )}
               <Form noValidate onSubmit={handleSubmit}>        
-                <Form.Group className="mb-4  " controlId="validationCustom01">
+                <Form.Group className=" mb-4 " controlId="validationCustom01">
                   <Form.Label className='contact-fs-24-500 black-100 '>Full Name</Form.Label>
                   <Form.Control
                     className="contact-fs-24-400 black-100 input-style "
@@ -213,9 +221,9 @@ function ContactUsForm() {
               </Form>
             </div>
             </Col>
-            <Col className='col-lg-5  ' >
-                <div className=' pt-4 '>
-                  <img src={contactimg} alt="contact-img"  className='conatiner pb-5 img-fluid rounded-circle' />
+            <Col className='col-lg-5 py-3 ' >
+                <div className='  '>
+                  <img src={contactimg} alt="contact-img"  className='conatiner  img-fluid rounded-circle' />
                 </div>
             </Col>
           </Row>
