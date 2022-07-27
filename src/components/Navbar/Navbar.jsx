@@ -61,8 +61,8 @@ const NavigationBar = () => {
         </div>
 
         <div className="d-flex">
-          <div className="d-flex justify-content-end">
-            <Link to="/" className="enrol-login text-center mx-3">
+          <div className="d-flex justify-content-end me-3">
+            <Link to="/" className="enrol-login text-center mx-4">
               <div
                 className="d-inline-block d-none d-md-block btn-login"
               >
