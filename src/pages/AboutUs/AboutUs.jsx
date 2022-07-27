@@ -156,12 +156,12 @@ const AboutUs = () => {
                                             </p>
                                         </Col>
                                         <Col xs={6} className="">
-                                            <div className="bg-deep-blue-100 square-div ms-auto" id="novelty" style={{borderRadius: '4px'}}>
+                                            <div className="bg-green-100 square-div ms-auto" id="novelty" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     N
                                                 </p>
                                             </div>
-                                            <p className="deep-blue-100 text-end text-md-center text-lg-end text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="green-100 text-end text-md-center text-lg-end text-below-square-div pt-2" style={{fontWeight: '700'}}>
                                                 NOVELTY
                                             </p>
                                         </Col>
@@ -171,22 +171,22 @@ const AboutUs = () => {
                                 <Col xs={12}>
                                     <Row className="">
                                         <Col xs={6} className="">
-                                            <div className="bg-black-100 square-div ms-auto me-3" style={{borderRadius: '4px'}}>
+                                            <div className="bg-deep-blue-100 square-div ms-auto me-3" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     A
                                                 </p>
                                             </div>
-                                            <p className="black-100 text-end me-2 text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="deep-blue-100 text-end me-2 text-below-square-div pt-2" style={{fontWeight: '700'}}>
                                                 AMBITION
                                             </p>
                                         </Col>
                                         <Col xs={6} className="">
-                                            <div className="bg-blue-100 square-div ms-3 mx-auto" style={{borderRadius: '4px'}}>
+                                            <div className="bg-deep-blue-100 square-div ms-3 mx-auto" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     R
                                                 </p>
                                             </div>
-                                            <p className="blue-100 text-start ms-3 text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="deep-blue-100 text-start ms-3 text-below-square-div pt-2" style={{fontWeight: '700'}}>
                                                 RESPECT
                                             </p>
                                         </Col>
