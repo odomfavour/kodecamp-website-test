@@ -11,13 +11,13 @@ const benefitsdata = [
     {
         id:2,
         title: "WHAT WE OFFER",
-        description: "“At KodeCamp, you gain access relevant and valuable training and mentorship that will propel your tech journey”",
+        description: "“Partnering with various tech industries,we offer our interns spots to work with the skills gotten in a corporate setting.”",
         image: benefit2,  
     },
     {
         id:3,
         title: "GET A CERTIFICATE",
-        description: "“At KodeCamp, you gain access relevant and valuable training and mentorship that will propel your tech journey”",
+        description: "“As much as we believe in knowledge acquisition, we also award certifications that are globally recognized and accepted”",
         image: benefit3,  
     }
 ]
