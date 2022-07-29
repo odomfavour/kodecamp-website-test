@@ -30,7 +30,7 @@ function LandMobileCard({id, name, track,description,image}) {
                                                 </div>
                                             </div>
                                             <div>
-                                                <p className='fw-bold font-size-sm lh-sm '>SALISU AKANDE</p>
+                                                <p className='fw-bold font-size-sm lh-sm black-100 '>SALISU AKANDE</p>
                                                 <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>Product Design Intern </p>
                                             </div>
                                         </Card.Body>

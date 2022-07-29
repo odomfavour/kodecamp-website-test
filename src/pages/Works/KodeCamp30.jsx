@@ -8,13 +8,22 @@ import { useEffect } from "react";
 
 const KodeCamp30 = () => {
 
-    let countDownTimeMs = Date.parse("Jul 22 2022 00:00:00");
+    let countDownTimeMs = Date.parse("Jul 30 2022 00:00:00");
     const [ remainingTime, setRemainingTime ] = useState({
         seconds: "00",
         minutes: "00",
         hours: "00",
         days: "00"
     });
+
+    if (remainingTime.seconds < 0 || remainingTime.minutes < 0 || remainingTime.hours < 0 || remainingTime.days < 0) {
+        setRemainingTime({
+            seconds: "0",
+            minutes: "0",
+            hours: "0",
+            days: "0"
+        })      
+    }
 
     useEffect(() => {
         const intervalId =  setInterval(() => {

@@ -6,7 +6,7 @@
 
 .navbar {
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   height: fit-content;
   background: rgba(33, 37, 41, 0.02);
@@ -42,19 +42,24 @@
   height: 100px;
 }
 
+.navbar-links-desktop.active {
+  color: var(--blue-100) !important;
+}
+
 .navbar-links-desktop {
-  color: rgba(33, 37, 41, 0.6) !important;
+  color: rgba(33, 37, 41, 0.6);
   line-height: 24px;
   text-decoration: none;
 }
 
-.btn-login, .btn-enroll {
+
+.btn-login, .btn-enrol {
   line-height: 24px !important;
   padding: 10px !important;
   border-radius: 4px;
 }
 
-.btn-login:focus, .btn-enroll:focus {
+.btn-login:focus, .btn-enrol:focus {
   box-shadow: none !important;
 }
 
@@ -65,7 +70,7 @@
   height: 50px;
 }
 
-.btn-enroll {
+.btn-enrol {
   border-color: var(--green-100) !important;
   width: 140px;
   height: 50px;
@@ -134,7 +139,7 @@
 }
 
 @media (max-width: 575.98px) {
-  .btn-login, .btn-enroll {
+  .btn-login, .btn-enrol {
     text-align: center;
     height: 40px;
     padding-top: 6px !important;
@@ -144,7 +149,7 @@
     width: 125px;
   }
 
-  .btn-enroll {
+  .btn-enrol {
     width: 130px;
     word-wrap: break-word;
   }

@@ -39,6 +39,12 @@
     width: 14px !important;
     height: 14px !important;
 }
+
+.image-carousel .carousel-indicators {
+    width: 0px !important;
+    height: 0px !important;
+}
+
 .landingpageacc .accordion-button:not(.collapsed)::after {
     content: url("../../Images/landing-card-images/close-icon-2.svg") !important;
     background-image: none !important;
@@ -75,10 +81,10 @@
     .dotted .card:hover {
         transform: scale(1.1);
         transform-origin: center !important;
-        width: 320px !important;
+        width: 310px !important;
     }
     .not-dotted .card:hover{
-        width: 320px !important;
+        width: 310px !important;
     }
     .dotted .card{
         width: 300px !important;
