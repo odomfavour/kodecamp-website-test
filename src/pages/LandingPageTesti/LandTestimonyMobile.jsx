@@ -5,6 +5,9 @@ import previousicon from '../../Images/landing-card-images/previous-icon.svg';
 import LandingPageAccordSection from './LandingPageAccordSection';
 import { getCardData } from './CardData';
 import LandTestimonyCard from './LandTestimonyCard';
+// 
+
+
 
 function LandTestMobile() {
     const testimonials = getCardData();
@@ -57,6 +60,7 @@ function LandTestMobile() {
                     ))
                 } 
             </Carousel>
+            
             <Container>
                 <Row className='container '>
                     <Col className='me-auto  col-1'>
@@ -71,6 +75,31 @@ function LandTestMobile() {
                     </Col>
                 </Row>
             </Container>
+            {/* <div className='image-carousel'>
+              <Carousel  activeIndex={index}
+                  onSelect={handleSelect}
+                  controls={false}
+                  className='pb-5 ' 
+                  variant="dark" 
+                  interval='10000' 
+                  slide='false' 
+                  aria-hidden='false'
+              >   
+
+                  {
+                      testimonials.map(testimony => (
+                              (
+                                  
+                                  <Carousel.Item key={testimony.id}>
+                                          <div className='  row d-flex justify-content-evenly'>
+                                              <LandingCardAnimation image={testimony.image} key={testimony.id}/>
+                                          </div>
+                                  </Carousel.Item>         
+                              )
+                      ))
+                  } 
+              </Carousel>
+            </div> */}
         </section>
     </div>
   )

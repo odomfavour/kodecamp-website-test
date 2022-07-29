@@ -39,6 +39,12 @@
     width: 14px !important;
     height: 14px !important;
 }
+
+.image-carousel .carousel-indicators {
+    width: 0px !important;
+    height: 0px !important;
+}
+
 .landingpageacc .accordion-button:not(.collapsed)::after {
     content: url("../../Images/landing-card-images/close-icon-2.svg") !important;
     background-image: none !important;

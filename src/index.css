@@ -23,6 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* max-width: 1440px !important; */
   margin: auto !important;
+  scroll-behavior: smooth;
 }
 *,
 button,
@@ -119,24 +120,20 @@ a {
 .light-blue {
   color: var(--ligt-blue);
 }
-
 a:hover {
   border: none !important;
 }
-
 /* form control focus removal */
 .form-control:focus {
   box-shadow: none !important;
   outline: none !important;
   border-color: var(--black-60) !important;
 }
-
 .form-select:focus {
   box-shadow: none !important;
   outline: none !important;
   border-color: var(--black-60) !important;
 }
-
 .err-message {
   color: rgb(253, 111, 111);
 }

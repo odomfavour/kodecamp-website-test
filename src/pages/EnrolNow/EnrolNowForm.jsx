@@ -96,26 +96,29 @@ const EnrolNowForm = () => {
       console.log(states);
       console.log(city);
 
-    //   if (Object.keys(inputErrors).length === 0 && isSubmit) {
-    //     Swal.fire({
-    //       icon: "success",
-    //       title: "Form Submitted",
-    //       confirmButtonColor: "#669e00",
-    //     }).then(() =>
-    //       setInputField({
-    //         firstname: '',
-    //         lastname: '',
-    //         emailaddress: '',
-    //         phonenumber: '',
-    //         aim: '',
-    //         aboutyou:'',
-    //         learningtrack: '',
-    //         referal: '',
-    //         level:'',
-    //         gender:'',
-    //       })
-    //     );
-    //   };
+     
+    if (Object.keys(inputErrors).length === 0 && isSubmit) {
+        Swal.fire({
+            icon: "success",
+            title: "Form Submitted",
+            confirmButtonColor: "#669e00",
+          })
+          .then(() =>{
+              setInputField({
+                firstname: '',
+                lastname: '',
+                emailaddress: '',
+                phonenumber: '',
+                aim: '',
+                aboutyou:'',
+                learningtrack: '',
+                referal: '',
+                level:'',
+                gender:'',
+              }
+              )
+          })
+      };
     }
     useEffect(() => {
       // console.log(inputErrors);
@@ -159,15 +162,6 @@ const EnrolNowForm = () => {
           }
           if(!values.referal){
             errors.referal = "Please select a value"
-          }
-          if(!values.country){
-            errors.country = "Please select a value"
-          }
-          if(!values.state){
-            errors.state = "Please select a value"
-          }
-          if(!values.city){
-            errors.city = "Please select a value"
           }
        return errors;
     }
