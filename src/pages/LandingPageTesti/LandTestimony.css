@@ -10,7 +10,7 @@
 .dotted .card{
     border: 1px dashed var(--green-100) !important;
     transform: rotate(4deg) !important;
-    height: 350px;        
+    height:390px ;        
 }
 .not-dotted .card{
     border: 0.1px solid grey  !important;
@@ -26,12 +26,10 @@
     border: 0.3px solid gray !important;
     transform: rotate(4deg) !important; 
 }
-
 .landing-fs-52{
     font-size: 50px !important;
     /* line-height: 42px !important; */
 } 
-
 .landtesti-fs-12{
         font-size: 16px;
 }
@@ -39,7 +37,6 @@
     width: 14px !important;
     height: 14px !important;
 }
-
 .image-carousel .carousel-indicators {
     width: 0px !important;
     height: 0px !important;
@@ -145,19 +142,24 @@
     }
     .dotted .card{
         width: 260px !important;
+        
         margin-right: auto !important;
-        margin-left: auto !important;         
+        margin-left: auto !important;
+              
     }
     .not-dotted .card{
         width: 260px !important;
         margin-right: auto !important;
         margin-left: auto !important; 
+        
     }
     .not-dotted .card:hover{
         width: 270px !important;
+        
     }
     .dotted .card:hover {
         width: 270px !important;
+ 
     }
     .not-dotted .card .fs-mobile {
         font-size: 14px;
@@ -183,6 +185,5 @@
 @media (max-width: 767.98px){
     .landing-fs-52{
         line-height: 40px !important;
-
     }
 }

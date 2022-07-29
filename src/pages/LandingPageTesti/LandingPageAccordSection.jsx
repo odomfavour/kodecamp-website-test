@@ -31,7 +31,7 @@ function LandinPageAccordSection() {
                                 </Link>
 
                             </h4>
-                            <h4 className='d-block d-lg-none text-center black-100 line-height-lg fs-5 fw-normal'>
+                            <h5 className='d-block d-lg-none text-center black-100  fw-normal'>
                                 With so much to learn from enroling in 
                                 KodeCamp, these are some of the tracks
                                 available to our interns. To browse through 
@@ -39,11 +39,10 @@ function LandinPageAccordSection() {
                                 <Link to="/explore">
                                     <h4 className='line-height-lg fw-normal fs-5 mt-2'>Explore Section</h4>
                                 </Link>
-
-                            </h4> 
+                            </h5> 
                         </div>
                     </Col>
-                    <Col className="col-10  col-lg-6 mt-4">
+                    <Col className="col  col-lg-6 mt-4">
                         {/* {
                                 accordiondata.map(accdata => (
                                     (               

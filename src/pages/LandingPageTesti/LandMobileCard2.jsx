@@ -17,10 +17,8 @@ function LandMobileCard2({id, name, track,description,image}) {
                                             <div className=''>
                                                 <Card.Text className=''>
                                                     <div className=' mx-auto '>
-                                                        <p className=' line-height-sm fs-mobile font-size-sm fw-normal light-blue px-2'>
-                                                            “At KodeCamp, you gain access relevant and valuable training 
-                                                            and mentorship that will propel 
-                                                            your tech journey”
+                                                        <p className=' line-height-sm fs-mobile font-size-sm fw-normal light-blue' style={{height:'160px'}}>
+                                                            “The journey was quite intense and interesting. I gained so much knowledge during the learning and internship phase, made amazing connections. Thank you Kodecamp”
                                                         </p>
                                                     </div>
                                                 </Card.Text>
@@ -31,8 +29,8 @@ function LandMobileCard2({id, name, track,description,image}) {
                                                 </div>
                                             </div>
                                             <div>
-                                                <p className='fw-bold font-size-sm lh-sm black-100 '>IDRIOUSSO KOMBALO</p>
-                                                <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>FrontEnd Development Intern </p>
+                                                <p className='fw-bold font-size-sm lh-sm black-100 '>ASHIMI ASHLEY</p>
+                                                <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>Product Management Intern </p>
                                             </div>
                                         </Card.Body>
                                     </Card>
