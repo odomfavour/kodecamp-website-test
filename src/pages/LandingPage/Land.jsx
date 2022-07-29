@@ -138,7 +138,7 @@ const Land = () => {
             <hr className=' d-none d-lg-block' />
             
             <div className="rowmobile text-center d-lg-none">
-                <h1 className='hero-header lh-md mb-5 deep-blue-100 fw-bolder text-center'>
+                <h1 className='hero-header fntwgt px-2 mb-5 deep-blue-100 text-center'>
                     Kickstart and 
                     Develop your career
                     in  <span className="green-100">Tech</span>.
