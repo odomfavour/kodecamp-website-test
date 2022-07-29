@@ -66,7 +66,7 @@ const EnrolNowForm = () => {
       if (states){
         fetchCities();
       }
-  },[states])
+  },[states, country, errors])
     const [inputErrors, setInputErrors] = useState({});
     const [isSubmit,setIsSubmit] = useState(false);
     const [inputField , setInputField] = useState({
