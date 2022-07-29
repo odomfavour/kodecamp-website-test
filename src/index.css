@@ -23,6 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* max-width: 1440px !important; */
   margin: auto !important;
+  scroll-behavior: smooth;
 }
 *,
 button,

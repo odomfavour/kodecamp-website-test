@@ -1,150 +1,184 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./EnrolNow.css";
+import Swal from "sweetalert2";
+// import withReactContent from "sweetalert2-react-content";
 const EnrolNowForm = () => {
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
-    const [email, setEmail] = useState("");
-    const [phonenumber, setPhonenumber] = useState("");
-    const [gender, setGender] = useState("Select a Gender");
-    const [countryy, setCountryy] = useState("");
-    const [statee, setStatee] = useState("");
-    const [cityy, setCityy] = useState("");
-    const [level, setLevel] = useState("Select Level");
-    const [learningtrack, setLearningtrack] = useState("");
-    const [referal, setReferal] = useState("");
-    const [aboutyou, setAboutyou] = useState("");
-    const [aim, setAim] = useState("");
-    function handleSubmit(e) {
-        e.preventDefault();
-        setFirstname("");
-        setLastname("");
-        setEmail("");
-        setPhonenumber("");
-        setGender("");
-        setCountryy("");
-        setStatee("");
-        setCityy("");
-        setLevel("");
-        setLearningtrack("");
-        setReferal("");
-        setAboutyou("");
-        setAim("");
-        alert("form Submitted")
+    const [planets, setPlanets] = useState({});
+    const [errors, setErrors] = useState({});
+    const [country, setCountry] = useState("");
+    const [fetchstates, setFetchStates] = useState({});
+    const [states, setStates] = useState({});
+    const [fetchCity, setFetchCity] = useState({});
+    const [city, setCity] = useState({});
+    useEffect(() => {
+       function fetchData() {
+         fetch("https://countriesnow.space/api/v0.1/countries/states")
+          .then(response => response.json())
+          .then(data => setPlanets(data))
+          // .then(()=>console.log(planets.data))
+          .catch(err => {setErrors(err)
+            console.log(err)
+          });
+      }
+      fetchData();
+    }, []);
+  useEffect(()=>{
+    function fetchState(){
+      fetch("https://countriesnow.space/api/v0.1/countries/states", {
+        method: "POST",
+        body: JSON.stringify({
+            "country": `${country}`
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      })
+      .then(response => response.json())
+        .then(res => setFetchStates(res.data))
+      .catch(err => {setErrors(err)
+        console.log(err)
+      })}
+      if (country){
+        fetchState();
+      }
+    
+  },[country])
+  useEffect(()=>{
+    function fetchCities(){
+      fetch("https://countriesnow.space/api/v0.1/countries/state/cities", {
+        method: "POST",
+        body: JSON.stringify({
+            "country": `${country}`,
+            "state": `${states}`
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      })
+      .then(response => response.json())
+          .then(data => setFetchCity(data))
+          //.then(()=>console.log(fetchCity.data))
+          .catch(err => {setErrors(err)
+            console.log(errors)
+          });
     }
-    const [country, setCountry] = useState([]);
-    const [state, setState] = useState([]);
-    const [city, setCity] = useState([]);
+      if (states){
+        fetchCities();
+      }
+  },[states, country, errors])
+    const [inputErrors, setInputErrors] = useState({});
+    const [isSubmit,setIsSubmit] = useState(false);
+    const [inputField , setInputField] = useState({
+        firstname: '',
+        lastname: '',
+        emailaddress: '',
+        phonenumber: '',
+        aim: '',
+        aboutyou:'',
+        learningtrack: '',
+        referal: '',
+        level:'',
+        gender:'',
+    })
+    const handleChange = (e) =>{
+      let value = e.target.value;
+      setInputField( {
+        ...inputField,[e.target.name]: value
+      });
+      // console.log(inputField);
+    }
+    const handleSubmit = (e) =>{
+      e.preventDefault();
+      setInputErrors(validate(inputField));
+      setIsSubmit(true);
+      console.log(country);
+      console.log(states);
+      console.log(city);
 
-    const countries = [
-        { id: "1", name: "Nigeria" },
-        { id: "2", name: "USA" },
-        { id: "3", name: "Canada" },
-        { id: "4", name: "Ghana" },
-        { id: "5", name: "Togo" },
-        { id: "6", name: "Cameroun" },
-        { id: "7", name: "India" },
-        { id: "8", name: "Ghana" },
-        { id: "9", name: "Japan" },
-        { id: "10", name: "China" },
-    ];
-
-    const states = [
-        { id: "1", countryId: "1", name: "Abia" },
-        { id: "2", countryId: "1", name: "Adamawa" },
-        { id: "3", countryId: "1", name: "AkwaIbom" },
-        { id: "4", countryId: "1", name: "Anambra" },
-        { id: "5", countryId: "1", name: "Bauchi" },
-        { id: "6", countryId: "1", name: "Bayelsa" },
-        { id: "7", countryId: "1", name: "Benue" },
-        { id: "8", countryId: "1", name: "Cross River" },
-        { id: "9", countryId: "1", name: "Delta" },
-        { id: "10", countryId: "1", name: "Ebonyi" },
-        { id: "11", countryId: "1", name: "Edo" },
-        { id: "12", countryId: "1", name: "Ekiti" },
-        { id: "13", countryId: "1", name: "Enugu" },
-        { id: "14", countryId: "1", name: "Gombe" },
-        { id: "15", countryId: "1", name: "Imo" },
-        { id: "16", countryId: "1", name: "Jigawa" },
-        { id: "17", countryId: "1", name: "Kaduna" },
-        { id: "18", countryId: "1", name: "Kano" },
-        { id: "19", countryId: "1", name: "Kastina" },
-        { id: "20", countryId: "1", name: "Kebbi" },
-        { id: "21", countryId: "1", name: "Kogi" },
-        { id: "22", countryId: "1", name: "Kwara" },
-        { id: "23", countryId: "1", name: "Lagos" },
-        { id: "24", countryId: "1", name: "Nasarawa" },
-        { id: "25", countryId: "1", name: " Niger" },
-        { id: "26", countryId: "1", name: "Ogun" },
-        { id: "27", countryId: "1", name: "Ondo" },
-        { id: "28", countryId: "1", name: "Osun" },
-        { id: "29", countryId: "1", name: "Oyo" },
-        { id: "30", countryId: "1", name: "Plateau" },
-        { id: "31", countryId: "1", name: "River" },
-        { id: "32", countryId: "1", name: "Sokoto" },
-        { id: "33", countryId: "1", name: "Taraba" },
-        { id: "34", countryId: "1", name: "Yobe" },
-        { id: "35", countryId: "1", name: "Nasarawa" },
-        { id: "36", countryId: "1", name: "Zamfara" },
-        { id: "37", countryId: "2", name: "Texas" },
-        { id: "38", countryId: "2", name: "California" },
-    ];
-
-    const cities = [
-        { id: "1", stateId: "23", name: "lekki" },
-        { id: "2", stateId: "23", name: "Ikeja" },
-        { id: "3", stateId: "3", name: "Uyo" },
-        { id: "4", stateId: "3", name: "Eket" },
-        { id: "5", stateId: "37", name: "Houston" },
-        { id: "6", stateId: "37", name: "Austin" },
-        { id: "7", stateId: "38", name: "Los Angeles" },
-        { id: "8", stateId: "38", name: "Son Diego" },
-        { id: "9", stateId: "23", name: "Agbara" },
-        { id: "10", stateId: "1", name: "Umuahia" },
-        { id: "11", stateId: "1", name: "ABA" },
-        { id: "12", stateId: "1", name: "Eluoma" },
-        { id: "13", stateId: "1", name: "Alayi" },
-        { id: "14", stateId: "1", name: "Abiriba" },
-        { id: "15", stateId: "1", name: "Arochukwu" },
-        { id: "16", stateId: "1", name: "Ohuhu" },
-        { id: "17", stateId: "1", name: "Umukabia" },
-        { id: "18", stateId: "23", name: "Ikorodu" },
-        { id: "19", stateId: "23", name: "Agbara" },
-        { id: "20", stateId: "23", name: "Agege" },
-        { id: "21", stateId: "23", name: "Alimosho" },
-        { id: "22", stateId: "23", name: "Ifako-Ijaye" },
-        { id: "23", stateId: "23", name: "Shomolu" },
-        { id: "24", stateId: "23", name: "Oshodi-isolo" },
-        { id: "25", stateId: "23", name: "Apapa" },
-        { id: "26", stateId: "23", name: "Ajeromi-Ifelodun" },
-        { id: "27", stateId: "23", name: "Lagos-Island" },
-        { id: "28", stateId: "38", name: "Son Diego" },
-        { id: "29", stateId: "23", name: "Agbara" },
-        { id: "30", stateId: "23", name: "Ojo" },
-        { id: "31", stateId: "23", name: "Epe" },
-        { id: "32", stateId: "3", name: "Ikot Ekepene" },
-
-    ];
-    useEffect((country) => {
-        setCountry(countries);
-    },
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        []);
-    const handleCountry = (name) => {
-        const dt = states.filter((x) => x.countryId === name);
-        setState(dt);
-    };
-
-    const handleState = (name) => {
-        const dt = cities.filter((x) => x.stateId === name);
-        setCity(dt);
-    };
+     
+    if (Object.keys(inputErrors).length === 0 && isSubmit) {
+        Swal.fire({
+            icon: "success",
+            title: "Form Submitted",
+            confirmButtonColor: "#669e00",
+          })
+          .then(() =>{
+              setInputField({
+                firstname: '',
+                lastname: '',
+                emailaddress: '',
+                phonenumber: '',
+                aim: '',
+                aboutyou:'',
+                learningtrack: '',
+                referal: '',
+                level:'',
+                gender:'',
+              }
+              )
+          })
+      };
+    }
+    useEffect(() => {
+      // console.log(inputErrors);
+      if (Object.keys(inputErrors).length === 0 && isSubmit){
+        console.log(inputField);
+      }
+    }, [inputErrors, inputField, isSubmit])
+  
+    const validate = (values) =>{
+        const errors = {};
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        if(validate){
+            if(!values.firstname){
+           errors.firstname = "First Name is required"
+        }
+        if(!values.lastname){
+            errors.lastname = "Last Name is required"
+          }
+        if(!values.emailaddress){
+          errors.emailaddress = "Email is required"
+        }else if (!regex.test(values.emailaddress)){
+          errors.emailaddress = "This is not a valid email format"
+        }
+        if(!values.phonenumber){
+          errors.phonenumber = "Phone number is required"
+        }
+        if(!values.aboutyou){
+          errors.aboutyou = "Please input your message"
+        }
+        if(!values.aim){
+            errors.aim = "Please input your message"
+          }
+          if(!values.gender){
+            errors.gender = "Please select a value"
+          }
+          if(!values.level){
+            errors.level = "Please select a value"
+          }
+          if(!values.learningtrack){
+            errors.learningtrack = "Please select a value"
+          }
+          if(!values.referal){
+            errors.referal = "Please select a value"
+          }
+       return errors;
+    }
+       else{
+        console.log(country);
+        console.log(states);
+        console.log(city);
+        alert("form submitted")
+    }
+} 
+  
     const fontwgt = {
         fontWeight: "500"
     }
     return (
         <div className="container">
-            <form onSubmit={handleSubmit}>
+            <form noValidate onSubmit={handleSubmit}>
                 <div className="my-4">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-md-6   text-md-start">
@@ -156,15 +190,14 @@ const EnrolNowForm = () => {
                                 First Name
                             </label>
                             <input
-                                value={firstname}
-                                onChange={(e) => {
-                                    setFirstname(e.target.value);
-                                }}
+                                name="firstname"
+                                onChange={handleChange} 
+                                value={inputField.firstname} 
                                 type="text"
                                 className="form-control enroll-input form-controll"
-                                placeholder="Name"
-                                required
+                                placeholder="Enter your first name"
                             />
+                        <p className='err-message'>{inputErrors.firstname}</p>       
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label
@@ -175,14 +208,14 @@ const EnrolNowForm = () => {
                                 Last Name
                             </label>
                             <input
-                                value={lastname}
-                                onChange={(e) => {
-                                    setLastname(e.target.value);
-                                }}
+                                name="lastname"
+                                onChange={handleChange} 
+                                value={inputField.lastname} 
                                 type="text"
                                 className="form-control enroll-input"
-                                placeholder="Last Name"
+                                placeholder="Enter your Last Name"
                             />
+                            <p className='err-message'>{inputErrors.lastname}</p> 
                         </div>
                     </div>
                     <div className=" my-4 text-md-start d-md-none d-lg-none">
@@ -194,14 +227,14 @@ const EnrolNowForm = () => {
                             Last Name
                         </label>
                         <input
-                            value={lastname}
-                            onChange={(e) => {
-                                setLastname(e.target.value);
-                            }}
+                        name="lastname"
+                            onChange={handleChange} 
+                            value={inputField.lastname} 
                             type="text"
                             className="form-control enroll-input"
-                            placeholder="Last Name"
+                            placeholder="Enter your Last Name"
                         />
+                        <p className='err-message'>{inputErrors.lastname}</p>    
                     </div>
                 </div>
                 <div className="my-4">
@@ -211,28 +244,29 @@ const EnrolNowForm = () => {
                                 Email address
                             </label>
                             <input
-                                value={email}
-                                onChange={(e) => {
-                                    setEmail(e.target.value);
-                                }}
+                            name="emailaddress"
+                            onChange={handleChange} 
+                            value={inputField.emailaddress} 
                                 type="email"
                                 className="form-control enroll-input"
                                 placeholder="Enter your Email address"
                             />
+                            <p className='err-message'>{inputErrors.emailaddress}</p>    
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Phone Number
                             </label>
                             <input
-                                value={phonenumber}
-                                onChange={(e) => {
-                                    setPhonenumber(e.target.value);
-                                }}
-                                type="text"
+                            name="phonenumber"
+                            id="phonenumber"
+                            onChange={handleChange} 
+                            value={inputField.phonenumber} 
+                                type="tel"
                                 className="form-control enroll-input"
-                                placeholder="Enter your Phone Number"
+                                placeholder="+234 812 555 0126" 
                             />
+                            <p className='err-message'>{inputErrors.phonenumber}</p>    
                         </div>
                     </div>
                     <div className=" my-4 text-md-start  d-md-none  d-lg-none">
@@ -240,14 +274,14 @@ const EnrolNowForm = () => {
                             Phone Number
                         </label>
                         <input
-                            value={phonenumber}
-                            onChange={(e) => {
-                                setPhonenumber(e.target.value);
-                            }}
-                            type="text"
+                        name="phonenumber"
+                        onChange={handleChange} 
+                        value={inputField.phonenumber} 
+                            type="tel"
                             className="form-control enroll-input"
-                            placeholder="Enter your Phone Number"
+                            placeholder="+234 812 555 0126" 
                         />
+                        <p className='err-message'>{inputErrors.phonenumber}</p>    
                     </div>
                 </div>
                 <div className="my-4">
@@ -257,13 +291,13 @@ const EnrolNowForm = () => {
                                 Gender
                             </label>
                             <select
-                                value={gender}
                                 className="form-select enroll-input "
                                 name="gender"
                                 id="gender"
-                                onChange={(e) => setGender(e.target.value)}
+                                onChange={handleChange} 
+                                value={inputField.gender} 
                             >
-                                <option value="level" selected disabled>
+                                <option value="" selected >
                                     Select Gender
                                 </option>
                                 <option value="Male">Male</option>
@@ -271,31 +305,24 @@ const EnrolNowForm = () => {
                                 <option value="Prefer not to disclose">Prefer not to disclose</option>
                                 <option value="Others">Others</option>
                             </select>
+                            <p className='err-message'>{inputErrors.gender}</p> 
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Country
                             </label>
                             <select
-                                id="ddlCountry"
-                                value={countryy}
+                                name="country"
+                                id="country"
                                 className="form-control enroll-input select-class"
                                 onChange={(e) => [
-                                    handleCountry(e.target.value),
-                                    setCountryy(e.target.value),
-                                ]}
-                            >
-                                <option value="0">Select Country</option>
-                                {country && country !== undefined
-                                    ? country.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>
-                                                {ctr.name}
-                                            </option>
-                                        );
-                                    })
-                                    : "No Country"}
-                            </select>
+                                    setCountry(e.target.value)
+                                ]} 
+                                value={country}
+                            > 
+                            <option value="" selected>Select a country</option>
+                            { planets.data && planets.data.map((item ,index)=><option name={item.name} value={item.name} key={index}>{item.name}</option> )   } 
+                            </select>   
                         </div>
                     </div>
                     <div className=" my-4 text-md-start   d-md-none d-lg-none">
@@ -303,25 +330,17 @@ const EnrolNowForm = () => {
                             Country
                         </label>
                         <select
-                            id="ddlCountry"
-                            value={countryy}
-                            className="form-control enroll-input select-class"
-                            onChange={(e) => [
-                                handleCountry(e.target.value),
-                                setCountryy(e.target.value),
-                            ]}
-                        >
-                            <option value="0">Select Country</option>
-                            {country && country !== undefined
-                                ? country.map((ctr, index) => {
-                                    return (
-                                        <option key={index} value={ctr.id}>
-                                            {ctr.name}
-                                        </option>
-                                    );
-                                })
-                                : "No Country"}
-                        </select>
+                                name="country"
+                                id="country"
+                                className="form-control enroll-input select-class"
+                                onChange={(e) => [
+                                    setCountry(e.target.value)
+                                ]} 
+                                value={country}
+                            >         
+        <option value="">Select a country</option>
+      { planets.data && planets.data.map((item ,index)=><option value={item.name} key={index}>{item.name}</option> )   } 
+                            </select>
                     </div>
                 </div>
                 <div className="my-4">
@@ -331,47 +350,30 @@ const EnrolNowForm = () => {
                                 State
                             </label>
                             <select
-                                id="ddlStates"
-                                value={statee}
+                                name="states"
+                                id="states"
+                                onChange={(e) => [setStates(e.target.value)]} 
+                                value={states}  
                                 className="form-control enroll-input select-class"
-                                onChange={(e) => [
-                                    handleState(e.target.value),
-                                    setStatee(e.target.value),
-                                ]}
                             >
-                                <option value="0">Select State</option>
-                                {state && state !== undefined
-                                    ? state.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>
-                                                {ctr.name}
-                                            </option>
-                                        );
-                                    })
-                                    : "No State"}
-                            </select>
+        <option value="">Select a State</option>
+      { fetchstates.states && fetchstates.states.map((item ,index)=><option value={item.name} key={index}>{item.name}</option> ) } 
+      </select>
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 City
                             </label>
                             <select
-                                id="ddlCity"
-                                value={cityy}
+                                id="city"
+                               name="city"
                                 className="form-control enroll-input select-class"
-                                onChange={(e) => setCityy(e.target.value)}
+                                onChange={(e) => [setCity(e.target.value)]} 
+                                value={city}
                             >
-                                <option value="0">Select City</option>
-                                {city && city !== undefined
-                                    ? city.map((ctr, index) => {
-                                        return (
-                                            <option key={index} value={ctr.id}>
-                                                {ctr.name}
-                                            </option>
-                                        );
-                                    })
-                                    : "No City"}
-                            </select>
+        <option value="">Select a City</option>
+      { fetchCity.data && fetchCity.data.map((item ,index)=><option value={item} key={index}>{item}</option> ) } 
+      </select>
                         </div>
                     </div>
                     <div className="my-4 text-md-start   d-md-none  d-lg-none">
@@ -379,22 +381,16 @@ const EnrolNowForm = () => {
                             City
                         </label>
                         <select
-                            id="ddlCity"
-                            value={cityy}
-                            className="form-control enroll-input select-class"
-                            onChange={(e) => setCityy(e.target.value)}
-                        >
-                            <option value="0">Select City</option>
-                            {city && city !== undefined
-                                ? city.map((ctr, index) => {
-                                    return (
-                                        <option key={index} value={ctr.id}>
-                                            {ctr.name}
-                                        </option>
-                                    );
-                                })
-                                : "No City"}
-                        </select>
+                          onChange={(e) => [setCity(e.target.value)]}
+                            value={city}
+                                id="city"
+                               name="city"
+                                className="form-control enroll-input select-class"   
+                            >
+                            
+        <option value="">Select a City</option>
+      { fetchCity.data && fetchCity.data.map((item ,index)=><option value={item} key={index}>{item}</option> ) } 
+      </select>                     
                     </div>
                 </div>
                 <div className="my-4">
@@ -404,32 +400,33 @@ const EnrolNowForm = () => {
                                 What level are you applying for
                             </label>
                             <select
-                                value={level}
                                 className="form-select enroll-input "
                                 name="level"
                                 id="level"
-                                onChange={(e) => setLevel(e.target.value)}
+                                onChange={handleChange} 
+                                value={inputField.level}
                             >
-                                <option value="level" selected disabled>
+                                <option  selected value="">
                                     Select Level
                                 </option>
                                 <option value="beginner">Beginner</option>
                                 <option value="intermediate">Intermediate</option>
                                 <option value="advanced">Advanced</option>
                             </select>
+                            <p className='err-message'>{inputErrors.level}</p>    
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Learning track
                             </label>
                             <select
-                                value={learningtrack}
                                 className="form-select enroll-input"
-                                name="track"
-                                id="track"
-                                onChange={(e) => setLearningtrack(e.target.value)}
+                                name="learningtrack"
+                                id="learningtrack"
+                                onChange={handleChange} 
+                                value={inputField.learningtrack}
                             >
-                                <option selected disabled>
+                                <option selected value="">
                                     Select a learning track
                                 </option>
                                 <option value="Product Design">Product Design </option>
@@ -438,10 +435,10 @@ const EnrolNowForm = () => {
                                     Frontend development
                                 </option>
                                 <option value="Android Development">
-                                    Android Development{" "}
+                                    Android Development
                                 </option>
                                 <option value="Backend Development">
-                                    Backend Development{" "}
+                                    Backend Development
                                 </option>
                                 <option value="Digital Marketing">
                                     Digital Marketing
@@ -451,19 +448,21 @@ const EnrolNowForm = () => {
                                     Internet of Things (IOT)
                                 </option>
                             </select>
+                            <p className='err-message'>{inputErrors.learningtrack}</p> 
                         </div>
                         <div className="col-md-6 mt-4 text-md-start d-md-none">
                             <label style={fontwgt} className="form-label enrollalignlabel">
                                 Learning track
                             </label>
                             <select
-                                value={learningtrack}
+                                
                                 className="form-select enroll-input"
-                                name="track"
-                                id="track"
-                                onChange={(e) => setLearningtrack(e.target.value)}
+                                name="learningtrack"
+                                id="learningtrack"
+                                onChange={handleChange} 
+                                value={inputField.learningtrack} 
                             >
-                                <option selected disabled>
+                                <option selected value="">
                                     Select a learning track
                                 </option>
                                 <option value="Product Design">Product Design </option>
@@ -472,10 +471,10 @@ const EnrolNowForm = () => {
                                     Frontend development
                                 </option>
                                 <option value="Android Development">
-                                    Android Development{" "}
+                                    Android Development
                                 </option>
                                 <option value="Backend Development">
-                                    Backend Development{" "}
+                                    Backend Development
                                 </option>
                                 <option value="Digital Marketing">
                                     Digital Marketing
@@ -485,6 +484,7 @@ const EnrolNowForm = () => {
                                     Internet of Things (IOT)
                                 </option>
                             </select>
+                            <p className='err-message'>{inputErrors.learningtrack}</p> 
                         </div>
                     </div>
                 </div>
@@ -495,13 +495,13 @@ const EnrolNowForm = () => {
                                 How did you hear about kodecamp
                             </label>
                             <select
-                                value={referal}
+                                name="referal"
+                                onChange={handleChange} 
+                                value={inputField.referal} 
                                 className="form-select enroll-input"
-                                name="gender"
-                                id="gender"
-                                onChange={(e) => setReferal(e.target.value)}
+                                id="referal"
                             >
-                                <option selected disabled>
+                                <option selected value="">
                                     Select from list
                                 </option>
                                 <option value="Linkedln">Linkedln</option>
@@ -513,6 +513,7 @@ const EnrolNowForm = () => {
                                 <option value="Youtube">Youtube </option>
                                 <option value="Others">Others</option>
                             </select>
+                            <p className='err-message'>{inputErrors.referal}</p> 
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block"></div>
                     </div>
@@ -526,15 +527,16 @@ const EnrolNowForm = () => {
                         Tell us about yourself
                     </label>
                     <textarea
-                        value={aboutyou}
                         className="form-control z-depth-1 enrollaligntextarea"
-                        onChange={(e) => setAboutyou(e.target.value)}
+                        onChange={handleChange} 
+                        value={inputField.aboutyou} 
                         rows="3"
                         maxLength="500"
-                        name="aboutyourself"
-                        id="aboutyourself"
+                        name="aboutyou"
+                        id="aboutyou"
                         placeholder="About you"
                     ></textarea>
+                    <p className='err-message'>{inputErrors.aboutyou}</p>  
                 </div>
                 <div className="row mx-1 justify-content-center align-items-center mt-4">
                     <label
@@ -545,18 +547,19 @@ const EnrolNowForm = () => {
                         What do you aim to achieve at the end of the program
                     </label>
                     <textarea
-                        value={aim}
                         className="form-control z-depth-1 enrollaligntextarea"
-                        onChange={(e) => setAim(e.target.value)}
+                        onChange={handleChange} 
+                        value={inputField.aim} 
                         rows="3"
                         maxLength="500"
-                        name="aboutyourself"
-                        id="aboutyourself"
+                        name="aim"
+                        id="aim"
                         placeholder="Your Aim(s)"
                     ></textarea>
+                    <p className='err-message'>{inputErrors.aim}</p>  
                 </div>
                 <div className="justify-content-center align-items-center text-center">
-                    <button type="submit" className="fwbd px-4 py-3 btn m-4 bg-green-100 white-100"  >
+                    <button type="submit" className="fwbd px-5 py-3 btn m-4 bg-green-100 white-100"  >
                         Join the Cohort
                     </button>
                 </div>
