@@ -148,7 +148,7 @@ const Sponsor = () => {
                       Phone number
                     </Form.Label>
                     <Form.Control
-                      type="number"
+                      type="tel"
                       name="phone"
                       value={newSponsor.phone}
                       onChange={handleChange}

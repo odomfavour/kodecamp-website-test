@@ -262,7 +262,7 @@ const EnrolNowForm = () => {
                             id="phonenumber"
                             onChange={handleChange} 
                             value={inputField.phonenumber} 
-                                type="text"
+                                type="tel"
                                 className="form-control enroll-input"
                                 placeholder="+234 812 555 0126" 
                             />
@@ -277,7 +277,7 @@ const EnrolNowForm = () => {
                         name="phonenumber"
                         onChange={handleChange} 
                         value={inputField.phonenumber} 
-                            type="text"
+                            type="tel"
                             className="form-control enroll-input"
                             placeholder="+234 812 555 0126" 
                         />
