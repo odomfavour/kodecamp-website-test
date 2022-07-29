@@ -3,16 +3,17 @@ import { Container, Form, Button } from "react-bootstrap";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import "./Sponsor.css";
 
+// custom alert
+import Swal from "sweetalert2";
+
 const Sponsor = () => {
-  const initialValues = {
+  const [newSponsor, setNewSponsor] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     business: "",
-  };
-
-  const [newSponsor, setNewSponsor] = useState(initialValues);
+  });
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
@@ -30,7 +31,21 @@ const Sponsor = () => {
     e.preventDefault();
     setFormErrors(validate(newSponsor));
     setIsSubmit(true);
-    console.log(newSponsor);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      Swal.fire({
+        icon: "success",
+        title: "Form Submitted",
+        confirmButtonColor: "#669e00",
+      }).then(() =>
+        setNewSponsor({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          business: "",
+        })
+      );
+    }
   }
 
   useEffect(() => {
@@ -163,11 +178,11 @@ const Sponsor = () => {
                 Become a sponsor
               </Button>
 
-              {Object.keys(formErrors).length === 0 && isSubmit ? (
+              {/* {Object.keys(formErrors).length === 0 && isSubmit ? (
                 alert("You have successfully registered as a Sponsor")
               ) : (
                 <p>{""} </p>
-              )}
+              )} */}
             </Form>
           </Container>
         </div>
