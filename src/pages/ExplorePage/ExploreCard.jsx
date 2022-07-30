@@ -6,9 +6,9 @@ function ExploreCard({ track_name, track_image, track_icon, track_desc }) {
       <div>
         <div className="mb-3">
           <div className=" col mb-4">
-            <Card className="explore-card-container h-100 bg-white-100">
+            <Card className="explore-card-container h-100  bg-white-100">
               <div
-                className=" explore-card-bg text-white  "
+                className=" explore-card-bg text-white explore-card-height  "
                 style={{
                   backgroundImage: `url('${track_image}')`,
                 }}
@@ -28,7 +28,7 @@ function ExploreCard({ track_name, track_image, track_icon, track_desc }) {
                 </Card.Title>
 
                 <div>
-                  <Card.Text className="explore-fs-14-500 deep-blue-100 text-start track-desc">
+                  <Card.Text className=" explore-fs-14-500  deep-blue-100 text-start track-desc">
                     {track_desc}
                   </Card.Text>
                 </div>
