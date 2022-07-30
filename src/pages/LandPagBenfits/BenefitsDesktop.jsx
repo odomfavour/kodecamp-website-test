@@ -38,8 +38,7 @@ function BenefitsDesktop() {
                             <Card.Body>
                                 <Card.Title className='fs-5 fw-bold'>WHAT WE OFFER</Card.Title>
                                 <Card.Text className='fs-6 mx-2'>
-                                    At KodeCamp, you gain access relevant and valuable training 
-                                    and mentorship that will propel your tech journey
+                                Partnering with various tech industries,we offer our interns spots to work with the skills  gotten in a corporate setting.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -52,8 +51,7 @@ function BenefitsDesktop() {
                             <Card.Body>
                                 <Card.Title className='fs-5 fw-bold'>GET A CERTIFICATE</Card.Title>
                                 <Card.Text className='fs-6 mx-2'>
-                                    At KodeCamp, you gain access relevant and valuable training 
-                                    and mentorship that will propel your tech journey
+                                    As much as we believe in knowledge acquisition, we also award certifications that are globally recognized and accepted
                                 </Card.Text>
                             </Card.Body>
                         </Card>

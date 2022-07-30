@@ -17,11 +17,9 @@ function LandMobileCard3({id, name, track,description,image}) {
                                         <Card.Body className='text-center'>
                                             <div className=''>
                                                 <Card.Text className=''>
-                                                    <div className=' mx-auto '>
-                                                        <p className=' line-height-sm fs-mobile font-size-sm fw-normal light-blue px-2'>
-                                                            “At KodeCamp, you gain access relevant and valuable training 
-                                                            and mentorship that will propel 
-                                                            your tech journey”
+                                                    <div className=' mx-auto '> 
+                                                        <p className=' line-height-sm fs-mobile font-size-sm fw-normal light-blue ' style={{height:'160px'}}>
+                                                            “Kodecamp has proven to help learners succeed; it is an all inclusive and flexible program that allows people with even little-to-no experience learn alongside their peers ”
                                                         </p>
                                                     </div>
                                                 </Card.Text>
@@ -32,8 +30,8 @@ function LandMobileCard3({id, name, track,description,image}) {
                                                 </div>
                                             </div>
                                             <div>
-                                                <p className='fw-bold font-size-sm lh-sm '>KALISA MURANO</p>
-                                                <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>Backend Development Intern </p>
+                                                <p className='fw-bold font-size-sm lh-sm black-100 '>NAGHMA BIBI NUNDLOLL</p>
+                                                <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>FrontEnd Development Intern </p>
                                             </div>
                                         </Card.Body>
                                     </Card>

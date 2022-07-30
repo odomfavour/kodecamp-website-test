@@ -1,3 +1,6 @@
+.buttondisabled:disabled {
+    opacity: 0.35;
+  }
 .enroll-h4 {
     font-size: 30px;
     line-height: 43px;
@@ -38,7 +41,7 @@
     overflow-y: auto;
     max-height: calc(100vh - 150px);
 }
-
+/* 
 .form-check-input:checked~.custom-radio::before {
     background-color: var(--black-100);
 
@@ -68,7 +71,7 @@
     gap: 15px;
     align-items: center !important;
     margin-bottom: 10px;
-}
+} */
 
 .form-control:focus {
     box-shadow: none !important;

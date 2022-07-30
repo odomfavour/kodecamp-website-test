@@ -10,6 +10,7 @@
     "autoprefixer": "10.4.5",
     "bootstrap": "^5.2.0-beta1",
     "dayjs": "^1.11.3",
+    "formik": "^2.2.9",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-circular-progressbar": "^2.1.0",
@@ -18,6 +19,8 @@
     "react-player": "^2.10.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.4.24",
+    "sweetalert2-react-content": "^5.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
