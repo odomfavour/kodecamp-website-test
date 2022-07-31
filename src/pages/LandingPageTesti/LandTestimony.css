@@ -43,8 +43,9 @@
 }
 
 .landingpageacc .accordion-button:not(.collapsed)::after {
-    content: url("../../Images/landing-card-images/close-icon-2.svg") !important;
+    content: url("../../Images/landing-card-images/minus.svg") !important;
     background-image: none !important;
+    color: white !important;
 } 
 .landingpageacc .accordion-button.collapsed::after {   
     content: url("../../Images/landing-card-images/add-icon.svg");

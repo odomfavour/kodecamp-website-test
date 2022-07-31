@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { Form, Row, Col, Container } from "react-bootstrap";
 import contactimg from "../../Images/contactus_images/contact-us-image.jpg";
 import contactimgmobile from "../../Images/contactus_images/contact-us-image-mobile.jpg";
-
+import contactmdimg1 from "../../Images/contactus_images/contact-md-img-1.jpg";
+import contactmdimg2 from "../../Images/contactus_images/contact-md-img-2.jpg";
+import contactmdimg3 from "../../Images/contactus_images/contact-md-img-3.jpg";
+import contactmdimg4 from "../../Images/contactus_images/contact-md-img-4.jpg";
+import contactmdimg5 from "../../Images/contactus_images/contact-md-img-5.jpg";
 // custom alert
 import Swal from "sweetalert2";
 // import withReactContent from "sweetalert2-react-content";
@@ -78,8 +82,8 @@ function ContactUsForm() {
 
   return (
     <>
-      <Container className="my-5">
-        <div className="text-center mx-auto contact-fs-32-500 col-lg-9 col-md-11 col fs-sm-5 fs-3  fw-bold">
+      <Container className="my-5 d-none d-md-block">
+        <div className="text-center mx-auto col-lg-10 fw-bold" style={{fontSize:"32px"}}>
           <p className="">
             Our team are available to respond to any enquires or question you
             might have. We’ll love to hear from you,
@@ -87,19 +91,76 @@ function ContactUsForm() {
           </p>
         </div>
       </Container>
-      <Container>
+      <Container className="my-5 d-block d-md-none">
+        <div className="text-center mx-auto col-md-9 px-3 fw-bold" style={{fontSize:"15px"}} >
+          <p className="">
+            Our team are available to respond to any enquires or question you
+            might have. We’ll love to hear from you,
+            <br></br>Get in touch today!
+          </p>
+        </div>
+      </Container>
+      <Container >
         {/* Mobile View */}
-        <Row className=" d-flex-column justify-content-center  my-5  d-block d-lg-none ">
-          <Col className="  d-block d-lg-none  ">
-            <div className="text-center container mb-5 ">
-              <img
-                src={contactimgmobile}
-                alt="contact-img"
-                className=" img-fluid border rounded-circle"
-              />
-            </div>
+        <Row className=" d-inline-block   d-block d-lg-none ">
+          <Col className=" d-block d-lg-none mt-4 mb-5">
+            
+            <div className=" position-relative d-flex justify-content-center align-items-center mx-auto" style={{height:"350px", width:"350px" }}>
+                
+                <div className=" contact-medium-img position-absolute  contact-hero-2">
+                    <img
+                      src={contactmdimg1}
+                      alt="contact-img"
+                      className="conatiner   img-fluid rounded-circle"
+                    />
+                </div>
+                <div className=" contact-medium-img position-absolute  contact-hero-1 ">
+                  <img
+                    src={contactmdimg2}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className=" contact-medium-img position-absolute  contact-hero-3 ">
+                  <img
+                    src={contactmdimg3}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className="  position-absolute  contact-hero-4 " style={{height:'60px', width:"60px"}}>
+                  <img
+                    src={contactmdimg4}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className=" position-absolute  contact-hero-5 " style={{height:'70px', width:"70px"}}>
+                  <img
+                    src={contactmdimg5}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className="inner-circle position-absolute   rounded-circle">
+                  
+                </div>
+                <div className="outer-circle position-absolute   rounded-circle">
+                  
+                </div>
+                
+                
+                <div className="  position-relative " style={{width:"200px", height:"200px"}}>
+                  <img
+                    src={contactimgmobile}
+                    alt="contact-img"
+                    className="  img-fluid rounded-circle"
+                  />
+                 
+                </div>
+              </div>
           </Col>
-          <Col className="">
+          <Col className=" d-block d-lg-none">
             <div className=" container">
               <Form noValidate onSubmit={handleSubmit}>
                 <Form.Group className="mb-4 " controlId="validationCustom01">
@@ -174,9 +235,9 @@ function ContactUsForm() {
         </Row>
 
         {/* Desktop View */}
-        <div className="d-none d-lg-block">
-          <Row className=" d-flex justify-content-between my-5 ">
-            <Col className="col-lg-6  ">
+        <div className="d-none d-lg-block ">
+          <Row className=" d-flex justify-content-between  my-3 ">
+            <Col className="col-lg-6 pt-4 ">
               <div className=" container">
                 <Form noValidate onSubmit={handleSubmit}>
                   <Form.Group className=" mb-4 " controlId="validationCustom01">
@@ -248,14 +309,62 @@ function ContactUsForm() {
                 </Form>
               </div>
             </Col>
-            <Col className="col-lg-5 py-3 ">
-              <div className="  ">
-                <img
-                  src={contactimg}
-                  alt="contact-img"
-                  className="conatiner  img-fluid rounded-circle"
-                />
+            <Col className="col-lg-5 pt-5">
+              <div className="position-relative d-flex justify-content-center align-items-center" style={{height:"400px", width:"400px" }}>
+                
+                <div className=" contact-medium-img position-absolute  contact-hero-2">
+                    <img
+                      src={contactmdimg1}
+                      alt="contact-img"
+                      className="conatiner   img-fluid rounded-circle"
+                    />
+                </div>
+                <div className=" contact-medium-img position-absolute  contact-hero-1 ">
+                  <img
+                    src={contactmdimg2}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className=" contact-medium-img position-absolute  contact-hero-3 ">
+                  <img
+                    src={contactmdimg3}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className="  position-absolute  contact-hero-4 " style={{height:'70px', width:"70px"}}>
+                  <img
+                    src={contactmdimg4}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className=" position-absolute  contact-hero-5 " style={{height:'80px', width:"80px"}}>
+                  <img
+                    src={contactmdimg5}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
+                </div>
+                <div className="inner-circle position-absolute   rounded-circle">
+                  
+                </div>
+                <div className="outer-circle position-absolute   rounded-circle">
+                  
+                </div>
+                
+                
+                <div className="  position-relative " style={{width:"270px", height:"270px"}}>
+                  <img
+                    src={contactimg}
+                    alt="contact-img"
+                    className="  img-fluid rounded-circle"
+                  />
+                 
+                </div>
               </div>
+              
             </Col>
           </Row>
         </div>
