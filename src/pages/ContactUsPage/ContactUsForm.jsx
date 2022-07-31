@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Form, Row, Col, Container } from "react-bootstrap";
 import contactimg from "../../Images/contactus_images/contact-us-image.jpg";
 import contactimgmobile from "../../Images/contactus_images/contact-us-image-mobile.jpg";
-
 // custom alert
 import Swal from "sweetalert2";
 // import withReactContent from "sweetalert2-react-content";

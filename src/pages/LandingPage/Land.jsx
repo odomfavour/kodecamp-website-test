@@ -119,9 +119,9 @@ const Land = () => {
                     OUR SPONSORS
                 </h1>
                 <h3 className='sponsorfontsize2  lh-base deep-blue-100'>
-                    We are a trusted tech stop for talents globally, aiming to increase the  percentage
-                    deployed into the workforce. As a sponsor, you stand to gain the audience that comes
-                    with the brand and also be affiliated with us. Check out our existing sponsors today!
+                Join the KodeCamp internship and gain 
+                        relevant skills to kickstart and develop your
+                        career in the ever growing tech space.
                 </h3>
                 <div className="row d-flex flex-row mt-5 ">
                     <div className="col"></div>
