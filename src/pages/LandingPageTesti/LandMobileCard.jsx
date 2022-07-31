@@ -16,10 +16,8 @@ function LandMobileCard({id, name, track,description,image}) {
                                             <div className=''>
                                                 <Card.Text className=''>
                                                     <div className=' mx-auto '>
-                                                        <p className=' line-height-sm font-size-sm fs-mobile fw-normal light-blue px-2'>
-                                                            “At KodeCamp, you gain access relevant and valuable training 
-                                                            and mentorship that will propel 
-                                                            your tech journey”
+                                                        <p className=' line-height-sm font-size-sm fs-mobile fw-normal light-blue ' style={{height:'160px'}}>
+                                                            “They say the people who support your growth are angels on earth and I believe that being a part of Kodecamp has been significant to my career”
                                                         </p>
                                                     </div>
                                                 </Card.Text>
@@ -30,7 +28,7 @@ function LandMobileCard({id, name, track,description,image}) {
                                                 </div>
                                             </div>
                                             <div>
-                                                <p className='fw-bold font-size-sm lh-sm black-100 '>SALISU AKANDE</p>
+                                                <p className='fw-bold font-size-sm lh-sm black-100 '>CLINTON OBUZOR</p>
                                                 <p className='landtesti-fs-12 font-size-sm lh-sm fw-bold blue-100'>Product Design Intern </p>
                                             </div>
                                         </Card.Body>

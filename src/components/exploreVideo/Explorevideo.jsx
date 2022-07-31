@@ -43,16 +43,16 @@ const Explorevideo = () => {
       </Col>
       <Col className="col-md-2 d-none d-lg-flex d-md-flex px-md-3 px-lg-4">
         <div
-          style={{ width: "64px", height: "64px" }}
-          className="  bg-deep-blue-100 d-flex justify-content-center align-items-center mx-3"
+          style={{ width: "64px", height: "64px", borderRadius: "4px" }}
+          className="  bg-deep-blue-100 d-flex justify-content-center align-items-center mx-4"
         >
           <IoIosArrowBack className="white-100 fs-1 p-2 arrow-icon" />
         </div>
         <div
-          style={{ width: "64px", height: "64px" }}
-          className="border-secondary d-flex justify-content-center align-items-center rounded-3 border"
+          style={{ width: "64px", height: "64px", borderRadius: "4px" }}
+          className="border-secondary d-flex justify-content-center align-items-center border"
         >
-          <IoIosArrowForward className="black-60 fs-1 border-secondary arrow-icon" />
+          <IoIosArrowForward className="black-60 fs-1 p-2 border-secondary arrow-icon" />
         </div>
       </Col>
     </Row>

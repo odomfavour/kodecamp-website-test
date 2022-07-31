@@ -15,35 +15,34 @@ function LandinPageAccordSection() {
                             <h5 className='fs-6 mb-2 border-bottom land-avail line-height-base text-center   fw-bold border-sm-bottom border-lg-bottom col-lg-8 col-md-10 col deep-blue-100 d-block d-md-none '>AVAILABLE TRACKS</h5>
                             <h5 className=' land-avail d-none d-lg-block  deep-blue-100 fs-4 fw-bold '>AVAILABLE TRACKS</h5>
                             <h5 className=' land-avail d-none d-md-block d-lg-none  text-center deep-blue-100 fs-4 fw-bold '>AVAILABLE TRACKS</h5>
-                            <h1 className=' d-none d-lg-block landing-fs-52  deep-blue-100' style={{fontWeight: "800"}}  >
+                            <h1 className=' d-none d-lg-block display-5  deep-blue-100' style={{fontWeight: "800"}}  >
+                                <span className='green-100'>Checkout</span>  some <br /> of our available <br /> tracks 
+                            </h1>
+                            <h1 className=' d-block d-lg-none display-5 text-center  deep-blue-100' style={{fontWeight: "800"}}  >
                                 <span className='green-100'>Checkout</span>  some of our available tracks 
                             </h1>
-                            <h1 className=' d-block d-lg-none landing-fs-52 text-center  deep-blue-100' style={{fontWeight: "600"}}  >
-                                <span className='green-100'>Checkout</span>  some of our available tracks 
-                            </h1>
-                            <h4 className='d-none d-lg-block  line-height-lg fs-4 fw-normal'>
+                            <h5 className='d-none d-lg-block deep-blue-100 lh-base'>
                                 With so much to learn from enroling in 
                                 KodeCamp, these are some of the tracks
                                 available to our interns. To browse through 
                                 our list of courses, check out the
                                 <Link to="/explore">
-                                    <h4 className='line-height-lg fw-normal mt-2'>Explore Section</h4>
+                                    <h5 className='lh-base mt-1'>Explore Section</h5>
                                 </Link>
 
-                            </h4>
-                            <h4 className='d-block d-lg-none text-center black-100 line-height-lg fs-5 fw-normal'>
+                            </h5>
+                            <h6 className='d-block d-lg-none text-center deep-blue-100 lh-base'>
                                 With so much to learn from enroling in 
                                 KodeCamp, these are some of the tracks
                                 available to our interns. To browse through 
                                 our list of courses, check out the
                                 <Link to="/explore">
-                                    <h4 className='line-height-lg fw-normal fs-5 mt-2'>Explore Section</h4>
+                                    <h6 className='lh-base  mt-1'>Explore Section</h6>
                                 </Link>
-
-                            </h4> 
+                            </h6> 
                         </div>
                     </Col>
-                    <Col className="col-10  col-lg-6 mt-4">
+                    <Col className="col  col-lg-6 mt-4">
                         {/* {
                                 accordiondata.map(accdata => (
                                     (               
