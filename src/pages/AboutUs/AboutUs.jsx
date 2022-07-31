@@ -26,7 +26,7 @@ const AboutUs = () => {
                         <h1 className="deep-blue-100 experience text-center text-lg-start mt-4 mt-md-5" style={{fontWeight: "800"}}>
                             The <span className="green-100">KodeCamp</span> Experience
                         </h1>
-                        <p className="deep-blue-100 text-start d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.5em"}}>
+                        <p className="deep-blue-100 text-start d-none d-lg-block experience-text" style={{fontWeight: "500" ,fontSize: "1.25rem", lineHeight: "1.5em"}}>
                             KodeCamp is designed to support capacity development in the field of information and communication technology (ICT) 
                             by providing training, mentorship, leadership, and career opportunities to young Nigerians.
                         </p>
@@ -69,7 +69,7 @@ const AboutUs = () => {
             <Container className="d-block d-sm-none mt-4 mb-5">
                 <Row className="position-relative">
                     <Col xs={11} className="mx-auto">
-                        <div className="values text-center bg-blue-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"180px"}}>
+                        <div className="values text-center bg-blue-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"200px"}}>
                             <div className="values-content-container">
                                 <p className="white-100 px-4 py-5">
                                     These are the values that we hold dear. These culture and ethics have shaped us into one of the best tech 
@@ -89,10 +89,10 @@ const AboutUs = () => {
                         <div className="mission text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={Icon} className="mission-icon mt-4 mt-lg-3" alt="mission-icon" />
-                                <h2 className="white-100 pt-3 pt-lg-0" style={{fontWeight: "700", fontSize: "1.25em"}}>
+                                <h2 className="white-100 pt-1 pt-sm-2 pt-lg-1" style={{fontWeight: "700", fontSize: "1.25em"}}>
                                     Mission
                                 </h2>
-                                <p className="white-100 px-4 px-sm-5 px-lg-5 pt-2 pt-lg-0 pb-2" style={{fontWeight: "500", fontSize: "1.125em"}}>
+                                <p className="white-100 px-4 px-sm-5 pb-4 pb-sm-0 px-lg-5 pt-sm-2 pt-lg-0" style={{fontWeight: "500", fontSize: "1.125em"}}>
                                     Our mission is to admit, nurture and deploy next generation of tech workforce 
                                     in Africa for the budding era of industry 4.0.
                                 </p>
@@ -104,10 +104,10 @@ const AboutUs = () => {
                         <div className="vision text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={VisionIcon} className="vision-icon mt-4 mt-lg-3" alt="vision-icon" />
-                                <h2 className="white-100 pt-3 pt-lg-0" style={{fontWeight: "700", fontSize: "1.25em"}}>
+                                <h2 className="white-100 pt-3 pt-lg-1" style={{fontWeight: "700", fontSize: "1.25em"}}>
                                     Vision
                                 </h2>
-                                <p className="white-100 px-4 px-sm-5 px-lg-5 pt-2 pt-lg-0 pb-2" style={{fontWeight: "500", fontSize: "1.125em"}}>
+                                <p className="white-100 px-4 px-sm-5 pt-2 pt-lg-0 pb-2 technical-talents" style={{fontWeight: "500", fontSize: "1.125em"}}>
                                     A one stop for technical talents in Africa by 2025!
                                 </p>
                                 <img src={Polygon} alt="polygon-vision" className="polygon-vision" />
@@ -146,22 +146,22 @@ const AboutUs = () => {
                                 <Col xs={12}>
                                     <Row className="">
                                         <Col xs={6} className="">
-                                            <div className="bg-green-100 square-div me-auto" id="equity" style={{borderRadius: '4px'}}>
+                                            <div className="bg-green-100 square-div mx-auto" id="equity" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     E
                                                 </p>
                                             </div>
-                                            <p className="green-100 text-start text-md-center text-lg-start text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="green-100 text-center text-lg-center text-below-square-div pt-2" id="equity-text" style={{fontWeight: '700'}}>
                                                 EQUITY
                                             </p>
                                         </Col>
                                         <Col xs={6} className="">
-                                            <div className="bg-green-100 square-div ms-auto" id="novelty" style={{borderRadius: '4px'}}>
+                                            <div className="bg-green-100 square-div mx-auto" id="novelty" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     N
                                                 </p>
                                             </div>
-                                            <p className="green-100 text-end text-md-center text-lg-end text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="green-100 text-center text-lg-center text-below-square-div pt-2" id="novelty-text" style={{fontWeight: '700'}}>
                                                 NOVELTY
                                             </p>
                                         </Col>
@@ -176,17 +176,17 @@ const AboutUs = () => {
                                                     A
                                                 </p>
                                             </div>
-                                            <p className="deep-blue-100 text-end me-2 text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="deep-blue-100 text-end me-2 text-below-square-div pt-2" id="ambition-text" style={{fontWeight: '700'}}>
                                                 AMBITION
                                             </p>
                                         </Col>
                                         <Col xs={6} className="">
-                                            <div className="bg-deep-blue-100 square-div ms-3 mx-auto" style={{borderRadius: '4px'}}>
+                                            <div className="bg-deep-blue-100 square-div ms-3 me-auto" style={{borderRadius: '4px'}}>
                                                 <p className="white-100 text-center pb-3 square-div-text" style={{fontWeight: "700"}}>
                                                     R
                                                 </p>
                                             </div>
-                                            <p className="deep-blue-100 text-start ms-3 text-below-square-div pt-2" style={{fontWeight: '700'}}>
+                                            <p className="deep-blue-100 text-start ms-3 text-below-square-div pt-2" id="respect-text" style={{fontWeight: '700'}}>
                                                 RESPECT
                                             </p>
                                         </Col>
