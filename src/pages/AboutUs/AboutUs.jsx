@@ -69,7 +69,7 @@ const AboutUs = () => {
             <Container className="d-block d-sm-none mt-4 mb-5">
                 <Row className="position-relative">
                     <Col xs={11} className="mx-auto">
-                        <div className="values text-center bg-blue-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"200px"}}>
+                        <div className="values text-center bg-green-100 overflow-hidden mx-auto" style={{borderRadius: "4px", height:"200px"}}>
                             <div className="values-content-container">
                                 <p className="white-100 px-4 py-5">
                                     These are the values that we hold dear. These culture and ethics have shaped us into one of the best tech 
@@ -89,7 +89,7 @@ const AboutUs = () => {
                         <div className="mission text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={Icon} className="mission-icon mt-4 mt-lg-3" alt="mission-icon" />
-                                <h2 className="white-100 pt-1 pt-sm-2 pt-lg-1" style={{fontWeight: "700", fontSize: "1.25em"}}>
+                                <h2 className="white-100 pt-1 pt-sm-2 pt-lg-2" style={{fontWeight: "700", fontSize: "1.25em", marginBottom: '1.2rem'}}>
                                     Mission
                                 </h2>
                                 <p className="white-100 px-4 px-sm-5 pb-4 pb-sm-0 px-lg-5 pt-sm-2 pt-lg-0" style={{fontWeight: "500", fontSize: "1.125em"}}>
@@ -104,7 +104,7 @@ const AboutUs = () => {
                         <div className="vision text-center bg-green-100 mb-5 overflow-hidden mx-auto" style={{borderRadius: "4px"}}>
                             <div className="mission-content-container">
                                 <img src={VisionIcon} className="vision-icon mt-4 mt-lg-3" alt="vision-icon" />
-                                <h2 className="white-100 pt-3 pt-lg-1" style={{fontWeight: "700", fontSize: "1.25em"}}>
+                                <h2 className="white-100 pt-3 pt-lg-2" style={{fontWeight: "700", fontSize: "1.25em"}}>
                                     Vision
                                 </h2>
                                 <p className="white-100 px-4 px-sm-5 pt-2 pt-lg-0 pb-2 technical-talents" style={{fontWeight: "500", fontSize: "1.125em"}}>
