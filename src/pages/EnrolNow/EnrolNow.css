@@ -1,3 +1,6 @@
+.buttondisabled:disabled {
+    opacity: 0.35;
+  }
 .enroll-h4 {
     font-size: 30px;
     line-height: 43px;

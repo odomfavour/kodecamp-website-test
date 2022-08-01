@@ -3,7 +3,7 @@
 }
 
 .explore-card-bg {
-  height: 299.7px;
+  height: 180px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,5 +58,15 @@
 @media screen and (max-width: 575px) {
   .explore-page .track-desc {
     height: 110px;
+  }
+}
+@media (min-width: 575.98px) and (max-width: 7678px) {
+  .explore-page .track-desc {
+    height: 140px;
+  }
+}
+@media  (min-width: 1024px) {
+  .explore-page .track-desc {
+    height: 120px;
   }
 }

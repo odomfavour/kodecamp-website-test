@@ -152,7 +152,7 @@ const Teams = () => {
                       className="text-justify"
                       style={{ fontSize: "14px", fontWeight: "400" }}
                     >
-                      Graphics, Web and Mobile Design, Tech Enthsiast. A cool
+                      Graphics, Web and Mobile Designer, Tech Enthsiast. A cool
                       breeze and a hurricane.
                     </p>
                   </div>
@@ -175,8 +175,8 @@ const Teams = () => {
                       className="text-justify"
                       style={{ fontSize: "14px", fontWeight: "400" }}
                     >
-                      CAD | CAM | Product Design | Industial Design. I listen a
-                      lot more than I speak.
+                      CAD | CAM | Product Design | Industial Design. He listens
+                      a lot more than he speaks.
                     </p>
                   </div>
                 )}
@@ -316,7 +316,7 @@ const Teams = () => {
           </Col>
           <Col className=" d-lg-none">
             {/* team mate */}
-            <div className=" \">
+            <div>
               <img src={TeamMember1} alt="" className="img-fluid " />
               <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5 ">
                 <p
@@ -401,8 +401,8 @@ const Teams = () => {
                   UI/UX Design
                 </p>
                 <p style={{ fontSize: "16px", fontWeight: "400" }}>
-                  Graphics, Web and Mobile Design, Tech Enthsiast. A cool breeze
-                  and a hurricane.
+                  Graphics, Web and Mobile Designer, Tech Enthsiast. A cool
+                  breeze and a hurricane.
                 </p>
               </div>
             </div>
@@ -424,8 +424,8 @@ const Teams = () => {
                   CAD
                 </p>
                 <p style={{ fontSize: "16px", fontWeight: "400" }}>
-                  CAD | CAM | Product Design | Industial Design. I listen a lot
-                  more than I speak.
+                  CAD | CAM | Product Design | Industial Design. He listens a
+                  lot more than he speaks.
                 </p>
               </div>
             </div>

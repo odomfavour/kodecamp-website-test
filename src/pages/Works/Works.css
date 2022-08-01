@@ -13,7 +13,8 @@
     }
 
     #textBelowKodeCamp3_0 {
-        font-size: 1.5em !important
+        font-size: 1.25em !important;
+        line-height: 1.5em;
     }
 
     .text-time {
@@ -46,8 +47,7 @@
 
     #text-below-data {
         font-weight: 400 !important;
-        font-size: 24px  !important;
-        line-height: 1.5625em !important;
+        line-height: 1.5em !important;
     }
 
     #btn-join-works {

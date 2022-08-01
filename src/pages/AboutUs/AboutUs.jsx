@@ -32,7 +32,11 @@ const AboutUs = () => {
             </h1>
             <p
               className="deep-blue-100 text-start d-none d-lg-block experience-text"
-              style={{ fontWeight: "500", fontSize: "1.5em" }}
+              style={{
+                fontWeight: "500",
+                fontSize: "1.25rem",
+                lineHeight: "1.5em",
+              }}
             >
               KodeCamp is designed to support capacity development in the field
               of information and communication technology (ICT) by providing
@@ -109,7 +113,7 @@ const AboutUs = () => {
           <Col xs={11} className="mx-auto">
             <div
               className="values text-center bg-blue-100 overflow-hidden mx-auto"
-              style={{ borderRadius: "4px", height: "180px" }}
+              style={{ borderRadius: "4px", height: "200px" }}
             >
               <div className="values-content-container">
                 <p className="white-100 px-4 py-5">
@@ -149,13 +153,13 @@ const AboutUs = () => {
                   alt="mission-icon"
                 />
                 <h2
-                  className="white-100 pt-3 pt-lg-0"
+                  className="white-100 pt-1 pt-sm-2 pt-lg-1"
                   style={{ fontWeight: "700", fontSize: "1.25em" }}
                 >
                   Mission
                 </h2>
                 <p
-                  className="white-100 px-4 px-sm-5 px-lg-5 pt-2 pt-lg-0 pb-2"
+                  className="white-100 px-4 px-sm-5 pb-4 pb-sm-0 px-lg-5 pt-sm-2 pt-lg-0"
                   style={{ fontWeight: "500", fontSize: "1.125em" }}
                 >
                   Our mission is to admit, nurture and deploy next generation of
@@ -181,13 +185,13 @@ const AboutUs = () => {
                   alt="vision-icon"
                 />
                 <h2
-                  className="white-100 pt-3 pt-lg-0"
+                  className="white-100 pt-3 pt-lg-1"
                   style={{ fontWeight: "700", fontSize: "1.25em" }}
                 >
                   Vision
                 </h2>
                 <p
-                  className="white-100 px-4 px-sm-5 px-lg-5 pt-2 pt-lg-0 pb-2"
+                  className="white-100 px-4 px-sm-5 pt-2 pt-lg-0 pb-2 technical-talents"
                   style={{ fontWeight: "500", fontSize: "1.125em" }}
                 >
                   A one stop for technical talents in Africa by 2025!
@@ -250,7 +254,7 @@ const AboutUs = () => {
                   <Row className="">
                     <Col xs={6} className="">
                       <div
-                        className="bg-green-100 square-div me-auto"
+                        className="bg-green-100 square-div mx-auto"
                         id="equity"
                         style={{ borderRadius: "4px" }}
                       >
@@ -262,7 +266,8 @@ const AboutUs = () => {
                         </p>
                       </div>
                       <p
-                        className="green-100 text-start text-md-center text-lg-start text-below-square-div pt-2"
+                        className="green-100 text-center text-lg-center text-below-square-div pt-2"
+                        id="equity-text"
                         style={{ fontWeight: "700" }}
                       >
                         EQUITY
@@ -270,7 +275,7 @@ const AboutUs = () => {
                     </Col>
                     <Col xs={6} className="">
                       <div
-                        className="bg-green-100 square-div ms-auto"
+                        className="bg-green-100 square-div mx-auto"
                         id="novelty"
                         style={{ borderRadius: "4px" }}
                       >
@@ -282,7 +287,8 @@ const AboutUs = () => {
                         </p>
                       </div>
                       <p
-                        className="green-100 text-end text-md-center text-lg-end text-below-square-div pt-2"
+                        className="green-100 text-center text-lg-center text-below-square-div pt-2"
+                        id="novelty-text"
                         style={{ fontWeight: "700" }}
                       >
                         NOVELTY
@@ -307,6 +313,7 @@ const AboutUs = () => {
                       </div>
                       <p
                         className="deep-blue-100 text-end me-2 text-below-square-div pt-2"
+                        id="ambition-text"
                         style={{ fontWeight: "700" }}
                       >
                         AMBITION
@@ -314,7 +321,7 @@ const AboutUs = () => {
                     </Col>
                     <Col xs={6} className="">
                       <div
-                        className="bg-deep-blue-100 square-div ms-3 mx-auto"
+                        className="bg-deep-blue-100 square-div ms-3 me-auto"
                         style={{ borderRadius: "4px" }}
                       >
                         <p
@@ -326,6 +333,7 @@ const AboutUs = () => {
                       </div>
                       <p
                         className="deep-blue-100 text-start ms-3 text-below-square-div pt-2"
+                        id="respect-text"
                         style={{ fontWeight: "700" }}
                       >
                         RESPECT
@@ -338,7 +346,6 @@ const AboutUs = () => {
           </Row>
         </Container>
       </Container>
-
       <Teams />
     </PageWrapper>
   );
