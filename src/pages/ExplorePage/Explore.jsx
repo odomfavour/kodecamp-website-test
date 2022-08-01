@@ -12,7 +12,7 @@ import { SearchContext } from "../../contexts/SearchContext";
 
 function Explore() {
   const [searchValue, setSearchValue] = useState("");
-  return (
+  return ( 
     <>
       <PageWrapper>
         <div className="container explore-page my-5">

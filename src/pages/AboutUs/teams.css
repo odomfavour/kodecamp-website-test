@@ -1,0 +1,73 @@
+.puzzle-container {
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.card-images {
+  width: 235px;
+  height: auto;
+  min-width: 235px;
+  position: relative;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.mover {
+  width: 235px;
+  height: 310px;
+  min-width: 235px;
+  position: relative;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  z-index: 0;
+  background-color: red;
+}
+
+/* puzzle stylings */
+
+/* .card-image-2.move1 {
+  transform: translateX(120px);
+}
+.card-image-3.move1 {
+  transform: translateX(240px);
+}
+.mover.move1 {
+  transform: translateY(0px);
+}  */
+
+.card-image-1.move1 {
+  transform: translateX(0px);
+}
+.card-image-2.move1 {
+  transform: translateX(0px);
+}
+.card-image-3.move1 {
+  transform: translateX(0px);
+}
+.mover.move1 {
+  transform: translateX(0px);
+}
+
+.card-image-1.move2 {
+  transform: translateX(0px);
+}
+.card-image-2.move2 {
+  transform: translateX(-240px);
+}
+.card-image-3.move2 {
+  transform: translateX(0px);
+}
+.mover.move2 {
+  transform: translateX(240px);
+}
+
+.card-image-1.move3 {
+  transform: translateX(0px);
+}
+.card-image-2.move3 {
+  transform: translateX(-240px);
+}
+.card-image-3.move3 {
+  transform: translateX(-240px);
+}
+.mover.move3 {
+  transform: translateX(480px);
+}

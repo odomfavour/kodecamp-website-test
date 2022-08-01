@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import "./Sponsor.css";
@@ -27,50 +27,47 @@ const Sponsor = () => {
     });
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setFormErrors(validate(newSponsor));
-    setIsSubmit(true);
+    const valid = await setFormErrors(validate(newSponsor));
+    // setIsSubmit(true);
+    console.log(valid);
+    console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       Swal.fire({
         icon: "success",
         title: "Form Submitted",
         confirmButtonColor: "#669e00",
-      }).then(() =>
+      }).then(() => {
+        console.log(formErrors);
+
         setNewSponsor({
           firstName: "",
           lastName: "",
           email: "",
           phone: "",
           business: "",
-        })
-      );
+        });
+      });
     }
   }
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(newSponsor);
-    }
-  }, [formErrors, newSponsor, isSubmit]);
-
   const validate = (values) => {
-    const errors = {};
+    let errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.firstName) {
       errors.firstName = "First name is required";
-    }
-    if (!values.lastName) {
+    } else if (!values.lastName) {
       errors.lastName = "Last name is required";
-    }
-    if (!values.email) {
+    } else if (!values.email) {
       errors.email = "Email is required";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format";
-    }
-    if (!values.phone) {
+    } else if (!values.phone) {
       errors.phone = "Pnone number is required";
+    } else {
+      setIsSubmit(true);
+      errors = {};
     }
 
     return errors;
