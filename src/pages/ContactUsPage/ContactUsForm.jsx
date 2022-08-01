@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { useEffect } from "react";
 import { Form, Row, Col, Container } from "react-bootstrap";
 import contactimg from "../../Images/contactus_images/contact-us-image.jpg";
 import contactimgmobile from "../../Images/contactus_images/contact-us-image-mobile.jpg";
