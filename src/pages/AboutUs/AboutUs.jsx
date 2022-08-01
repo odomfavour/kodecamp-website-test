@@ -112,7 +112,7 @@ const AboutUs = () => {
         <Row className="position-relative">
           <Col xs={11} className="mx-auto">
             <div
-              className="values text-center bg-blue-100 overflow-hidden mx-auto"
+              className="values text-center bg-green-100 overflow-hidden mx-auto"
               style={{ borderRadius: "4px", height: "200px" }}
             >
               <div className="values-content-container">
@@ -153,8 +153,12 @@ const AboutUs = () => {
                   alt="mission-icon"
                 />
                 <h2
-                  className="white-100 pt-1 pt-sm-2 pt-lg-1"
-                  style={{ fontWeight: "700", fontSize: "1.25em" }}
+                  className="white-100 pt-1 pt-sm-2 pt-lg-2"
+                  style={{
+                    fontWeight: "700",
+                    fontSize: "1.25em",
+                    marginBottom: "1.2rem",
+                  }}
                 >
                   Mission
                 </h2>
@@ -185,7 +189,7 @@ const AboutUs = () => {
                   alt="vision-icon"
                 />
                 <h2
-                  className="white-100 pt-3 pt-lg-1"
+                  className="white-100 pt-3 pt-lg-2"
                   style={{ fontWeight: "700", fontSize: "1.25em" }}
                 >
                   Vision

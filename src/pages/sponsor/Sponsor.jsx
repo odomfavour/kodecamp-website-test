@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import PageWrapper from "../../layout/PageWapper/PageWrapper";
 import "./Sponsor.css";
@@ -31,6 +31,7 @@ const Sponsor = () => {
     e.preventDefault();
     const valid = await setFormErrors(validate(newSponsor));
     // setIsSubmit(true);
+    console.log(valid);
     console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       Swal.fire({
