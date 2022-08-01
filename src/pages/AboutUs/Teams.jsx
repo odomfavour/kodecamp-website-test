@@ -315,6 +315,10 @@ const Teams = () => {
             </div>
           </Col>
           <Col className=" d-lg-none">
+            <h2 className="deep-blue-100 fw-bolder text-center text-uppercase mb-5 mt-2">
+              Meet the <br /> <span className="green-100">kodecamp</span> team
+            </h2>
+
             {/* team mate */}
             <div>
               <img src={TeamMember1} alt="" className="img-fluid " />
