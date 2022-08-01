@@ -82,7 +82,10 @@ function ContactUsForm() {
   return (
     <>
       <Container className="my-5 d-none d-md-block">
-        <div className="text-center mx-auto col-lg-10 fw-bold" style={{fontSize:"32px"}}>
+        <div
+          className="text-center mx-auto col-lg-10 fw-bold"
+          style={{ fontSize: "32px" }}
+        >
           <p className="">
             Our team are available to respond to any enquires or question you
             might have. We’ll love to hear from you,
@@ -91,7 +94,10 @@ function ContactUsForm() {
         </div>
       </Container>
       <Container className="my-5 d-block d-md-none">
-        <div className="text-center mx-auto col-md-9 px-3 fw-bold" style={{fontSize:"15px"}} >
+        <div
+          className="text-center mx-auto col-md-9 px-3 fw-bold"
+          style={{ fontSize: "15px" }}
+        >
           <p className="">
             Our team are available to respond to any enquires or question you
             might have. We’ll love to hear from you,
@@ -99,65 +105,69 @@ function ContactUsForm() {
           </p>
         </div>
       </Container>
-      <Container >
+      <Container>
         {/* Mobile View */}
         <Row className=" d-inline-block   d-block d-lg-none ">
           <Col className=" d-block d-lg-none mt-4 mb-5">
-            
-            <div className=" position-relative d-flex justify-content-center align-items-center mx-auto" style={{height:"350px", width:"350px" }}>
-                
-                <div className=" contact-medium-img position-absolute  contact-hero-2">
-                    <img
-                      src={contactmdimg1}
-                      alt="contact-img"
-                      className="conatiner   img-fluid rounded-circle"
-                    />
-                </div>
-                <div className=" contact-medium-img position-absolute  contact-hero-1 ">
-                  <img
-                    src={contactmdimg2}
-                    alt="contact-img"
-                    className="conatiner   img-fluid rounded-circle"
-                  />
-                </div>
-                <div className=" contact-medium-img position-absolute  contact-hero-3 ">
-                  <img
-                    src={contactmdimg3}
-                    alt="contact-img"
-                    className="conatiner   img-fluid rounded-circle"
-                  />
-                </div>
-                <div className="  position-absolute  contact-hero-4 " style={{height:'60px', width:"60px"}}>
-                  <img
-                    src={contactmdimg4}
-                    alt="contact-img"
-                    className="conatiner   img-fluid rounded-circle"
-                  />
-                </div>
-                <div className=" position-absolute  contact-hero-5 " style={{height:'70px', width:"70px"}}>
-                  <img
-                    src={contactmdimg5}
-                    alt="contact-img"
-                    className="conatiner   img-fluid rounded-circle"
-                  />
-                </div>
-                <div className="inner-circle position-absolute   rounded-circle">
-                  
-                </div>
-                <div className="outer-circle position-absolute   rounded-circle">
-                  
-                </div>
-                
-                
-                <div className="  position-relative " style={{width:"200px", height:"200px"}}>
-                  <img
-                    src={contactimgmobile}
-                    alt="contact-img"
-                    className="  img-fluid rounded-circle"
-                  />
-                 
-                </div>
+            <div
+              className=" position-relative d-flex justify-content-center align-items-center mx-auto"
+              style={{ height: "350px", width: "350px" }}
+            >
+              <div className=" contact-medium-img position-absolute  contact-hero-2">
+                <img
+                  src={contactmdimg1}
+                  alt="contact-img"
+                  className="conatiner   img-fluid rounded-circle"
+                />
               </div>
+              <div className=" contact-medium-img position-absolute  contact-hero-1 ">
+                <img
+                  src={contactmdimg2}
+                  alt="contact-img"
+                  className="conatiner   img-fluid rounded-circle"
+                />
+              </div>
+              <div className=" contact-medium-img position-absolute  contact-hero-3 ">
+                <img
+                  src={contactmdimg3}
+                  alt="contact-img"
+                  className="conatiner   img-fluid rounded-circle"
+                />
+              </div>
+              <div
+                className="  position-absolute  contact-hero-4 "
+                style={{ height: "60px", width: "60px" }}
+              >
+                <img
+                  src={contactmdimg4}
+                  alt="contact-img"
+                  className="conatiner   img-fluid rounded-circle"
+                />
+              </div>
+              <div
+                className=" position-absolute  contact-hero-5 "
+                style={{ height: "70px", width: "70px" }}
+              >
+                <img
+                  src={contactmdimg5}
+                  alt="contact-img"
+                  className="conatiner   img-fluid rounded-circle"
+                />
+              </div>
+              <div className="inner-circle position-absolute   rounded-circle"></div>
+              <div className="outer-circle position-absolute   rounded-circle"></div>
+
+              <div
+                className="  position-relative "
+                style={{ width: "200px", height: "200px" }}
+              >
+                <img
+                  src={contactimgmobile}
+                  alt="contact-img"
+                  className="  img-fluid rounded-circle"
+                />
+              </div>
+            </div>
           </Col>
           <Col className=" d-block d-lg-none">
             <div className=" container">
@@ -222,7 +232,7 @@ function ContactUsForm() {
                 </Form.Group>
                 <div className="text-center my-5 ">
                   <button
-                    className="bg-green-100  contact-send-btn contact-send-btn-text font-weight-semibold white-100 "
+                    className="bg-green-100  contact-send-btn contact-send-btn-text fw-semibold white-100 "
                     type="submit"
                   >
                     Send Message
@@ -299,7 +309,7 @@ function ContactUsForm() {
                   </Form.Group>
                   <div className="text-center my-5 ">
                     <button
-                      className="bg-green-100  contact-send-btn contact-send-btn-text font-weight-semibold white-100 "
+                      className="bg-green-100  contact-send-btn contact-send-btn-text fw-semibold white-100 "
                       type="submit"
                     >
                       Send Message
@@ -309,14 +319,16 @@ function ContactUsForm() {
               </div>
             </Col>
             <Col className="col-lg-5 pt-5">
-              <div className="position-relative d-flex justify-content-center align-items-center" style={{height:"400px", width:"400px" }}>
-                
+              <div
+                className="position-relative d-flex justify-content-center align-items-center"
+                style={{ height: "400px", width: "400px" }}
+              >
                 <div className=" contact-medium-img position-absolute  contact-hero-2">
-                    <img
-                      src={contactmdimg1}
-                      alt="contact-img"
-                      className="conatiner   img-fluid rounded-circle"
-                    />
+                  <img
+                    src={contactmdimg1}
+                    alt="contact-img"
+                    className="conatiner   img-fluid rounded-circle"
+                  />
                 </div>
                 <div className=" contact-medium-img position-absolute  contact-hero-1 ">
                   <img
@@ -332,38 +344,40 @@ function ContactUsForm() {
                     className="conatiner   img-fluid rounded-circle"
                   />
                 </div>
-                <div className="  position-absolute  contact-hero-4 " style={{height:'70px', width:"70px"}}>
+                <div
+                  className="  position-absolute  contact-hero-4 "
+                  style={{ height: "70px", width: "70px" }}
+                >
                   <img
                     src={contactmdimg4}
                     alt="contact-img"
                     className="conatiner   img-fluid rounded-circle"
                   />
                 </div>
-                <div className=" position-absolute  contact-hero-5 " style={{height:'80px', width:"80px"}}>
+                <div
+                  className=" position-absolute  contact-hero-5 "
+                  style={{ height: "80px", width: "80px" }}
+                >
                   <img
                     src={contactmdimg5}
                     alt="contact-img"
                     className="conatiner   img-fluid rounded-circle"
                   />
                 </div>
-                <div className="inner-circle position-absolute   rounded-circle">
-                  
-                </div>
-                <div className="outer-circle position-absolute   rounded-circle">
-                  
-                </div>
-                
-                
-                <div className="  position-relative " style={{width:"270px", height:"270px"}}>
+                <div className="inner-circle position-absolute   rounded-circle"></div>
+                <div className="outer-circle position-absolute   rounded-circle"></div>
+
+                <div
+                  className="  position-relative "
+                  style={{ width: "270px", height: "270px" }}
+                >
                   <img
                     src={contactimg}
                     alt="contact-img"
                     className="  img-fluid rounded-circle"
                   />
-                 
                 </div>
               </div>
-              
             </Col>
           </Row>
         </div>
