@@ -4,7 +4,7 @@
 
 .women-on-pc-circle {
         border: thin solid var(--blue-100);
-        z-index: 1;
+        z-index: -1;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -14,7 +14,7 @@
 }
 
 .man-and-women-on-pc-circle {
-    z-index: 1;
+    z-index: -1;
     width: 200px;
     height: 200px;
     position: absolute;
@@ -25,7 +25,7 @@
 }
 
 .man-with-dreads-on-pc-circle {
-    z-index: 1;
+    z-index: -1;
     width: 250px;
     height: 250px;
     position: absolute;
@@ -36,7 +36,7 @@
 }
 
 .lady-on-glasses-circle {
-    z-index: 1;
+    z-index: -1;
     width: 150px;
     height: 150px;
     position: absolute;
@@ -52,7 +52,7 @@
 }
 
 .mission, .vision {
-    height: 270px;
+    height: 280px;
     max-width: 470px;
 }
 
@@ -105,6 +105,14 @@
     font-size: 1.25em;
 }
 
+@media (max-width: 330px) {
+    .polygon-values {
+        transform: translate(0px, -255px);  
+        height: 200px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 359px) {
     .polygon-mission {
         transform: translate(-30px, -330px);
@@ -116,19 +124,21 @@
     }
 }
 
-@media (max-width: 330px) {
-    .polygon-values {
-        transform: translate(0px, -255px);  
-        height: 200px;
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 390px) and (min-width: 330px) {
     .polygon-values {
         transform: translate(0px, -230px);  
         height: 200px;
         width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #equity, #equity-text {
+        transform: translateX(-25px);
+    }
+
+    #novelty, #novelty-text {
+        transform: translateX(25px);
     }
 }
 
@@ -142,13 +152,13 @@
 
 @media (min-width: 768px) {
     .mission-icon {
-        width: 97.5px;
-        height: 97.5px;
+        width: 75px;
+        height: 75px;
     }
 
     .vision-icon {
-        width: 99px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
     }
 
     .polygon-vision {
@@ -182,11 +192,12 @@
     }
 
     .polygon-mission {
-        width: 470px;
+        width: 112%;
     }
 
     .polygon-vision {
-        width: 100%;
+        margin-top: 25px;
+        width: 105%;
     }
 
     .vision {
