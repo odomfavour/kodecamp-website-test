@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const KodeCamp30 = () => {
 
-    let countDownTimeMs = Date.parse("Jul 30 2022 00:00:00");
+    let countDownTimeMs = Date.parse("Aug 30 2022 00:00:00");
     const [ remainingTime, setRemainingTime ] = useState({
         seconds: "00",
         minutes: "00",
