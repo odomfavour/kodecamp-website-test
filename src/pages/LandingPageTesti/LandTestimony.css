@@ -1,34 +1,77 @@
 .card{
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);   
     z-index: 1;
-    transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;    
+}
+.slick-dots li button:before{
+    font-size: 16px !important;
+    color: var(--green-100) !important;
+    padding: 0px;   
+}
+.slick-dots{
+    bottom: -5%;
+    left: -2.44%;
+}
+.image-carousel .slick-next, .image-carousel .slick-prev{
+    display: none !important;
 }
 
-/* .landing-desktop .carousel-inner{
-    overflow-y: hidden !important;
-} */
+.slick-next {
+    background: url('../../Images/landing-card-images/next-icon.svg') no-repeat;
+    content: "";
+    position: absolute;
+    display: block;    
+    right: 10%;
+    top: 110%;
+}
+.slick-prev {
+    background: url('../../Images/landing-card-images/previous-icon.svg') no-repeat;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 2%;
+    top: 110%;
+}
+
+.slick-next::before, .slick-prev::before{
+    font-size: 50px;
+    color: var(--green-100);
+    z-index: 1 !important;
+    padding: auto;
+}
+.testimonial-img{
+    width: 80px !important;
+    height: 80px !important;
+}
+.testimony-fs-description{
+    font-size: 12px;
+}
+.testimony-fs-name{
+    font-size: 14px;
+}
 .dotted .card{
     border: 1px dashed var(--green-100) !important;
     transform: rotate(4deg) !important;
-    height:390px ;        
+    height: 270px;
+    width: 320px !important;
 }
 .not-dotted .card{
     border: 0.1px solid grey  !important;
     transform: rotate(-4deg) !important;
+    width: 320px !important;
 }
 .dotted .card:hover {
     /* transform: scale(1.02); */
-    transform: rotate(-4deg) !important; 
+    transform: rotate(-4deg) !important;
+    transform-origin: center !important;
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    width: 350px;
+    width: 400px !important;
 }
 .not-dotted .card:hover{
     border: 0.3px solid gray !important;
-    transform: rotate(4deg) !important; 
-}
-.landing-fs-52{
-    font-size: 50px !important;
-    /* line-height: 42px !important; */
+    transform: rotate(4deg) !important;
+    transform-origin: center !important;
+    width: 400px !important;
 } 
 .landtesti-fs-12{
         font-size: 16px;
@@ -41,7 +84,6 @@
     width: 0px !important;
     height: 0px !important;
 }
-
 .landingpageacc .accordion-button:not(.collapsed)::after {
     content: url("../../Images/landing-card-images/minus.svg") !important;
     background-image: none !important;
@@ -60,24 +102,112 @@
 .landingpageacc .accordion-button:focus {
     box-shadow: none !important;
 }
-.blue100acc .accordion-button {
-    background-color: var(--blue-100) !important;
-}
 .deepblue100acc .accordion-button {
     background-color: var(--deep-blue-100) !important;
-}
-.green100acc .accordion-button {
-    background-color: var(--green-100) !important;
-}
-.black100acc .accordion-button {
-    background-color: var(--black-100) !important;
 }
 .fs-mobile-head{
     font-size: 22px !important;
 }
-@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+
+@media (min-width: 1199.98px)  {
+
+    .section-padding{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .not-dotted .card{
+        width: 300px !important;
+    }
+    .dotted .card{
+        width: 300px !important;
+        height: 250px !important;
+        transition: all .2s ease-in-out !important;     
+    }
     .dotted .card:hover {
-        transform: scale(1.1);
+        transform: scale(1.08);
+        transform-origin: center center !important;
+        width: 320px !important;
+        height: 290px !important;
+    }
+    .not-dotted .card:hover{
+        width: 320px !important;
+        height: 290px !important;
+    }
+    .testimonial-img{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .not-dotted .card:hover .testimonial-img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .dotted .card:hover .testimonial-img{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .not-dotted .card:hover .testimony-fs-description{
+        font-size: 14px;
+    }
+    .dotted .card:hover .testimony-fs-description{
+        font-size: 14px;
+    }
+    .not-dotted .card:hover .testimony-fs-name{
+        font-size: 14px;
+    }
+    .dotted .card:hover .testimony-fs-name{
+        font-size: 14px;
+    }
+    .slick-slider{
+        margin-left: 30px;
+    }
+    .image-carousel .slick-slider{   
+        left: -9% !important;
+        margin: 0px auto;
+        width: 300px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }    
+    .image-carousel .slick-list{   
+        margin: 0px auto;
+        width: 300px !important;
+        margin: 0px -7px;
+    }
+    .connect-dot-1{
+        left: 44.3%;
+        top: -23%;
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+        background-color: var(--green-100);
+        opacity: 0.55;
+    }
+    .connect-dot-2{
+        left: 44.4%;
+        top: -3%;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+        background-color: var(--green-100);
+        opacity: 0.40;
+    }
+    .connect-dot-3{
+        left: 44.57%;
+        top: 15%;
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+        background-color: var(--green-100);
+        opacity: 0.20;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .dotted .card:hover {
+        /* transform: scale(1.1); */
         transform-origin: center !important;
         width: 310px !important;
     }
@@ -86,53 +216,70 @@
     }
     .dotted .card{
         width: 300px !important;
-        transition: all .2s ease-in-out !important;     
+        height: 310px !important;
     }
-    /* .not-dotted .card::before{
-        content: '';
-        width: 40px;
-        height: 40px;
-        background-color: red;
-        border-radius: 50%;
-        position: absolute;
-        bottom:-40px;
-    } */
-    /* .landing-desktop .carousel{
-        overflow-x: hidden !important;
-        overflow-y: visible !important;
-    } */
-    .landing-fs-52{
-        font-size: 52px !important;
-        /* line-height: 42px !important; */
-    }
-    .not-dotted .card{
-        width: 300px !important;
-    }
-    .card{
-        transition: .2s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12) !important;      
+    .slick-slider{
+        margin-left: 70px;
     }
 }
-@media (min-width: 425px) and (max-width: 1023.98px) {
-    .dotted .card{
-        width: 290px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;         
-    }
-    .not-dotted .card{
-        width: 290px !important;
-        margin-right: auto !important;
-        margin-left: auto !important; 
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dotted .card:hover {
+        /* transform: scale(1.1); */
+        transform-origin: center !important;
+        width: 310px !important;
     }
     .not-dotted .card:hover{
+        width: 310px !important;
+    }
+    .dotted .card{
         width: 300px !important;
+        height: 310px !important;
+        /* transition: all .2s ease-in-out !important;      */
+    }
+    .section-padding{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }   
+}
+
+@media (min-width: 425.98px) and (max-width: 767px) {
+    .section-padding{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .dotted .card:hover {
-        width: 300px !important;
+        transform: scale(1.05);
+        transform-origin: center !important;
+        width: 335px !important;       
     }
-    .landing-fs-52{
-        font-size: 45px !important;
-        /* line-height: 42px !important; */
-    } 
+    .not-dotted .card:hover{
+        width: 335px !important;        
+    }
+    .not-dotted .card{
+        width: 320px !important;
+        height: 300px !important;
+        top: 0% !important;
+        left: -15% !important;
+    }
+    .dotted .card{
+        width: 320px !important;
+        transition: all .2s ease-in-out !important; 
+        height: 300px !important;
+        margin-left: 15% !important;
+        margin-right: 15% !important;
+        text-align: center;
+    }
+    .testimony-fs-description{
+        font-size: 15px;
+    }
+    .testimonial-img{
+        height: 80px !important;
+        width: 80px !important;
+    }
+    .testimony-fs-name{
+        font-size: 16px !important;
+    }
 }
 @media (max-width: 425px){
     .landingpageacc .accordion-button{
@@ -143,34 +290,24 @@
     }
     .dotted .card{
         width: 260px !important;
-        
         margin-right: auto !important;
         margin-left: auto !important;
-              
+        height: 280px !important;
     }
     .not-dotted .card{
         width: 260px !important;
         margin-right: auto !important;
         margin-left: auto !important; 
-        
     }
     .not-dotted .card:hover{
         width: 270px !important;
-        
     }
     .dotted .card:hover {
         width: 270px !important;
- 
     }
     .not-dotted .card .fs-mobile {
         font-size: 14px;
         width: none !important;
-    }
-    .landing-fs-52{
-        font-size: 33px !important;
-        font-weight: 500px !important;
-        line-height: 10px !important;
-        text-align: center !important;
     }
     .land-avail{
         text-align: center !important;
@@ -181,10 +318,5 @@
     }
     .landtesti-fs-12{
         font-size: 14px;
-    }
-}
-@media (max-width: 767.98px){
-    .landing-fs-52{
-        line-height: 40px !important;
     }
 }

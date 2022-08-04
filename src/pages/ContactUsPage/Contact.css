@@ -28,11 +28,7 @@
 .outer-circle{
   height: 115%;
   width: 115%;
-  border: 2px dashed var(--deep-blue-100);
-
-
-
-
+  border: 2px dashed var(--deep-blue-100) !important;
 ;
 }
 .inner-circle{

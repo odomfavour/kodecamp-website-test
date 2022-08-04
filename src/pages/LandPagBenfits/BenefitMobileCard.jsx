@@ -20,5 +20,4 @@ function BenefitMobileCard({title, image, description, id}) {
     </>
   )
 }
-
 export default BenefitMobileCard
