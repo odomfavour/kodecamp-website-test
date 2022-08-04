@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const KodeCamp30 = () => {
 
-    let countDownTimeMs = Date.parse("Jul 30 2022 00:00:00");
+    let countDownTimeMs = Date.parse("Aug 30 2022 00:00:00");
     const [ remainingTime, setRemainingTime ] = useState({
         seconds: "00",
         minutes: "00",
@@ -59,8 +59,8 @@ const KodeCamp30 = () => {
     const textBelowKodeCamp3_0 = {
         maxWidth: '56.625em',
         fontWeight: "500",
-        fontSize: "1em",
-        lineHeight: "2.25em"
+        fontSize: "1.25em",
+        lineHeight: "1.5em"
     };
 
     const timeDaysContainer ={
@@ -107,8 +107,8 @@ const KodeCamp30 = () => {
 
     const textBelowData =  {
         fontWeight: "500",
-        fontSize: "0.875em",
-        lineHeight: "1.5625em",
+        fontSize: "1.25em",
+        lineHeight: "1.5em",
         margin: "0 42px",
         maxWidth: "740px"
     };

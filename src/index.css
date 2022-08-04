@@ -120,9 +120,7 @@ a {
 .light-blue {
   color: var(--ligt-blue);
 }
-a:hover {
-  border: none !important;
-}
+
 /* form control focus removal */
 .form-control:focus {
   box-shadow: none !important;

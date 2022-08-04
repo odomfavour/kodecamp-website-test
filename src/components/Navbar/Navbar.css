@@ -14,10 +14,6 @@
   font-size: 16px;
 }
 
-.btn:hover {
-  border: none;
-}
-
 #overlay {
   position: fixed;
   width: 100%;
@@ -52,6 +48,10 @@
   text-decoration: none;
 }
 
+.navbar-links-desktop:hover {
+  color: rgba(33, 37, 41, 0.6);
+}
+
 
 .btn-login, .btn-enrol {
   line-height: 24px !important;
@@ -75,6 +75,7 @@
   width: 140px;
   height: 50px;
   margin-right: 20px;
+  color: var(--white-100) !important;
 }
 
 #responsive-navbar-nav {  
@@ -89,18 +90,6 @@
 
 .navbar a {
   text-decoration: none !important;
-  color: var(--black-60) !important;
-}
-
-.navbar .btn:focus {
-  border: none !important;
-}
-.navbar .btn:focus-visible{
-  border: none !important;
-}
-
-.active {
-  color: var(--blue-100) !important;
 }
 
 .navbar-links-mobile {
@@ -124,8 +113,6 @@
   cursor: pointer;
 }
 
-
-
 @media (min-width: 992px) {
   
   .navbar {
@@ -138,15 +125,12 @@
   
 }
 
+
 @media (max-width: 575.98px) {
-  .btn-login, .btn-enrol {
+  .btn-enrol {
     text-align: center;
     height: 40px;
     padding-top: 6px !important;
-  }
-
-  .btn-login {
-    width: 125px;
   }
 
   .btn-enrol {
