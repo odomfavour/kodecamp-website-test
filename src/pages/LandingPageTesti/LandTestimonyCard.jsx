@@ -29,7 +29,7 @@ function LandTestimonyCard({id, name, track,description,image}) {
                                             </div>
                                             <div>
                                                 <p className='fw-bold  lh-sm black-100 testimony-fs-name '>{name}</p>
-                                                <p className='testimony-fs-name lh-sm fw-bold blue-100'>{track} </p>
+                                                <p className='testimony-fs-name lh-sm fw-bold blue-100 mt-0'>{track} </p>
                                             </div>
                                         </Card.Body>
                                     </Card>
