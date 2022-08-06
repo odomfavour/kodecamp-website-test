@@ -5,25 +5,34 @@
         {
             id:1,
             name: "CLINTON OBUZOR",
-            description: "“They say the people who support your growth are angels on earth and I believe that being a part of Kodecamp has been significant to my career”",
+            description: "“They say the people who support your growth are angels on earth and I believe that being a part of Kodecamp is great”",
             track: "Product Design Intern",
             image: testimg1,  
         },
         {
             id:2,
             name: "ASHIMI ASHLEY",
-            description: "“The journey was quite intense and interesting. I gained so much knowledge during the learning and internship phase, made amazing connections. Thank you Kodecamp”",
+            description: "“The journey was quite intense and interesting. I gained so much knowledge during the learning and internship phase”",
             track:"Product Management Intern",
             image: testimg2,  
         },
         {
             id:3,
             name: "NAGHMA BIBI NUNDLOLL",
-            description: "“Kodecamp has proven to help learners succeed; it is an all inclusive and flexible program that allows people with even little-to-no experience learn alongside their peers ”",
+            description: "“Kodecamp has proven to help learners succeed; it is an all inclusive, flexible and technical program”",
+            track:"FrontEnd Development Intern",
+            image: testimg3,  
+            
+        },
+        {
+            id:4,
+            name: "NAGHMA BIBI NUNDLOLL",
+            description: "“Kodecamp has proven to help learners succeed; it is an all inclusive, flexible and technical program.”",
             track:"FrontEnd Development Intern",
             image: testimg3,  
             
         }
+
     ]
 
     const accordiondata =[

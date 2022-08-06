@@ -33,13 +33,10 @@ function BenefitsMobile() {
                 >   
                     {
                         benefits.map(bene => (
-                                (
-                                    
+                                (   
                                     <Carousel.Item key={bene.id} className="">
-                                            <div className='  row d-flex justify-content-center'>
-                                                
+                                            <div className='  row d-flex justify-content-center'>   
                                                     <BenefitMobileCard title={bene.title} image={bene.image} description={bene.description} key={bene.id}/>
-                                                
                                             </div>
                                     </Carousel.Item>         
                                 )
@@ -47,8 +44,7 @@ function BenefitsMobile() {
                     } 
                 </Carousel>
             </div>    
-        </section>
-    
+        </section>    
     </>
   );
 }

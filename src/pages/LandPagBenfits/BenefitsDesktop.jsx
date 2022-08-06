@@ -8,11 +8,9 @@ function BenefitsDesktop() {
 // const benefits = getBenefitCardData();
   return (
     <>
-        <section >
-            
-            
-            <div className='container d-none d-lg-block '>
-                <div className='text-center d-none d-md-block mt-4 mb-5'>
+        <section className='section-padding'>    
+          <div className='container d-none d-lg-block '>
+                <div className='text-center d-none d-md-block '>
                     <p className='fs-3 fw-bold deep-blue-100 pb-4'>BENEFITS OF JOINING KODECAMP INTERNSHIP</p>
                 </div>
                 <Row className='d-flex justify-content-around mb-3 '>
@@ -55,11 +53,10 @@ function BenefitsDesktop() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                    
                     </Col>
                 </Row>
             </div>
-            <div className='container d-none d-lg-block mb-5'>
+            <div className='container d-none d-lg-block '>
                 <Row className='d-flex justify-content-around'>
                     <Col className='col-md-5 col-lg-3'>
                         <div className='text-center'>
@@ -81,11 +78,10 @@ function BenefitsDesktop() {
                     </Col>
                 </Row>
             </div>
-            <div className='container'>
-                <hr className='d-none d-md-block d-lg-block' />
-            </div>
         </section>
-    
+        <div className=''>
+            <hr className='d-none d-md-block d-lg-block' />
+        </div>
     </>
   );
 }

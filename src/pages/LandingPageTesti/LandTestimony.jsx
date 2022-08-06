@@ -1,22 +1,15 @@
 import "./LandTestimony.css";
-import LandTestimonyDesktop from './LandTestimonyDesktop';
 import LandTestimonyMobile from './LandTestimonyMobile';
-import LandTestTabLap from "./LandTestTabLap";
+import LandTestimonyTabToDesktop from "./LandTestimonyTabToDesktop";
 
 function LandTestimony() {
   return (
-    <>
-        
-          <div className='container-fluid my-5'>
-            
+    <>    
+          <div className=''>
             <LandTestimonyMobile/>
-            <LandTestTabLap/>
-            <LandTestimonyDesktop/>
-
-          </div>
-        
+            <LandTestimonyTabToDesktop/>
+          </div>  
     </>
   )
 }
-
 export default LandTestimony
