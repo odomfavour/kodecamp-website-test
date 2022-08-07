@@ -197,7 +197,7 @@ const EnrolNowForm = () => {
                                 className="form-control enroll-input form-controll"
                                 placeholder="Enter your first name"
                             />
-                        <p className='err-message'>{inputErrors.firstname}</p>       
+                        <p className='err-message pt-4'>{inputErrors.firstname}</p>       
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label
@@ -215,7 +215,7 @@ const EnrolNowForm = () => {
                                 className="form-control enroll-input"
                                 placeholder="Enter your Last Name"
                             />
-                            <p className='err-message'>{inputErrors.lastname}</p> 
+                            <p className='err-message pt-4'>{inputErrors.lastname}</p> 
                         </div>
                     </div>
                     <div className=" my-4 text-md-start d-md-none d-lg-none">
@@ -234,7 +234,7 @@ const EnrolNowForm = () => {
                             className="form-control enroll-input"
                             placeholder="Enter your Last Name"
                         />
-                        <p className='err-message'>{inputErrors.lastname}</p>    
+                        <p className='err-message pt-4'>{inputErrors.lastname}</p>    
                     </div>
                 </div>
                 <div className="my-4">
@@ -251,7 +251,7 @@ const EnrolNowForm = () => {
                                 className="form-control enroll-input"
                                 placeholder="Enter your Email address"
                             />
-                            <p className='err-message'>{inputErrors.emailaddress}</p>    
+                            <p className='err-message pt-4'>{inputErrors.emailaddress}</p>    
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
@@ -266,7 +266,7 @@ const EnrolNowForm = () => {
                                 className="form-control enroll-input"
                                 placeholder="+234 812 555 0126" 
                             />
-                            <p className='err-message'>{inputErrors.phonenumber}</p>    
+                            <p className='err-message pt-4'>{inputErrors.phonenumber}</p>    
                         </div>
                     </div>
                     <div className=" my-4 text-md-start  d-md-none  d-lg-none">
@@ -281,7 +281,7 @@ const EnrolNowForm = () => {
                             className="form-control enroll-input"
                             placeholder="+234 812 555 0126" 
                         />
-                        <p className='err-message'>{inputErrors.phonenumber}</p>    
+                        <p className='err-message pt-4'>{inputErrors.phonenumber}</p>    
                     </div>
                 </div>
                 <div className="my-4">
@@ -305,7 +305,7 @@ const EnrolNowForm = () => {
                                 <option value="Prefer not to disclose">Prefer not to disclose</option>
                                 <option value="Others">Others</option>
                             </select>
-                            <p className='err-message'>{inputErrors.gender}</p> 
+                            <p className='err-message pt-4'>{inputErrors.gender}</p> 
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
@@ -413,7 +413,7 @@ const EnrolNowForm = () => {
                                 <option value="intermediate">Intermediate</option>
                                 <option value="advanced">Advanced</option>
                             </select>
-                            <p className='err-message'>{inputErrors.level}</p>    
+                            <p className='err-message pt-4'>{inputErrors.level}</p>    
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block">
                             <label style={fontwgt} className="form-label enrollalignlabel">
@@ -448,7 +448,7 @@ const EnrolNowForm = () => {
                                     Internet of Things (IOT)
                                 </option>
                             </select>
-                            <p className='err-message'>{inputErrors.learningtrack}</p> 
+                            <p className='err-message pt-4'>{inputErrors.learningtrack}</p> 
                         </div>
                         <div className="col-md-6 mt-4 text-md-start d-md-none">
                             <label style={fontwgt} className="form-label enrollalignlabel">
@@ -484,7 +484,7 @@ const EnrolNowForm = () => {
                                     Internet of Things (IOT)
                                 </option>
                             </select>
-                            <p className='err-message'>{inputErrors.learningtrack}</p> 
+                            <p className='err-message pt-4'>{inputErrors.learningtrack}</p> 
                         </div>
                     </div>
                 </div>
@@ -513,7 +513,7 @@ const EnrolNowForm = () => {
                                 <option value="Youtube">Youtube </option>
                                 <option value="Others">Others</option>
                             </select>
-                            <p className='err-message'>{inputErrors.referal}</p> 
+                            <p className='err-message pt-4'>{inputErrors.referal}</p> 
                         </div>
                         <div className="col-md-6  text-md-start d-none d-md-block"></div>
                     </div>
