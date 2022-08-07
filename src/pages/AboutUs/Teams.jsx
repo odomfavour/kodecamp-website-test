@@ -322,7 +322,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember1} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5 ">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5 ">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -331,11 +331,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   Frontend Web Development
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "300" }}>
                   A frontend developer with experience in React, Vue, NodeJs.
                   Free spirited, creative, goal-oriented and your random guy.
                 </p>
@@ -345,7 +345,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember2} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -354,11 +354,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   UI/UX Design
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   A Product Designer ( UI/UX) with experience in graphics design
                   and front-end development.
                 </p>
@@ -368,7 +368,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember3} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -377,11 +377,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   UI/UX Design
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   A Product Designer ( UI/UX) with experience in graphics design
                   and front-end development.
                 </p>
@@ -391,7 +391,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember4} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -400,11 +400,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   UI/UX Design
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   Graphics, Web and Mobile Designer, Tech Enthsiast. A cool
                   breeze and a hurricane.
                 </p>
@@ -414,7 +414,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember5} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -423,11 +423,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   CAD
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   CAD | CAM | Product Design | Industial Design. He listens a
                   lot more than he speaks.
                 </p>
@@ -437,7 +437,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember6} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -446,11 +446,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   UI/UX Design
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   A UI/UX Designer with experience in creating digital product
                   and solving design problems.
                 </p>
@@ -460,7 +460,7 @@ const Teams = () => {
             {/* team mate */}
             <div>
               <img src={TeamMember7} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -469,11 +469,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   Python and Javascript, Django
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   A technology enthusiast
                 </p>
               </div>
@@ -481,7 +481,7 @@ const Teams = () => {
 
             <div>
               <img src={TeamMember8} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -490,11 +490,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   UI/UX Design
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   A professional product designer based in Nigeria, experienced
                   in designing mobile apps and websites.
                 </p>
@@ -503,7 +503,7 @@ const Teams = () => {
 
             <div>
               <img src={TeamMember9} alt="" className="img-fluid " />
-              <div className="white-100 px-2 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
+              <div className="white-100 px-3 pt-3 pb-2 bg-deep-blue-100 mt-2 mb-5">
                 <p
                   className="mb-1"
                   style={{ fontSize: "18px", fontWeight: "700" }}
@@ -512,11 +512,11 @@ const Teams = () => {
                 </p>
                 <p
                   className="mb-2"
-                  style={{ fontSize: "16px", fontWeight: "600" }}
+                  style={{ fontSize: "16px", fontWeight: "500" }}
                 >
                   Python
                 </p>
-                <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                <p style={{ fontSize: "14px", fontWeight: "400" }}>
                   Rust, Python, Backend Engineer. Reserved and Open minded.
                 </p>
               </div>
