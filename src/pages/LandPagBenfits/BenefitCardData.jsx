@@ -21,7 +21,6 @@ const benefitsdata = [
         image: benefit3,  
     }
 ]
-
 export function getBenefitCardData() {
 return benefitsdata;
 }
