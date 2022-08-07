@@ -52,10 +52,7 @@
     background-repeat: no-repeat;
   }
 }
-@media screen and (max-width: 420px) {
-  .footer {
-    background-position: top;
-  }
+@media screen and (max-width: 575px) {
   .footer-col {
     padding-left: 20px !important;
   }
