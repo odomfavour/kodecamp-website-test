@@ -13,15 +13,16 @@ const Analytics = ({ cohort, value }) => {
         className="mx-auto py-2 px-2 px-md-3 deep-blue-100 shadow-sm"
       >
         <Card.Body className="pb-0">
-          <Card.Title
-            className="fw-semibold mb-3 "
-            style={{ fontSize: "2rem" }}
-          >
+          <h2 className="fw-semibold mb-3 " style={{ fontSize: "1.9em" }}>
             KodeCamp {cohort}
-          </Card.Title>
+          </h2>
           <Card.Text
-            style={{ fontWeight: "500" }}
-            className="lh-lg fs-5 mb-3 sonic-silver "
+            style={{
+              fontWeight: "500",
+              fontSize: "1.25em",
+              lineHeight: "1.7em",
+            }}
+            className="  mb-3 sonic-silver "
           >
             Over the course of the Kodecamp {cohort} we have had over {value}%
             of interns learn using our platform as seen on our analytics

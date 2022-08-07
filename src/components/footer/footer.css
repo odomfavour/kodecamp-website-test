@@ -6,6 +6,7 @@
 }
 .footer-logo {
   width: 180px !important;
+  margin-right: 30px;
   align-self: center;
 }
 
@@ -15,7 +16,7 @@
 .footer-subtitle {
   font-weight: 500;
   margin-bottom: 24px;
-  font-size: 20px !important;
+  font-size: 18px !important;
   color: var(--white-100);
 }
 .footer-list {
@@ -58,10 +59,5 @@
   }
   .footer-logo {
     transform: translateX(-15px);
-  }
-}
-@media (min-width: 990px) and (max-width: 1202px) {
-  .footer-subtitle.footer-subtitle-connect {
-    font-size: 19px !important;
   }
 }
