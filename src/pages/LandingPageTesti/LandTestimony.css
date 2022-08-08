@@ -42,8 +42,7 @@
     transform: rotate(-4deg) !important;
     width: 320px !important;
 }
-.dotted .card:hover {
-    /* transform: scale(1.02); */
+/* .dotted .card:hover {
     transform: rotate(-4deg) !important;
     transform-origin: center !important;
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -54,7 +53,7 @@
     transform: rotate(4deg) !important;
     transform-origin: center !important;
     width: 400px !important;
-} 
+}  */
 .landtesti-fs-12{
         font-size: 16px;
 }
@@ -97,47 +96,48 @@
         padding-bottom: 100px;
     }
     .not-dotted .card{
-        width: 300px !important;
-        height: 240px !important;
+        width: 250px !important;
+        height: 200px !important;
     }
     .dotted .card{
-        width: 300px !important;
-        height: 240px !important;
-        transition: all .2s ease-in-out !important;     
+        width: 250px !important ;
+        height: 200px !important ;
+        transition: all .3s ease-in-out;
     }
-    .dotted .card:hover {
-        transform: scale(1.08);
-        transform-origin: center center !important;
+    .testimony-fs-description{
+        font-size: 10px;
+        transition: all .3s ease-in-out;
+    }
+    .slick-center .dotted .card{
+        transform: translate(-10%, -5%) rotate(4deg) !important;
         width: 330px !important;
-        height: 260px !important;
+        height: 250px !important;
     }
-    .not-dotted .card:hover{
+    .slick-center .not-dotted .card{
+        transform:  rotate(-4deg) !important;
         width: 330px !important;
-        height: 260px !important;
+        height: 250px !important;
     }
+    .slick-center .testimony-fs-description{
+        font-size: 14px;
+    }
+    .testimony-fs-name{
+        font-size: 12px;
+        margin-bottom: 0.7rem !important;
+        transition: all .3s ease-in-out;
+    }
+    .slick-center .testimony-fs-name{
+        font-size: 14px;
+        margin-bottom: 0.9rem !important;
+    } 
     .testimonial-img{
-        width: 60px !important;
-        height: 60px !important;
+        width: 50px !important;
+        height: 50px !important;
+        transition: all .3s ease-in-out;
     }
-    .not-dotted .card:hover .testimonial-img {
+    .slick-center .testimonial-img {
         width: 80px !important;
         height: 80px !important;
-    }
-    .dotted .card:hover .testimonial-img{
-        width: 80px !important;
-        height: 80px !important;
-    }
-    .not-dotted .card:hover .testimony-fs-description{
-        font-size: 14px;
-    }
-    .dotted .card:hover .testimony-fs-description{
-        font-size: 14px;
-    }
-    .not-dotted .card:hover .testimony-fs-name{
-        font-size: 14px;
-    }
-    .dotted .card:hover .testimony-fs-name{
-        font-size: 14px;
     }
     .slick-slider{
         margin-left: 30px;
@@ -188,48 +188,26 @@
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    .dotted .card:hover {
-        /* transform: scale(1.1); */
-        transform-origin: center !important;
-        width: 350px !important;
+    
+    .dotted .card{
+        width: 380px !important;
         height: 280px !important;
     }
-    .not-dotted .card:hover{
+    /* .not-dotted .card{
         width: 350px !important;
-    }
-    .dotted .card{
-        width: 300px !important;
-        height: 250px !important;
-    }
-    .not-dotted .card{
-        width: 300px !important;
-        height: 250px !important;
-    }
+        height: 280px !important;
+    } */
     .slick-slider{
         margin-left: 70px;
     }
     .testimonial-img{
-        width: 80px !important;
-        height: 80px !important;
-    }
-    .not-dotted .card:hover .testimonial-img {
         width: 100px !important;
         height: 100px !important;
     }
-    .dotted .card:hover .testimonial-img{
-        width: 100px !important;
-        height: 100px !important;
-    }
-    .not-dotted .card:hover .testimony-fs-description{
+    .testimony-fs-description{
         font-size: 14px;
     }
-    .dotted .card:hover .testimony-fs-description{
-        font-size: 14px;
-    }
-    .not-dotted .card:hover .testimony-fs-name{
-        font-size: 14px;
-    }
-    .dotted .card:hover .testimony-fs-name{
+    .testimony-fs-name{
         font-size: 14px;
     }
 }
@@ -240,46 +218,21 @@
         padding-bottom: 50px;
     }
     .dotted .card{
-        width: 300px !important;
-        height: 250px !important;
-        /* transition: all .2s ease-in-out !important;      */
-    }
-    .not-dotted .card{
-        width: 300px !important;
-        height: 250px !important;
-        /* transition: all .2s ease-in-out !important;      */
-    }
-    .dotted .card:hover {
-        /* transform: scale(1.1); */
-        transform-origin: center !important;
-        width: 310px !important;
+        width: 320px !important;
         height: 280px !important;
     }
-    .not-dotted .card:hover{
-        width: 310px !important;
-        height: 280px !important;
-    }
-    .not-dotted .card:hover .testimony-fs-description{
+    /* .not-dotted .card{
+        width: 300px !important;
+        height: 250px !important;
+    } */
+    
+    .testimony-fs-description{
         font-size: 14px;
     }
-    .dotted .card:hover .testimony-fs-description{
-        font-size: 14px;
-    }
-    .not-dotted .card:hover .testimony-fs-name{
-        font-size: 14px;
-    }
-    .dotted .card:hover .testimony-fs-name{
+    .testimony-fs-name{
         font-size: 14px;
     }
     .testimonial-img{
-        width: 70px !important;
-        height: 70px !important;
-    }
-    .not-dotted .card:hover .testimonial-img {
-        width: 80px !important;
-        height: 80px !important;
-    }
-    .dotted .card:hover .testimonial-img{
         width: 80px !important;
         height: 80px !important;
     }
