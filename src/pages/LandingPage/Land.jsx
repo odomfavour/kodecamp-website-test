@@ -85,9 +85,12 @@ const Land = () => {
         top: "50%",
         left: "-2%"
     }
+    const marginbuttom  = {
+        marginTop: "150px"
+    }
     return (
         <div className="container py-2">
-            <div className="row rowlg mt-5">
+            <div className="row rowlg mt-5 " >
                 <div className="col d-none d-lg-block  ">
                     <h1 className='display-5 deep-blue-100 fntwgt my-4'>
                         Kickstart and
@@ -103,7 +106,7 @@ const Land = () => {
             </Link>
                    
                 </div>
-                <div className="col d-none d-lg-block" style={contain}>
+                <div className="col d-none d-lg-block " style={contain}>
                     <img className='img-fluid ' src={land} alt="" />
                     <img src={moon} style={deskmoonsty} alt="" className="img-fluid" />
                     <img src={cross} style={deskcrossty} alt="" className="img-fluid" />
@@ -113,7 +116,7 @@ const Land = () => {
                     <img src={remote} style={deskremotesty} alt="" className="img-fluid" />
                 </div>
             </div>
-            <hr className='d-none d-lg-block' />
+            <hr className='d-none d-lg-block' style={marginbuttom } />
             <div className="row rowlg d-none d-lg-block text-center mt-5">
                 <h1 className='my-5 sponsorfontsize1 deep-blue-100 fw-bold'>
                     OUR SPONSORS
@@ -128,10 +131,11 @@ const Land = () => {
                         <img className="col mx-3" src={sponsor3} alt="" />
                     <div className="col"></div>
                 </div>
+                <div>
                 <Link to="/sponsor" >
                 <button className='btn bg-green-100 white-100 my-5 rounded sponsorwidth fwbd'>Become a sponsor</button>
             </Link>
-                
+                </div>
             </div>
             <hr className=' d-none d-lg-block' />
             

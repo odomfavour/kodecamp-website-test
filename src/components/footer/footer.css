@@ -6,6 +6,7 @@
 }
 .footer-logo {
   width: 180px !important;
+  margin-right: 30px;
   align-self: center;
 }
 
@@ -52,19 +53,11 @@
     background-repeat: no-repeat;
   }
 }
-@media screen and (max-width: 420px) {
-  .footer {
-    background-position: top;
-  }
+@media screen and (max-width: 575px) {
   .footer-col {
     padding-left: 20px !important;
   }
   .footer-logo {
     transform: translateX(-15px);
-  }
-}
-@media (min-width: 990px) and (max-width: 1202px) {
-  .footer-subtitle.footer-subtitle-connect {
-    font-size: 19px !important;
   }
 }

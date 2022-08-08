@@ -1,0 +1,24 @@
+#scroll-up {
+  z-index: 30;
+  bottom: 30px;
+  right: 25px;
+  animation: bounce 1s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 420px) {
+  #scroll-up {
+    z-index: 30;
+    bottom: 25px;
+    right: 10px;
+  }
+}
