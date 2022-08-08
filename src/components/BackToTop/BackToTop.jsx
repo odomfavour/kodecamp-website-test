@@ -15,7 +15,7 @@ const BackToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 800) {
+      if (window.scrollY > 900) {
         setIsScrollUp(true);
       } else {
         setIsScrollUp(false);

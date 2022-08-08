@@ -41,7 +41,9 @@ export default class LandTestimonyTabToDesktop  extends Component {
       pauseOnHover: true,
       infinite: true,
       centerMode: true,
-      speed: 500,
+      autoplay: true,
+      // speed: 200,
+      autoplaySpeed: 7000,
       slidesToShow: 3,
       // prevArrow: <button className="slick-prev"></button>,
       // nextArrow: <button className="slick-prev"></button>,
@@ -109,11 +111,11 @@ export default class LandTestimonyTabToDesktop  extends Component {
         <section className="container d-none d-md-block section-padding ">
           <div className="text-center container ">
             <div className="text-center  ">
-              <p className=" fs-3 fw-bold deep-blue-100">WHAT OUR INTERNS HAVE TO SAY</p>
+              <p className=" fs-3 fw-bold deep-blue-100 ">WHAT OUR INTERNS HAVE TO SAY</p>
             </div>
-              <div className="main-carousel ">
+              <div className="main-carousel  ">
               {/* className="main-carousel position-relative mb-5" asNavFor={this.state.nav2} ref={slider => (this.slider1 = slider)} */}
-                <Slider ref={c => (this.slider = c)} {...settings}  >
+                <Slider ref={c => (this.slider = c)} {...settings} className='pt-5'  >
                   {
                     testimonials.map(testimony => (
                         <LandTestimonyCard name={testimony.name} track={testimony.track} description={testimony.description} image={testimony.image} key={testimony.id}/>   
